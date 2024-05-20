@@ -1,1 +1,1 @@
-CMakeLists.txt not found in D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management Select CMakeLists.txt
+CMakeLists.txt not found in D:\josem\Documents\GitHub\Wallet-Management Select CMakeLists.txt
