@@ -31,5 +31,4 @@ public:
     Controller(WalletManagement& walletManagement);
     void run();
 };
-
 #endif //WALLET_MANAGEMENT_CONTROLLER_H
