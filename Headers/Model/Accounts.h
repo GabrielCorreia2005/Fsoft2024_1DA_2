@@ -1,0 +1,8 @@
+//
+// Created by corre on 20/05/2024.
+//
+
+#ifndef WALLET_MANAGEMENT_ACCOUNTS_H
+#define WALLET_MANAGEMENT_ACCOUNTS_H
+
+#endif //WALLET_MANAGEMENT_ACCOUNTS_H
