@@ -1,8 +1,15 @@
 //
-// Created by corre on 20/05/2024.
+// Created by Gabriel on 20/05/2024.
 //
 #include "DataConsistencyException.h"
 
-DataConsistencyException::DataConsistencyException(const string &what_arg) : runtime_error(what_arg) {}
+DataConsistencyException::DataConsistencyException(string data) : data(data) {}
 
-DataConsistencyException::DataConsistencyException(const char *what_arg) : runtime_error(what_arg) {}
+const char* DataConsistencyException::what() const noexcept {
+return ("Data consistency error: " + data).c_str();
+}
+
+//how to use
+//if (student.getAge() < subject.getMinimumAge()) {
+//    throw DataConsistencyException("Student's age is below the minimum age for this subject.");
+//}
