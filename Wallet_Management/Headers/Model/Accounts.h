@@ -22,7 +22,7 @@ public:
     Accounts(const Accounts& obj);
     ~Accounts();
 
-
+    void setNumber(int &nr);
 };
 
 
