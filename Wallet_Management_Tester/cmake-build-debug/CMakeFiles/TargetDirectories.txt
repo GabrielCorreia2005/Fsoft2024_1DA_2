@@ -1,0 +1,3 @@
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet_Management_Tester/cmake-build-debug/CMakeFiles/Wallet_Management_Tester.dir
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet_Management_Tester/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet_Management_Tester/cmake-build-debug/CMakeFiles/rebuild_cache.dir
