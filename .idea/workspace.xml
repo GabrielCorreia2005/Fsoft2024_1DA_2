@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40e73e94-8a8b-41c4-9501-878383880a45" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Accounts.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Accounts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/Accounts.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/Accounts.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2gPRWVYHAlCXdQcaJ6NvkS3IxAV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/desktop.ini",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40e73e94-8a8b-41c4-9501-878383880a45" name="Changes" comment="" />
+      <created>1715597257986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715597257986</updated>
+      <workItem from="1715597259144" duration="435000" />
+      <workItem from="1716197375427" duration="600000" />
+      <workItem from="1716197986307" duration="3157000" />
+      <workItem from="1716801602542" duration="1237000" />
+      <workItem from="1716802858945" duration="662000" />
+      <workItem from="1716803662545" duration="57000" />
+      <workItem from="1716803764529" duration="2168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>
