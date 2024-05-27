@@ -25,10 +25,19 @@ private:
     LoanView loanView;
     TransactionsView transactionsView;
     WalletManagement model;
-    void runAccount(), runClient(), runLoan(), runTransactions(), runInsurance();
+
+    // Private functions to handle specific modules
+    void runAccount();
+    void runClient();
+    void runLoan();
+    void runTransactions();
+    void runInsurance();
 
 public:
+    // Constructor
     Controller(WalletManagement& walletManagement);
+
+    // Main run function of the application
     void run();
 };
 #endif //WALLET_MANAGEMENT_CONTROLLER_H

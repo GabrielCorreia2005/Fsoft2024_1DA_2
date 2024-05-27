@@ -18,12 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e73e94-8a8b-41c4-9501-878383880a45" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Accounts.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Accounts.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/Accounts.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/Accounts.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,51 +30,72 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2gPRWVYHAlCXdQcaJ6NvkS3IxAV" />
+  <component name="ProjectId" id="2gj2l1vnJSsrip3va4hvPJOIcWP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/desktop.ini",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40e73e94-8a8b-41c4-9501-878383880a45" name="Changes" comment="" />
-      <created>1715597257986</created>
+      <changelist id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="" />
+      <created>1716196813700</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715597257986</updated>
-      <workItem from="1715597259144" duration="435000" />
-      <workItem from="1716197375427" duration="600000" />
-      <workItem from="1716197986307" duration="3157000" />
-      <workItem from="1716801602542" duration="1237000" />
-      <workItem from="1716802858945" duration="662000" />
-      <workItem from="1716803662545" duration="57000" />
-      <workItem from="1716803764529" duration="2168000" />
+      <updated>1716196813700</updated>
+      <workItem from="1716196814756" duration="756000" />
+      <workItem from="1716197591114" duration="560000" />
+      <workItem from="1716198159150" duration="3608000" />
+      <workItem from="1716456424391" duration="1697000" />
+      <workItem from="1716801538802" duration="3604000" />
     </task>
+    <task id="LOCAL-00001" summary="models update">
+      <option name="closed" value="true" />
+      <created>1716200495521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716200495521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +105,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="models update" />
+    <option name="LAST_COMMIT_MESSAGE" value="models update" />
   </component>
 </project>
