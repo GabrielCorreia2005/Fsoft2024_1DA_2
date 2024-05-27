@@ -2,21 +2,23 @@
 // Created by gvice on 13/05/2024.
 //
 
-#ifndef WALLET_MANAGEMENT_INVALIDDATAEXCEPTION_H
-#define WALLET_MANAGEMENT_INVALIDDATAEXCEPTION_H
+#ifndef HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H_
+#define HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H_
 
 #include <exception>
 #include <string>
 using namespace std;
 
-class InvalidDataException : public exception {
+class InvalidDataException :public exception{
 private:
     string data;
 public:
-    explicit InvalidDataException(const string &data);
-
-    const char *what()  override;
+    InvalidDataException(string data);
+    //override what function
+    const char* what();
 };
 
 
-#endif //WALLET_MANAGEMENT_INVALIDDATAEXCEPTION_H
+
+
+#endif /* HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H_ */ 

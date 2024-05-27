@@ -2,21 +2,22 @@
 // Created by gvice on 13/05/2024.
 //
 
-#ifndef WALLET_MANAGEMENT_DUPLICATEDDATAEXCEPTION_H
-#define WALLET_MANAGEMENT_DUPLICATEDDATAEXCEPTION_H
+
+#ifndef HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H_
+#define HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H_
 
 #include <exception>
 #include <string>
 using namespace std;
 
-class DuplicatedDataException : public exception {
+class DuplicatedDataException :public exception{
 private:
     string data;
 public:
-    explicit DuplicatedDataException(const string &data);
-
-    const char *what()  override;
+    DuplicatedDataException(string data);
+    //override what function
+    const char* what();
 };
 
 
-#endif //WALLET_MANAGEMENT_DUPLICATEDDATAEXCEPTION_H
+#endif /* HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H_ */
