@@ -2,8 +2,8 @@
 // Created by corre on 20/05/2024.
 //
 
-#ifndef WALLET_MANAGEMENT_ACCOUNTS_H
-#define WALLET_MANAGEMENT_ACCOUNTS_H
+#ifndef WALLET_MANAGEMENT_CLIENT_H
+#define WALLET_MANAGEMENT_CLIENT_H
 
 #include "Client.h"
 
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //WALLET_MANAGEMENT_ACCOUNTS_H
+#endif 
