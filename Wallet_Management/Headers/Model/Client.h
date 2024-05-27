@@ -5,8 +5,6 @@
 #ifndef WALLET_MANAGEMENT_CLIENT_H
 #define WALLET_MANAGEMENT_CLIENT_H
 
-#include "Client.h"
-
 using namespace std;
 
 class Client{
@@ -18,7 +16,7 @@ private:
     bool isPointerNotNull(void * pointer);
 
 public:
-    Client(char name, int nr, float birth);
+    Client(char name, int number, float birth);
     Accounts(const Client& obj);
     ~Client();
 
@@ -26,4 +24,4 @@ public:
 };
 
 
-#endif 
+#endif
