@@ -19,7 +19,7 @@ private:
     bool isNameValid(const string& name);
 
 public:
-    Client(const string& name, int number, const Date& birth);
+    Client(const string &name, const Date &birth);
     Client(const Client &obj);
     ~Client();
 

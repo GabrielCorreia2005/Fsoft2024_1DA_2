@@ -20,7 +20,8 @@ int Utils::getNumber(const string& label)
 
         cin >> number;
 
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cout << "Not a number, please enter a number" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
