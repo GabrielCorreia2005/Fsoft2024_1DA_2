@@ -46,3 +46,37 @@ int View::menuBank()
     }while(op < 0 || op > 4);
     return op;
 }
+
+int View::menuAccount()
+{
+    int op = -1;
+
+    do{
+        cout << "\n**************** Menu Account ****************\n";
+        cout << "1- Account Information\n";
+        cout << "2- Close Account\n";
+
+        cout << "0- Bank\n";
+        op = Utils::getNumber("Option: ");
+
+    }while(op < 0 || op > 2);
+    return op;
+}
+
+int View::menuLoans()
+{
+    int op = -1;
+
+    do{
+        cout << "\n**************** Menu Loans ****************\n";
+        cout << "1- Acquire\n";
+        cout << "2- List\n";
+        cout << "3- Monitor\n";
+        cout << "4- Amortize\n";
+
+        cout << "0- Back\n";
+        op = Utils::getNumber("Option: ");
+
+    }while(op < 0 || op > 4);
+    return op;
+}
