@@ -9,12 +9,11 @@ using namespace std;
 class View{
 public:
     View();
-    int MenuClient();
-    int MenuBank();
+    int menuClient();
+    int menuBank();
     int menuAccount();
     int menuLoans();
     int menuTransactions();
-    int menuBank();
 
 
 #endif //FSOFT_PROJECT_VIEW_H
