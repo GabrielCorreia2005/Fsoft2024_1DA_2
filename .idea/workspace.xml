@@ -10,7 +10,9 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="FSOFT_PROJECT" targetName="FSOFT_PROJECT" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -18,7 +20,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update" />
+    <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/Progress/9" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.FSOFT_PROJECT.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
