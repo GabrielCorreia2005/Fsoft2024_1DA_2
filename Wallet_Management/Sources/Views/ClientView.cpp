@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Client ClientView::getDate()
+Date ClientView::getDate()
 {
     Date date;
     bool flag = false;
@@ -38,7 +38,7 @@ Client ClientView::getDate()
 Client ClientView:: getClient()
 {
     Date birthday;
-    Client client("Temporary Name", birthday);
+    Client Client("Temporary Name", birthday);
 
     bool flag = false;
 
@@ -48,30 +48,30 @@ Client ClientView:: getClient()
         {
             flag = false;
 
-            cout << "Client" << endlM;
+            cout << "Client" << endl;
 
             string name = Utils::getString("Name");
             birthday = getDate();
 
-            client.setName(name);
-            client.setBirthday(birthday);
+            Client.setName(name);
+            Client.setBirth(birthday);
         }catch(InvalidDataException& e)
         {
             flag = true;
         }
     }while(flag == true);
 
-    return client;
+    return Client;
 }
 
 void ClientView::printClient(Client *client)
 {
     int day, month, year;
 
-    student -> getBirthday.getDate(day, month, year);
+    client -> getBirth().getDate(day, month, year);
     string date = to_string(day) + "/" + to_string(month) + "/" + to_string(year);
 
-    cout << student -> getNumber() << ":" << student -> getName() << ":" << date << endl;
+    cout << client -> getNumber() << ":" << client -> getName() << ":" << date << endl;
 }
 
 void ClientView::printClients(list <Client>& students)

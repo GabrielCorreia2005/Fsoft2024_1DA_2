@@ -6,7 +6,7 @@
 #include "InvalidDataException.h"
 
 // Constructor
-Client::Client(const string& name, int number, const Date& birth) : name(name), number(number), birth(birth) {
+Client::Client(const string& name, const Date& birth) : name(name), birth(birth) {
     // Check if the name is valid
     if (!isNameValid(name)) {
         throw InvalidDataException("Invalid client name: " + name);
@@ -14,7 +14,7 @@ Client::Client(const string& name, int number, const Date& birth) : name(name), 
 }
 
 // Copy Constructor
-Client::Client(const Client &obj) : name(obj.name), number(obj.number), birth(obj.birth) {}
+Client::Client(const Client &obj) : name(obj.name), birth(obj.birth) {}
 
 // Destructor
 Client::~Client() {}
