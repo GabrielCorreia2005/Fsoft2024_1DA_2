@@ -14,8 +14,8 @@
 
 class EnrollView{
 public:
-    Enroll getAccount(ClientsContainer & clients);
+    Accounts getAccount(ClientsContainer & clients);
     void printAccount(Accounts *account);
-    void printAccounts(list<Account>& accounts);
-    void printStudentAccounts(Client * client, list<tuple<Subject *, int>>& subjects);
+    void printAccounts(list<Accounts>& accounts);
+    void printStudentAccounts(Client * client, list<tuple<Accounts *, int>>& subjects);
 };

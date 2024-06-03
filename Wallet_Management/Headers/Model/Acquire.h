@@ -24,7 +24,7 @@ public:
     void setInsurance(Insuranceinsurance);
 
     Loans getLoans() const;
-    void setLoans(Loansloans);
+    void setLoans(Loans::loans);
 
     bool operator==(const Acquire &rhs) const;
 };

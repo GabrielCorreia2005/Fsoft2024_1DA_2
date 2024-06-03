@@ -17,3 +17,8 @@
 237	377	7391117517933999	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj	b04129ed13b59c1d
 313	490	7391117518787090	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj	788f4d26182bf6c
 400	491	7391117519154887	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj	70d6286a2503198e
+12	266	7391436091259276	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj	b1f25b74e8db0f07
+268	799	7391436096716373	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj	1ae4c3be4f6e3342
+63	802	7391436096706371	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj	3a3a37b01cd88cb
+81	892	7391438504559188	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj	b4c096bfb40aa18f
+74	894	7391438504569171	CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj	bd540a0dbd9916b1
