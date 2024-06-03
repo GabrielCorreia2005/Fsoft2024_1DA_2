@@ -64,4 +64,19 @@ Client ClientView:: getClient()
     return client;
 }
 
+void ClientView::printClient(Client *client)
+{
+    int day, month, year;
+
+    student -> getBirthday.getDate(day, month, year);
+    string date = to_string(day) + "/" + to_string(month) + "/" + to_string(year);
+
+    cout << student -> getNumber() << ":" << student -> getName() << ":" << date << endl;
+}
+
+void ClientView::printClients(list <Client>& students)
+{
+    for(list<Client>::iterator it = students.begin(); it != students.end(); ++it)
+        printClient(&*it);
+}
 
