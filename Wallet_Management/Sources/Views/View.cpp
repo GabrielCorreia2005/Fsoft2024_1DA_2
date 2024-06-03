@@ -9,7 +9,7 @@
 
 using namespace std;
 
-View::view(){
+View::View(){
 }
 
 int View::menuClient()
