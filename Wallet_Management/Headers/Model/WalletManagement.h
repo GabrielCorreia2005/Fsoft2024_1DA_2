@@ -24,7 +24,7 @@ private:
 public:
     // Constructors
     WalletManagement();
-    WalletManagement(const WalletManagement &obj);
+    WalletManagement(const char *obj);
 
     // Getters for the containers
     ClientsContainer &getClientContainer();

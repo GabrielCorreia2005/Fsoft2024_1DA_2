@@ -61,4 +61,5 @@ add_executable(FSOFT_PROJECT
         ../Sources/Views/TransactionsView.cpp
         ../Sources/Views/Utils.cpp
         ../Sources/Views/View.cpp
-        ../main.cpp)
+        ../main.cpp
+        ../Headers/Views/Utils.h)

@@ -20,9 +20,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/WalletManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/WalletManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/main_teste.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -114,6 +111,10 @@
       <workItem from="1716456424391" duration="1697000" />
       <workItem from="1716801538802" duration="5678000" />
       <workItem from="1717406271099" duration="1385000" />
+      <workItem from="1717408091311" duration="636000" />
+      <workItem from="1717408738737" duration="486000" />
+      <workItem from="1717409247264" duration="82000" />
+      <workItem from="1717409356834" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="models update">
       <option name="closed" value="true" />

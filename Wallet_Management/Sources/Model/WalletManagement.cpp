@@ -12,7 +12,7 @@ WalletManagement::WalletManagement()  {
     transactionsContainer.setAccounts(&accountsContainer);
 }
 
-WalletManagement::WalletManagement(const WalletManagement &obj) :
+WalletManagement::WalletManagement(const char *obj) :
         clientsContainer(obj.clientsContainer),
         accountsContainer(obj.accountsContainer),
         loansContainer(obj.loansContainer),
