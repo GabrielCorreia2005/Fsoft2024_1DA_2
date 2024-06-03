@@ -21,11 +21,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
+      <change afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Data.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Insurance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Insurance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Loans.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Loans.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Transactions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Transactions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/ClientsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/ClientsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Mock/MockData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Mock/MockData.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/ClientsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/ClientsContainer.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
