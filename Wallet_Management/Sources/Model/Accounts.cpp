@@ -30,3 +30,10 @@ Accounts::~Accounts() {
 bool Accounts::isPointerNotNull(voidpointer) {
     return pointer != nullptr;
 }
+
+void Accounts::setBalance(float newBalance) {
+    if (newBalance < 0) {
+        throw DataConsistencyException("Balance cannot be negative.");
+    }
+    balance = newBalance;
+}

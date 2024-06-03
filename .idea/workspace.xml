@@ -20,7 +20,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/AccountsContainers.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,8 @@
       <workItem from="1716456424391" duration="1697000" />
       <workItem from="1716801538802" duration="5678000" />
       <workItem from="1717406271099" duration="1385000" />
-      <workItem from="1717408091311" duration="473000" />
+      <workItem from="1717408091311" duration="636000" />
+      <workItem from="1717408738737" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="models update">
       <option name="closed" value="true" />

@@ -38,18 +38,9 @@ void AccountsContainers::remove(int nr) {
 void AccountsContainers::update(int nr, float balance) {
     for (auto it = accounts.begin(); it != accounts.end(); ++it) {
         if (it->getNr() == nr) {
-            // Assuming you have a setBalance method in the Accounts class
-            it->setBalance(balance);
+            it->setBalance(balance); // Assuming setBalance is in Accounts.cpp
             return; // Account updated, exit the function
         }
     }
     // No account found with the given number
-}
-
-// Example of a setBalance method within the Accounts class:
-void Accounts::setBalance(float newBalance) {
-    if (newBalance < 0) {
-        throw DataConsistencyException("Balance cannot be negative.");
-    }
-    balance = newBalance;
 }
