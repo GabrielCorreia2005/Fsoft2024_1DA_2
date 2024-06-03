@@ -20,7 +20,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update" />
+    <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Insurance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Insurance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Loans.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Loans.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Transactions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Transactions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/cmake-build-debug/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +131,7 @@
       <workItem from="1717409247264" duration="82000" />
       <workItem from="1717409356834" duration="1272000" />
       <workItem from="1717422046309" duration="1010000" />
-      <workItem from="1717435925413" duration="2000" />
+      <workItem from="1717425405027" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="models update">
       <option name="closed" value="true" />
