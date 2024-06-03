@@ -6,7 +6,7 @@
 #define WALLET_MANAGEMENT_CLIENTSCONTAINER_H
 
 #include <list>
-#include "Clients.h"
+#include "Client.h"
 
 class ClientsContainer{
 private:
