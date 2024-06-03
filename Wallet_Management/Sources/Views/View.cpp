@@ -23,7 +23,7 @@ int View::menuClient()
         cout << "3- Delete\n";
 
         cout << "0- Exit\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 3);
     return op;
@@ -41,7 +41,7 @@ int View::menuBank()
         cout << "4- Insurance\n";
 
         cout << "0- Log Out\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 4);
     return op;
@@ -57,7 +57,7 @@ int View::menuAccount()
         cout << "2- Close Account\n";
 
         cout << "0- Bank\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 2);
     return op;
@@ -75,7 +75,7 @@ int View::menuLoans()
         cout << "4- Amortize\n";
 
         cout << "0- Back\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 4);
     return op;
@@ -91,7 +91,7 @@ int View::menuTransactions()
         cout << "2- Make\n";
 
         cout << "0- Back\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 2);
     return op;
@@ -108,7 +108,7 @@ int View::menuBank()
         cout << "3- List\n";
 
         cout << "0- Log Out\n";
-        op = Utils::getNumber("Option: ");
+        op = Utils::getNumber("Option");
 
     }while(op < 0 || op > 3);
     return op;
