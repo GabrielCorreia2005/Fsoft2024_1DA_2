@@ -7,21 +7,35 @@
 
 #include <list>
 #include "Client.h"
+#include "DuplicatedDataException.h"
 
-class ClientsContainer{
+using namespace std;
+
+class ClientsContainer {
 private:
-    list<Clients> clients;
-    list<Clients>::iterator search(int &number);
+    list<Client> clients;
+    list<Client>::iterator search(int number); // Private function to search for a client by number
 
 public:
-    list<Clients> getAll();
-    Instructor* get(int &number);
+    // Get a list of all clients in the container.
+    list<Client> getAll();
+
+    // Get a pointer to a specific client by their unique number.
+    // Returns nullptr if the client is not found.
+    Client* get(int number);
+
+    // Add a new client to the container.
+    // Throws a DuplicatedDataException if a client with the same number already exists.
     void add(const Client& obj);
-    void remove(int &number);
-    void update(char name, int number, float birth);
-    bool  isThereSubject(int &number);
 
+    // Remove a client from the container by their unique number.
+    void remove(int number);
+
+    // Update the name and birth date of an existing client in the container.
+    void update(int number, const string& name, const Date& birth);
+
+    // Check if a client with a specific number exists in the container.
+    bool isThereClient(int number);
 };
-
 
 #endif //WALLET_MANAGEMENT_CLIENTSCONTAINER_H
