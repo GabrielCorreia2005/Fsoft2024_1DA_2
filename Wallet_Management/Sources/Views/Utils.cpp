@@ -20,18 +20,26 @@ int Utils::getNumber(const string& label)
 
         cin >> number;
 
-        if(cin.fail())
-        {
+        if (cin.fail()) {
             cout << "Not a number, please enter a number" << endl;
-            cin.clear()
+            cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             flag = true;
-        }while(flag == true);
+        }
+        while (flag == true);
 
-        cin.clear()
+        cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         return number;
     }
 }
 
 string Utils::getString(const string& label)
+{
+    string input;
+
+    cout << label << ": ";
+    getline (cin, input);
+
+    return input;
+}
