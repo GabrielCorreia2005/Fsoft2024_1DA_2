@@ -19,8 +19,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/Client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/ClientsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/ClientsContainer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wallet_Management/main_teste.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wallet_Management/main_teste.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -69,12 +74,31 @@
       <recent name="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Test" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP Requests" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run Python file" flag="true" />
+      <visibility group="Run conda command" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="Run pip command" flag="true" />
+      <visibility group="com.intellij.httpClient.http.request.run.HttpRequestRunAnythingProvider" flag="false" />
+      <visibility group="com.intellij.ide.actions.runAnything.RunAnythingRunConfigurationProvider" flag="false" />
+      <visibility group="com.intellij.ide.actions.runAnything.activity.RunAnythingRecentProjectProvider" flag="false" />
+      <visibility group="com.intellij.lang.javascript.buildTools.grunt.GruntRunAnythingProvider" flag="false" />
+      <visibility group="com.intellij.lang.javascript.buildTools.gulp.GulpRunAnythingProvider" flag="false" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Npm" flag="false" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Yarn" flag="false" />
+      <visibility group="com.jetbrains.nodejs.execution.NodeRunAnythingProvider" flag="false" />
+      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingCondaProvider" flag="false" />
+      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingFileProvider" flag="false" />
+      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingPipProvider" flag="false" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,6 +113,7 @@
       <workItem from="1716198159150" duration="3608000" />
       <workItem from="1716456424391" duration="1697000" />
       <workItem from="1716801538802" duration="5678000" />
+      <workItem from="1717406271099" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="models update">
       <option name="closed" value="true" />
