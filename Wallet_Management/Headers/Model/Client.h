@@ -5,23 +5,35 @@
 #ifndef WALLET_MANAGEMENT_CLIENT_H
 #define WALLET_MANAGEMENT_CLIENT_H
 
+#include <string>
+#include "Date.h"
+#include "InvalidDataException.h"
+
 using namespace std;
 
-class Client{
-
+class Client {
 private:
-    char name
+    string name;
     int number;
-    float birth;
-    bool isPointerNotNull(void * pointer);
+    Date birth;
+    bool isNameValid(const string& name);
 
 public:
-    Client(char name, int number, float birth);
-    Accounts(const Client& obj);
+    Client(const string& name, int number, const Date& birth);
+    Client(const Client &obj);
     ~Client();
 
+    const string& getName() const;
+    void setName(const string &name);
 
+    int getNumber() const;
+    void setNumber(int number);
+
+    const Date& getBirth() const;
+    void setBirth(const Date &birth);
+
+    bool operator==(const Client &obj) const;
+    bool operator==(int nr) const;
 };
 
-
-#endif
+#endif //WALLET_MANAGEMENT_CLIENT_H
