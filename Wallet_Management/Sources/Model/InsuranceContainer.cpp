@@ -2,59 +2,61 @@
 // Created by gvice on 13/05/2024.
 //
 
-#include "ClientsContainer.h"
+#include "InsuranceContainer.h"
 #include "DuplicatedDataException.h"
 
-// Get all clients
-list<Client> ClientsContainer::getAll() {
-    return clients;
+// Get a list of all insurances
+list<Insurance> InsuranceContainer::getAll() {
+    return insurances;
 }
 
-// Get a specific client by number
-Client* ClientsContainer::get(int number) {
-    list<Client>::iterator it = search(number);
-    if(it != clients.end())
-        return &(*it);
-    else
-        return nullptr;
-}
-
-// Add a new client to the container
-void ClientsContainer::add(const Client& obj) {
-    // Check if a client with the same number already exists
-    if(isThereClient(obj.getNumber()))
-        throw DuplicatedDataException("There is already a client with the same number");
-
-    clients.push_back(obj);
-}
-
-// Remove a client by number
-void ClientsContainer::remove(int number) {
-    list<Client>::iterator it = search(number);
-    if (it != clients.end()) {
-        clients.erase(it);
+// Get a specific insurance by its name
+Insurance* InsuranceContainer::get(const string& name) {
+    list<Insurance>::iterator it = search(name);
+    if (it != insurances.end()) {
+        return &(*it); // Return a pointer to the Insurance object
+    } else {
+        return nullptr; // Insurance not found
     }
 }
 
-// Update client information
-void ClientsContainer::update(int number, const string& name, const Date& birth) {
-    list<Client>::iterator it = search(number);
-    if (it != clients.end()) {
-        it->setName(name);
-        it->setBirth(birth);
+// Add a new insurance to the container
+void InsuranceContainer::add(const Insurance& obj) {
+    if (search(obj.getName()) == insurances.end()) {
+        insurances.push_back(obj);
+    } else {
+        throw DuplicatedDataException("Insurance with that name already exists");
     }
 }
 
-// Check if a client with a given number exists
-bool ClientsContainer::isThereClient(int number) {
-    return search(number) != clients.end();
+// Remove an insurance by its name
+void InsuranceContainer::remove(const string& name) {
+    list<Insurance>::iterator it = search(name);
+    if (it != insurances.end()) {
+        insurances.erase(it);
+    }
 }
 
-// Search for a client by number
-list<Client>::iterator ClientsContainer::search(int number) {
-    for(list<Client>::iterator it = clients.begin(); it != clients.end(); it++){
-        if((*it).getNumber() == number)
+// Update the information of an existing insurance
+void InsuranceContainer::update(const string& name, float price, float length) {
+    list<Insurance>::iterator it = search(name);
+    if (it != insurances.end()) {
+        it->setPrice(price);
+        it->setLength(length);
+    }
+}
+
+// Check if an insurance with a specific name already exists
+bool InsuranceContainer::isThereInsurance(const string& name) {
+    return search(name) != insurances.end();
+}
+
+// Search for an insurance by its name
+list<Insurance>::iterator InsuranceContainer::search(const string& name) {
+    for (list<Insurance>::iterator it = insurances.begin(); it != insurances.end(); ++it) {
+        if (it->getName() == name) {
             return it;
+        }
     }
-    return clients.end();
+    return insurances.end(); // Insurance not found
 }
