@@ -29,6 +29,8 @@ public:
 
     // Update the balance of an existing account
     void update(int nr, float balance);
+
+    void setBalance(float &balance);
 };
 
 
