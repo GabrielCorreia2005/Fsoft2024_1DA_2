@@ -3,16 +3,16 @@
 //
 
 #include <iostream>
-#include "Wallet_Management.h"
+#include "WalletManagement.h"
 
 #include "Controller.h"
 using namespace std;
 
 int main()
 {
-    Wallet_Management walletManagement ("Wallet Management");
+    WalletManagement WalletManagement ("Wallet Management");
 
-    Controller controller (walletManagement);
+    Controller controller (WalletManagement);
     controller.run();
 
     cout << "Application has existed" << endl;
