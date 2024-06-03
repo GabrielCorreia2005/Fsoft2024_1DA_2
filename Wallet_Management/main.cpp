@@ -15,6 +15,6 @@ int main()
     Controller controller (walletManagement);
     controller.run();
 
-    cout << "Aplication has existed" << endl;
+    cout << "Application has existed" << endl;
     return 0;
 }
