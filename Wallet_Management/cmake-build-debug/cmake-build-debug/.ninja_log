@@ -1,19 +1,19 @@
 # ninja log v5
 0	262	7391115770838725	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj	b1f25b74e8db0f07
 54	264	7391115770838725	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj	1ae4c3be4f6e3342
-50	265	7391115770848728	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj	20411bdba3553a72
 27	266	7391115770838725	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj	bd4eedde8eeb657d
+50	265	7391115770848728	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj	20411bdba3553a72
 35	151	7391117015619594	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.obj	20a6824810d628a5
+28	154	7391117015873934	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj	3a3a37b01cd88cb
 45	152	7391117015709614	CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj	bd540a0dbd9916b1
 50	153	7391117015799617	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj	b4c096bfb40aa18f
-28	154	7391117015873934	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj	3a3a37b01cd88cb
 31	130	7391117515510217	CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj	cdc3366802392f6b
 36	142	7391117515590251	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.obj	d4a754ceb4b08e78
+244	399	7391117518149609	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj	f2f34c7aeef7b343
 42	149	7391117515660216	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.obj	357801e8d129aea7
 150	236	7391117516621310	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.obj	d61bcfdfcf619b32
 143	243	7391117516641298	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.obj	7adc146e76555f8f
 132	312	7391117517304242	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.obj	3348c70ee2abcba7
 237	377	7391117517933999	CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj	b04129ed13b59c1d
-244	399	7391117518149609	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj	f2f34c7aeef7b343
 313	490	7391117518787090	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj	788f4d26182bf6c
 400	491	7391117519154887	CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj	70d6286a2503198e
