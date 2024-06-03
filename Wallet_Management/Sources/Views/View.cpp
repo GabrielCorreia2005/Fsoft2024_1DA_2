@@ -80,3 +80,36 @@ int View::menuLoans()
     }while(op < 0 || op > 4);
     return op;
 }
+
+int View::menuTransactions()
+{
+    int op = -1;
+
+    do{
+        cout << "\n**************** Menu Transactions ****************\n";
+        cout << "1- History\n";
+        cout << "2- Make\n";
+
+        cout << "0- Back\n";
+        op = Utils::getNumber("Option: ");
+
+    }while(op < 0 || op > 2);
+    return op;
+}
+
+int View::menuBank()
+{
+    int op = -1;
+
+    do{
+        cout << "\n**************** Menu Insurance ****************\n";
+        cout << "1- Acquire\n";
+        cout << "2- Cancel\n";
+        cout << "3- List\n";
+
+        cout << "0- Log Out\n";
+        op = Utils::getNumber("Option: ");
+
+    }while(op < 0 || op > 3);
+    return op;
+}
