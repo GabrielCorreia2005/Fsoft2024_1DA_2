@@ -19,10 +19,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b32176-e633-490d-8611-bc5602f851ad" name="Changes" comment="models update">
-      <change afterPath="$PROJECT_DIR$/Wallet_Management/main_teste.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wallet_Management/main_teste.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/Headers/Model/WalletManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Headers/Model/WalletManagement.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wallet_Management/Sources/Model/WalletManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wallet_Management/main_teste.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1716198159150" duration="3608000" />
       <workItem from="1716456424391" duration="1697000" />
       <workItem from="1716801538802" duration="5678000" />
-      <workItem from="1717406271099" duration="697000" />
+      <workItem from="1717406271099" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="models update">
       <option name="closed" value="true" />
