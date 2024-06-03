@@ -8,7 +8,6 @@
 using namespace std;
 class View{
 public:
-    View();
     int menuClient();
     int menuBank();
     int menuAccount();
