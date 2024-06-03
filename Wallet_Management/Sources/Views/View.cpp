@@ -97,7 +97,7 @@ int View::menuTransactions()
     return op;
 }
 
-int View::menuBank()
+int View::menuInsurance()
 {
     int op = -1;
 

@@ -6,13 +6,16 @@
 #define FSOFT_PROJECT_VIEW_H
 
 using namespace std;
-class View{
+class View {
 public:
+    View();
+
     int menuClient();
     int menuBank();
     int menuAccount();
     int menuLoans();
     int menuTransactions();
-
+    int menuInsurance();
+};
 
 #endif //FSOFT_PROJECT_VIEW_H
