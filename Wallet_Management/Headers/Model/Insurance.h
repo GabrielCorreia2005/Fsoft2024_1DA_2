@@ -17,8 +17,8 @@ private:
     float length;   // The duration of the insurance policy (e.g., in months or years)
 
 public:
-    // Constructor: Takes the insurance name, price, and length as input
-    Insurance(const string& name, float price, float length);
+    // Constructor: Takes the insurance name, price, length, installments and fees as input
+    Insurance(const string& name, float price, float length, int installments, float fees);
 
     // Copy Constructor: Creates a copy of an existing Insurance object
     Insurance(const Insurance &obj);
@@ -27,15 +27,20 @@ public:
     ~Insurance();
 
     // Getters and setters for the private member variables:
-    const string& getName() const;
+    const string& getInsurance() const;
     void setName(const string& name);
 
-    float getPrice() const;
-    void setPrice(float price); // Might include validation to ensure price is positive
+    float getValue() const;
+    void setValue(float price); // Might include validation to ensure price is positive
 
     float getLength() const;
     void setLength(float length); // Might include validation for length
 
+    int getInstallments() const;
+    void setInstallments(int installments);
+
+    float getFees() const;
+    void setFees(int fees);
     // Overloaded equality operator: Compares two Insurance objects based on their name
     bool operator==(const Insurance &rhs) const;
 };
