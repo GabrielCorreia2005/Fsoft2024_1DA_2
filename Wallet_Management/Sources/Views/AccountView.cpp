@@ -70,7 +70,7 @@ void AccountView::printAccounts(list<Accounts> &accounts) {
 
     cout << "List of Accounts:" << endl;
     for (const Accounts& account : accounts) {
-        printAccount(&account);
+        printAccount(const_cast<Accounts *>(&account));
         cout << "--------------------" << endl;
     }
 }

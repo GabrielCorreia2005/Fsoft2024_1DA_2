@@ -1,7 +1,3 @@
-//
-// Created by corre on 20/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_LOANS_H
 #define WALLET_MANAGEMENT_LOANS_H
 
@@ -18,6 +14,9 @@ private:
     int durationMonths; // The duration of the loan in months
 
 public:
+    // Default Constructor
+    Loans() = default;
+
     // Constructor: Takes the loan type, amount, interest rate, and duration as parameters
     Loans(const string& type, float amount, float interestRate, int durationMonths);
 
@@ -27,18 +26,17 @@ public:
     // Destructor
     ~Loans();
 
-    // Getters and Setters for the private member variables
+    // Getters
     const string& getType() const;
-    void setType(const string& type);
-
     float getAmount() const;
-    void setAmount(float amount); // Throws an exception if the amount is not positive
-
     float getInterestRate() const;
-    void setInterestRate(float interestRate); // Throws an exception if the rate is negative
-
     int getDurationMonths() const;
-    void setDurationMonths(int durationMonths); // Throws an exception if duration is not positive
+
+    // Setters (You may want to add validation to these setters)
+    void setType(const string& type);
+    void setAmount(float amount);
+    void setInterestRate(float interestRate);
+    void setDurationMonths(int durationMonths);
 
     // Equality operator: Two loans are considered equal if they have the same type and amount
     bool operator==(const Loans& rhs) const;

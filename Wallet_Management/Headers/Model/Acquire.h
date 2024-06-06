@@ -20,13 +20,17 @@ public:
     Acquire(const Acquire &obj);
     ~Acquire();
 
-    Insurance getInsurance() const;
+    const Insurance getInsurance() const;
     void setInsurance(Insurance insurance);
 
-    Loans getLoans() const;
+    const Loans getLoans() const;
     void setLoans(Loans::loans);
 
     bool operator==(const Acquire &rhs) const;
+
+    void setLoans(Loans *loans);
+
+    void setInsurance(Insurance *insurance);
 };
 
 

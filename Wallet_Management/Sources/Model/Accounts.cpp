@@ -5,7 +5,8 @@
 #include "Accounts.h"
 #include "DataConsistencyException.h"
 
-Accounts::Accounts(int nr, float balance, Client client) : nr(nr), balance(balance), client(client) {
+Accounts::Accounts(int nr, float balance, void *client) : nr(nr), balance(balance), client(
+        static_cast<Client *>(client)) {
     if (balance < 0) {
         throw DataConsistencyException("Balance cannot be negative.");
     }

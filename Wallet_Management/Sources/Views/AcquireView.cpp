@@ -1,109 +1,128 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
 #include "AcquireView.h"
 #include "Utils.h"
 #include <iostream>
+#include <limits> // For numeric_limits
 
 using namespace std;
 
+// Get Acquire data from the user
 Acquire AcquireView::getAcquire(InsuranceContainer &insurances, LoansContainers &loans) {
-    int choice;
-    Insurance insurance;
-    Loans loan;
+    Acquire acquire; // Create an Acquire object (using the default constructor)
 
-    do {
-        cout << "Do you want to acquire:" << endl;
-        cout << "1. Insurance" << endl;
-        cout << "2. Loan" << endl;
-        cout << "3. Both" << endl;
-        cout << "0. Back" << endl;
-        choice = Utils::getNumber("Enter your choice");
+    int choice = Utils::getNumber("Do you want to acquire:\n1 - Insurance\n2 - Loan\n3 - Both\n0 - Back\nEnter your choice: ");
 
-        switch (choice) {
-            case 1:
-                insurance = getInsuranceOnly(insurances);
-                loan = Loans("", 0, 0, 0); // Create a default loan object
-                break;
-            case 2:
-                loan = getLoanOnly(loans);
-                insurance = Insurance("", 0, 0, 0, 0); // Create a default insurance object
-                break;
-            case 3:
-                insurance = getInsuranceOnly(insurances);
-                loan = getLoanOnly(loans);
-                break;
-            case 0:
-                break;
-            default:
-                cout << "Invalid choice. Please enter a number between 0 and 3." << endl;
+    switch (choice) {
+        case 1: {
+            Insurance insurance = getInsuranceOnly(insurances);
+            acquire.setInsurance(insurance); // Set only the insurance
+            break;
         }
-    } while (choice < 0 || choice > 3);
+        case 2: {
+            Loans loan = getLoanOnly(loans);
+            acquire.setLoans(loan);  // Set only the loan
+            break;
+        }
+        case 3: {
+            Insurance insurance = getInsuranceOnly(insurances);
+            Loans loan = getLoanOnly(loans);
+            acquire.setInsurance(insurance);
+            acquire.setLoans(loan);
+            break;
+        }
+        case 0:
+            break;
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+            break;
+    }
 
-    return Acquire(insurance, loan);
+    return acquire;
 }
 
+// Get insurance data (helper function for case 1 and 3)
 Insurance AcquireView::getInsuranceOnly(InsuranceContainer &insurances) {
-    int choice;
-    Insurance insurance;
+    string name = Utils::getString("Enter insurance name: ");
 
-    list<Insurance> availableInsurances = insurances.getAll();
-    if (availableInsurances.empty()) {
-        cout << "There are no insurances available at the moment." << endl;
-        return insurance;
+    // Check for existing insurance with the same name
+    if (insurances.isThereInsurance(name)) {
+        throw DuplicatedDataException("An insurance with this name already exists.");
     }
 
-    cout << "Available Insurances:" << endl;
-    int insuranceCount = 1;
-    for (const Insurance &ins : availableInsurances) {
-        cout << insuranceCount << ". " << ins.getName() << endl;
-        insuranceCount++;
-    }
+    float price;
+    float length;
+    int installments;
+    float fees;
 
-    do {
-        choice = Utils::getNumber("Select insurance (enter number): ");
-        if (choice <= 0 || choice > availableInsurances.size()) {
-            cout << "Invalid choice. Please enter a valid insurance number." << endl;
+    // Input and Validation Loop for price:
+    while (true) {
+        price = Utils::getNumber("Enter insurance price (positive value): ");
+        if (price > 0) {
+            break; // Valid price entered, exit loop
+        } else {
+            cout << "Invalid price. Please enter a positive value." << endl;
+            cin.clear(); // Clear error state
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
         }
-    } while (choice <= 0 || choice > availableInsurances.size());
+    }
 
-    auto it = availableInsurances.begin();
-    advance(it, choice - 1);
-    insurance = *it;
+    // Input and Validation Loop for length:
+    while (true) {
+        length = Utils::getNumber("Enter insurance length (in months, positive value): ");
+        if (length > 0) {
+            break;
+        } else {
+            cout << "Invalid length. Please enter a positive value." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    }
 
-    return insurance;
+    // Input and Validation Loop for installments:
+    while (true) {
+        installments = Utils::getNumber("Enter number of installments (positive value): ");
+        if (installments > 0) {
+            break;
+        } else {
+            cout << "Invalid number of installments. Please enter a positive value." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    }
+
+    // Input and Validation Loop for fees:
+    while (true) {
+        fees = Utils::getNumber("Enter insurance fees (non-negative value): ");
+        if (fees >= 0) {
+            break;
+        } else {
+            cout << "Invalid fees. Please enter a non-negative value." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    }
+
+    return Insurance(name, price, length, installments, fees);
 }
 
+// Get loan data (helper function for case 2 and 3)
 Loans AcquireView::getLoanOnly(LoansContainers &loans) {
-    int choice;
-    Loans loan;
+    string type = Utils::getString("Enter loan type: ");
+    float amount = Utils::getNumber("Enter loan amount: ");
+    float interestRate = Utils::getNumber("Enter interest rate: ");
+    int durationMonths = Utils::getNumber("Enter loan duration (in months): ");
 
-    list<Loans> availableLoans = loans.getAll();
-    if (availableLoans.empty()) {
-        cout << "There are no loans available at the moment." << endl;
-        return loan;
+    // Additional validation for loan data
+    if (amount <= 0) {
+        throw InvalidDataException("Loan amount must be a positive value.");
+    }
+    if (interestRate < 0) {
+        throw InvalidDataException("Interest rate cannot be negative.");
+    }
+    if (durationMonths <= 0) {
+        throw InvalidDataException("Loan duration must be a positive value.");
     }
 
-    cout << "Available Loans:" << endl;
-    int loanCount = 1;
-    for (const Loans &l : availableLoans) {
-        cout << loanCount << ". " << l.getType() << " (Amount: " << l.getAmount() << ")" << endl;
-        loanCount++;
-    }
-
-    do {
-        choice = Utils::getNumber("Select loan (enter number): ");
-        if (choice <= 0 || choice > availableLoans.size()) {
-            cout << "Invalid choice. Please enter a valid loan number." << endl;
-        }
-    } while (choice <= 0 || choice > availableLoans.size());
-
-    auto it = availableLoans.begin();
-    advance(it, choice - 1);
-    loan = *it;
-
-    return loan;
+    return Loans(type, amount, interestRate, durationMonths);
 }
 
 void AcquireView::printAcquire(Acquire *acquire) {

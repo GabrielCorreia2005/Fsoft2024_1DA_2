@@ -12,6 +12,8 @@ using namespace std;
 class Accounts{
 
 private:
+    Accounts(int nr, float balance, void *client);
+
     int nr;
     float balance;
     Client * client;
@@ -23,6 +25,8 @@ public:
     ~Accounts();
 
     void setNumber(int &nr);
+
+    void setBalance(float newBalance);
 };
 
 
