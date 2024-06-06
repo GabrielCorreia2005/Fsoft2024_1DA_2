@@ -1,143 +1,167 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
 #include "TransactionsView.h"
 #include "Utils.h"
-#include <iostream>
-#include <iomanip>
-
-using namespace std;
 
 Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
-    float amount;
+    float amount = Utils::getNumber("Enter transaction amount:");
     string type;
     Date date;
     Accounts *originAccount = nullptr;
     Accounts *destinationAccount = nullptr;
 
-    // Get transaction amount
     do {
-        amount = Utils::getNumber("Enter transaction amount");
-        if (amount <= 0) {
-            cout << "Invalid transaction amount. Please enter a positive number." << endl;
+        cout << "Enter transaction type (Deposit, Withdrawal, Transfer): ";
+        cin >> type;
+        if (type != "Deposit" && type != "Withdrawal" && type != "Transfer") {
+            cout << "Invalid transaction type. Please enter Deposit, Withdrawal, or Transfer." << endl;
         }
-    } while (amount <= 0);
+    } while (type != "Deposit" && type != "Withdrawal" && type != "Transfer");
 
-    // Get transaction type
-    type = Utils::getString("Enter transaction type");
-
-    // Get transaction date
     int day, month, year;
     cout << "Enter transaction date (day month year): ";
     cin >> day >> month >> year;
     date.setDate(day, month, year);
 
-    // Get origin account (optional)
-    int originChoice;
-    do {
-        cout << "Does this transaction have an origin account?" << endl;
-        cout << "1. Yes" << endl;
-        cout << "2. No" << endl;
-        originChoice = Utils::getNumber("Enter your choice");
-
-        if (originChoice != 1 && originChoice != 2) {
-            cout << "Invalid choice. Please enter 1 or 2." << endl;
+    if (type == "Transfer") {
+        originAccount = selectOriginAccount(accounts);
+        if (originAccount != nullptr) {
+            destinationAccount = selectDestinationAccount(accounts, originAccount);
         }
-    } while (originChoice != 1 && originChoice != 2);
-
-    if (originChoice == 1) {
-        cout << "Available Accounts:" << endl;
-        list<Accounts> allAccounts = accounts.getAll();
-        int accountCount = 1;
-        for (const Accounts &a : allAccounts) {
-            cout << accountCount << ". Account Number: " << a.getNumber()
-                 << " (Client: " << a.getClient()->getName() << ")" << endl;
-            accountCount++;
-        }
-
-        int accountSelection;
-        do {
-            accountSelection = Utils::getNumber("Select Origin Account (enter number)");
-            if (accountSelection <= 0 || accountSelection > allAccounts.size()) {
-                cout << "Invalid account selection." << endl;
-            }
-        } while (accountSelection <= 0 || accountSelection > allAccounts.size());
-
-        auto accountIt = allAccounts.begin();
-        advance(accountIt, accountSelection - 1);
-        originAccount = &(*accountIt);
-    }
-
-    // Get destination account (optional)
-    int destinationChoice;
-    do {
-        cout << "Does this transaction have a destination account?" << endl;
-        cout << "1. Yes" << endl;
-        cout << "2. No" << endl;
-        destinationChoice = Utils::getNumber("Enter your choice");
-
-        if (destinationChoice != 1 && destinationChoice != 2) {
-            cout << "Invalid choice. Please enter 1 or 2." << endl;
-        }
-    } while (destinationChoice != 1 && destinationChoice != 2);
-
-    if (destinationChoice == 1) {
-        cout << "Available Accounts:" << endl;
-        list<Accounts> allAccounts = accounts.getAll();
-        int accountCount = 1;
-        for (const Accounts &a : allAccounts) {
-            cout << accountCount << ". Account Number: " << a.getNumber()
-                 << " (Client: " << a.getClient()->getName() << ")" << endl;
-            accountCount++;
-        }
-
-        int accountSelection;
-        do {
-            accountSelection = Utils::getNumber("Select Destination Account (enter number)");
-            if (accountSelection <= 0 || accountSelection > allAccounts.size()) {
-                cout << "Invalid account selection." << endl;
-            }
-        } while (accountSelection <= 0 || accountSelection > allAccounts.size());
-
-        auto accountIt = allAccounts.begin();
-        advance(accountIt, accountSelection - 1);
-        destinationAccount = &(*accountIt);
+    } else { // Deposit or Withdrawal
+        originAccount = selectOriginAccount(accounts);
     }
 
     return Transactions(amount, type, date, originAccount, destinationAccount);
 }
 
+Accounts* TransactionsView::selectOriginAccount(AccountsContainers &accounts) {
+    list<Accounts> allAccounts = accounts.getAll();
+    if (allAccounts.empty()) {
+        cout << "No accounts available." << endl;
+        return nullptr;
+    }
+
+    cout << "Select Origin Account:" << endl;
+    int accountCount = 1;
+    for (const Accounts &a : allAccounts) {
+        cout << accountCount << ". Account Number: " << a.getNr()
+             << " (Client: " << a.client->getName() << ")" << endl;
+        accountCount++;
+    }
+
+    int choice;
+    do {
+        choice = Utils::getNumber("Enter the account number: ");
+        if (choice <= 0 || choice > allAccounts.size()) {
+            cout << "Invalid account number. Please enter a valid number." << endl;
+        }
+    } while (choice <= 0 || choice > allAccounts.size());
+
+    auto it = allAccounts.begin();
+    advance(it, choice - 1);
+    return &(*it); // Return a pointer to the selected account
+}
+
+Accounts* TransactionsView::selectDestinationAccount(AccountsContainers &accounts, Accounts *originAccount) {
+    list<Accounts> allAccounts = accounts.getAll();
+    if (allAccounts.size() <= 1) {
+        cout << "Not enough accounts for a transfer." << endl;
+        return nullptr;
+    }
+
+    cout << "Select Destination Account (different from origin):" << endl;
+    int accountCount = 1;
+    for (const Accounts &a : allAccounts) {
+        if (&a != originAccount) { // Don't show the origin account as an option
+            cout << accountCount << ". Account Number: " << a.getNr()
+                 << " (Client: " << a.client->getName() << ")" << endl;
+            accountCount++;
+        }
+    }
+
+    int choice;
+    do {
+        choice = Utils::getNumber("Enter the account number: ");
+
+        // Check if the choice is valid (within range and not the origin account)
+        if (choice <= 0 || choice >= accountCount ||
+            (choice == (std::distance(allAccounts.begin(), std::find(allAccounts.begin(), allAccounts.end(), *originAccount)) + 1))) {
+            cout << "Invalid account number. Please enter a valid number different from the origin account." << endl;
+        }
+
+    } while (choice <= 0 || choice >= accountCount ||
+             (choice == (std::distance(allAccounts.begin(), std::find(allAccounts.begin(), allAccounts.end(), *originAccount)) + 1)));
+
+    auto it = allAccounts.begin();
+    int validChoiceCount = 1;
+    for (; it != allAccounts.end(); ++it, ++validChoiceCount) {
+        if (&(*it) != originAccount && validChoiceCount == choice) {
+            break;
+        }
+    }
+    return &(*it); // Return a pointer to the selected account
+}
+
 
 void TransactionsView::printTransaction(Transactions *transaction) {
-    if (transaction) {
-        cout << "Transaction Type: " << transaction->getType() << endl;
-        cout << "Amount: " << fixed << setprecision(2) << transaction->getAmount() << endl;
-        cout << "Date: ";
-        int day, month, year;
-        transaction->getDate().getDate(day, month, year);
-        cout << day << "/" << month << "/" << year << endl;
+    cout << "=== Transaction Details ===" << endl;
+    cout << "Amount: " << transaction->getAmount() << endl;
+    cout << "Type: " << transaction->getType() << endl;
+    int day, month, year;
+    transaction->getDate().getDate(day, month, year);
+    cout << "Date: " << day << "/" << month << "/" << year << endl;
 
-        if (transaction->getOriginAccount()) {
-            cout << "Origin Account: " << transaction->getOriginAccount()->getNumber() << endl;
-        }
-        if (transaction->getDestinationAccount()) {
-            cout << "Destination Account: " << transaction->getDestinationAccount()->getNumber() << endl;
-        }
-    } else {
-        cout << "Invalid Transaction (nullptr)." << endl;
+    if (transaction->getOriginAccount() != nullptr) {
+        cout << "Origin Account: " << transaction->getOriginAccount()->getNr() << endl;
     }
+
+    if (transaction->getDestinationAccount() != nullptr) {
+        cout << "Destination Account: " << transaction->getDestinationAccount()->getNr() << endl;
+    }
+
+    cout << "==========================" << endl;
 }
 
 void TransactionsView::printTransactions(list<Transactions> &transactions) {
+    cout << "=== List of Transactions ===" << endl;
+    for (const Transactions& transaction : transactions) {
+        printTransaction(&transaction);
+    }
+    cout << "===========================" << endl;
+}
+
+void TransactionsView::printAccountTransactions(Accounts *account, list<Transactions> &transactions) {
+    cout << "=== Transactions for Account: " << account->getNr() << " ===" << endl;
+    for (const Transactions& transaction : transactions) {
+        if (transaction.getOriginAccount() == account || transaction.getDestinationAccount() == account) {
+            printTransaction(&transaction);
+        }
+    }
+    cout << "===================================" << endl;
+}
+
+Transactions* TransactionsView::selectTransaction(list<Transactions>& transactions) {
     if (transactions.empty()) {
-        cout << "There are no transactions to display." << endl;
-        return;
+        cout << "No transactions available." << endl;
+        return nullptr;
     }
 
-    cout << "List of Transactions:" << endl;
-    for (const Transactions &transaction : transactions) {
-        printTransaction(&transaction);
-        cout << "--------------------" << endl;
+    cout << "=== Select a Transaction ===" << endl;
+    int count = 1;
+    for (const Transactions &t : transactions) {
+        cout << count << ". " << t.getType() << " (Amount: " << t.getAmount() << " on "
+             << t.getDate().getDay() << "/" << t.getDate().getMonth() << "/" << t.getDate().getYear() << ")" << endl;
+        count++;
     }
+
+    int choice;
+    do {
+        choice = Utils::getNumber("Enter your choice (number): ");
+        if (choice <= 0 || choice > transactions.size()) {
+            cout << "Invalid choice. Please enter a valid transaction number." << endl;
+        }
+    } while (choice <= 0 || choice > transactions.size());
+
+    auto it = transactions.begin();
+    advance(it, choice - 1);
+    return &(*it); // Return a pointer to the selected transaction
 }
