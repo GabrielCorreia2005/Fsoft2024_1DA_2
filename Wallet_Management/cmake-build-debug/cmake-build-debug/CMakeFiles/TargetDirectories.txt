@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir
 C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> aeb04daac4449b4b6ecc5ccbcabd16be2a4ac9c4

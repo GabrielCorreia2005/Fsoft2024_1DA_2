@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Insurance InsuranceView::getInsurance()
+Insurance insuranceView::getInsurance();
 {
     Insurance insurance("Temporary name", price, length, installments, fees);
     bool flag = false;

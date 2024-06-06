@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug
+=======
+# Install script for directory: C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug
+>>>>>>> aeb04daac4449b4b6ecc5ccbcabd16be2a4ac9c4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> aeb04daac4449b4b6ecc5ccbcabd16be2a4ac9c4
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

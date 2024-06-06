@@ -4,8 +4,11 @@
 
 #include "DuplicatedDataException.h"
 
-DuplicatedDataException::DuplicatedDataException(const string &data) : data(data) {}
 
-const char *DuplicatedDataException::what() {
-    return data.c_str();
+DuplicatedDataException::DuplicatedDataException(string data){
+    this->data = "Error: ["+ data + "] duplicated!!";
+}
+
+const char* DuplicatedDataException::what(){
+    return this->data.c_str();
 }
