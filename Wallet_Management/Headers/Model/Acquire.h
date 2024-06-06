@@ -16,12 +16,12 @@ private:
     bool isPointerNotNull(void * pointer);
 
 public:
-    Acquire(Insurance insurance, Loansloans);
+    Acquire(Insurance insurance, Loans loans);
     Acquire(const Acquire &obj);
     ~Acquire();
 
     Insurance getInsurance() const;
-    void setInsurance(Insuranceinsurance);
+    void setInsurance(Insurance insurance);
 
     Loans getLoans() const;
     void setLoans(Loans::loans);
