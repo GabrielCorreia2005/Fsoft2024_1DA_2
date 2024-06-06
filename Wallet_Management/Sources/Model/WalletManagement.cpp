@@ -1,27 +1,9 @@
-//
-// Created by Gabriel on 20/05/2024.
-//
-
 #include "WalletManagement.h"
-#include "DataConsistencyException.h"
 
-WalletManagement::WalletManagement()  {
-    accountsContainer.setClients(&clientsContainer); // Set up the relationship between containers
-    loansContainer.setClients(&clientsContainer);
-    insuranceContainer.setClients(&clientsContainer);
-    transactionsContainer.setAccounts(&accountsContainer);
+WalletManagement::WalletManagement() {
 }
 
-WalletManagement::WalletManagement(const char *obj) :
-        clientsContainer(obj.clientsContainer),
-        accountsContainer(obj.accountsContainer),
-        loansContainer(obj.loansContainer),
-        insuranceContainer(obj.insuranceContainer),
-        transactionsContainer(obj.transactionsContainer) {
-    accountsContainer.setClients(&clientsContainer); // Set up the relationship between containers
-    loansContainer.setClients(&clientsContainer);
-    insuranceContainer.setClients(&clientsContainer);
-    transactionsContainer.setAccounts(&accountsContainer);
+WalletManagement::WalletManagement(const char *obj) {
 }
 
 ClientsContainer &WalletManagement::getClientContainer() {
@@ -45,5 +27,5 @@ TransactionsContainers &WalletManagement::getTransactionsContainer() {
 }
 
 void WalletManagement::setDataForConsistency() {
-    // Implement checks for data consistency across containers
+
 }
