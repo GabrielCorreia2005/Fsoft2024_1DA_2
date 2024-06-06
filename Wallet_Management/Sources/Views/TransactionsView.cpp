@@ -18,14 +18,14 @@ Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
 
     // Get transaction amount
     do {
-        amount = Utils::getNumber("Enter transaction amount: ");
+        amount = Utils::getNumber("Enter transaction amount");
         if (amount <= 0) {
             cout << "Invalid transaction amount. Please enter a positive number." << endl;
         }
     } while (amount <= 0);
 
     // Get transaction type
-    type = Utils::getString("Enter transaction type: ");
+    type = Utils::getString("Enter transaction type");
 
     // Get transaction date
     int day, month, year;
@@ -39,7 +39,7 @@ Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
         cout << "Does this transaction have an origin account?" << endl;
         cout << "1. Yes" << endl;
         cout << "2. No" << endl;
-        originChoice = Utils::getNumber("Enter your choice: ");
+        originChoice = Utils::getNumber("Enter your choice");
 
         if (originChoice != 1 && originChoice != 2) {
             cout << "Invalid choice. Please enter 1 or 2." << endl;
@@ -58,7 +58,7 @@ Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
 
         int accountSelection;
         do {
-            accountSelection = Utils::getNumber("Select Origin Account (enter number): ");
+            accountSelection = Utils::getNumber("Select Origin Account (enter number)");
             if (accountSelection <= 0 || accountSelection > allAccounts.size()) {
                 cout << "Invalid account selection." << endl;
             }
@@ -75,7 +75,7 @@ Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
         cout << "Does this transaction have a destination account?" << endl;
         cout << "1. Yes" << endl;
         cout << "2. No" << endl;
-        destinationChoice = Utils::getNumber("Enter your choice: ");
+        destinationChoice = Utils::getNumber("Enter your choice");
 
         if (destinationChoice != 1 && destinationChoice != 2) {
             cout << "Invalid choice. Please enter 1 or 2." << endl;
@@ -94,7 +94,7 @@ Transactions TransactionsView::getTransaction(AccountsContainers &accounts) {
 
         int accountSelection;
         do {
-            accountSelection = Utils::getNumber("Select Destination Account (enter number): ");
+            accountSelection = Utils::getNumber("Select Destination Account (enter number)");
             if (accountSelection <= 0 || accountSelection > allAccounts.size()) {
                 cout << "Invalid account selection." << endl;
             }

@@ -36,7 +36,7 @@ Acquire AcquireView::getAcquire(InsuranceContainer &insurances, LoansContainers 
 
         int insuranceSelection;
         do {
-            insuranceSelection = Utils::getNumber("Select Insurance (enter number): ");
+            insuranceSelection = Utils::getNumber("Select Insurance (enter number)");
             if (insuranceSelection <= 0 || insuranceSelection > allInsurances.size()) {
                 cout << "Invalid insurance selection." << endl;
             }
@@ -53,7 +53,7 @@ Acquire AcquireView::getAcquire(InsuranceContainer &insurances, LoansContainers 
         cout << "Do you want to acquire a loan?" << endl;
         cout << "1. Yes" << endl;
         cout << "2. No" << endl;
-        loanChoice = Utils::getNumber("Enter your choice: ");
+        loanChoice = Utils::getNumber("Enter your choice");
 
         if (loanChoice != 1 && loanChoice != 2) {
             cout << "Invalid choice. Please enter 1 or 2." << endl;
@@ -71,7 +71,7 @@ Acquire AcquireView::getAcquire(InsuranceContainer &insurances, LoansContainers 
 
         int loanSelection;
         do {
-            loanSelection = Utils::getNumber("Select Loan (enter number): ");
+            loanSelection = Utils::getNumber("Select Loan (enter number)");
             if (loanSelection <= 0 || loanSelection > allLoans.size()) {
                 cout << "Invalid loan selection." << endl;
             }

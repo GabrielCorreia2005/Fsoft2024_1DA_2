@@ -11,11 +11,11 @@ Insurance InsuranceView::getInsurance() {
     float length;
 
     // Get insurance name
-    name = Utils::getString("Enter insurance name: ");
+    name = Utils::getString("Enter insurance name");
 
     // Get insurance price
     do {
-        price = Utils::getNumber("Enter insurance price: ");
+        price = Utils::getNumber("Enter insurance price");
         if (price <= 0) {
             cout << "Invalid insurance price. Please enter a positive number." << endl;
         }
@@ -23,7 +23,7 @@ Insurance InsuranceView::getInsurance() {
 
     // Get insurance length
     do {
-        length = Utils::getNumber("Enter insurance length (in months): ");
+        length = Utils::getNumber("Enter insurance length (in months)");
         if (length <= 0) {
             cout << "Invalid insurance length. Please enter a positive number." << endl;
         }
