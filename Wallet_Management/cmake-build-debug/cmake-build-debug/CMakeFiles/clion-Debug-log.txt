@@ -20,6 +20,10 @@ CMake Deprecation Warning:
 -- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+<<<<<<< Updated upstream
 -- Configuring done (9.2s)
+=======
+-- Configuring done (7.2s)
+>>>>>>> Stashed changes
 -- Generating done (0.2s)
 -- Build files have been written to: C:/Users/gonca/Documents/GitHub/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug
