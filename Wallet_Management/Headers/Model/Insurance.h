@@ -15,6 +15,8 @@ private:
     string name;      // The name or type of insurance
     float price;     // The premium or cost of the insurance
     float length;   // The duration of the insurance policy (e.g., in months or years)
+    int installments;
+    float fees;
 
 public:
     // Constructor: Takes the insurance name, price, length, installments and fees as input
@@ -27,11 +29,11 @@ public:
     ~Insurance();
 
     // Getters and setters for the private member variables:
-    const string& getInsurance() const;
+    const string& getName() const;
     void setName(const string& name);
 
-    float getValue() const;
-    void setValue(float price); // Might include validation to ensure price is positive
+    float getPrice() const;
+    void setPrice(float price); // Might include validation to ensure price is positive
 
     float getLength() const;
     void setLength(float length); // Might include validation for length

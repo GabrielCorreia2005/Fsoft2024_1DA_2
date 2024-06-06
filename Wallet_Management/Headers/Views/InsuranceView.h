@@ -14,7 +14,7 @@ public:
     Insurance getInsurance();
 
     // Print the details of a single insurance policy
-    void printInsurance(Insurance insurance);
+    void printInsurance(Insurance *insurance);
 
     // Print a list of insurance policies
     void printInsurances(list<Insurance> &insurances);
