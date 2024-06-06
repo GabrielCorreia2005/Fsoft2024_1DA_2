@@ -9,13 +9,15 @@ Insurance InsuranceView::getInsurance() {
     string name;
     float price;
     float length;
+    int installments;
+    float fees;
 
     // Get insurance name
-    name = Utils::getString("Enter insurance name: ");
+    name = Utils::getString("Enter insurance name");
 
     // Get insurance price
     do {
-        price = Utils::getNumber("Enter insurance price: ");
+        price = Utils::getNumber("Enter insurance price");
         if (price <= 0) {
             cout << "Invalid insurance price. Please enter a positive number." << endl;
         }
@@ -23,13 +25,29 @@ Insurance InsuranceView::getInsurance() {
 
     // Get insurance length
     do {
-        length = Utils::getNumber("Enter insurance length (in months): ");
+        length = Utils::getNumber("Enter insurance length (in months) ");
         if (length <= 0) {
             cout << "Invalid insurance length. Please enter a positive number." << endl;
         }
     } while (length <= 0);
 
-    return Insurance(name, price, length);
+    do {
+        installments = Utils::getNumber("Enter insurance installments");
+        if (installments <= 0)
+        {
+            cout << "Invalid insurance installments. Please enter a positive number." << endl;
+        }
+    }while(installments <= 0);
+
+    do {
+        fees = Utils::getNumber("Enter insurance fees");
+        if(fees <= 0)
+        {
+            cout << "Invalid insurance fees. Please enter a positive number." << endl;
+        }
+    }while(fees <=0);
+
+    return Insurance(name, price, length, installments, fees);
 }
 
 void InsuranceView::printInsurance(Insurance *insurance) {
@@ -50,7 +68,7 @@ void InsuranceView::printInsurances(list<Insurance> &insurances) {
 
     cout << "List of Insurances:" << endl;
     for (const Insurance &insurance : insurances) {
-        printInsurance(&insurance);
+        printInsurance(insurance);
         cout << "--------------------" << endl;
     }
 }

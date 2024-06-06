@@ -5,7 +5,7 @@
 #include "Insurance.h"
 #include "InvalidDataException.h"
 
-Insurance::Insurance(const string& name, float price) : name(name), price(price) {
+Insurance::Insurance(const string& name, float price, float length, int installments, float fees) : name(name), price(price), length(length), installments(installments), fees(fees) {
     if (price <= 0) {
         throw InvalidDataException("Insurance price must be greater than 0.");
     }
