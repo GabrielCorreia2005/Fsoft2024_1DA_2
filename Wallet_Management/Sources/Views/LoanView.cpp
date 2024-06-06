@@ -16,11 +16,11 @@ Loans LoanView::getLoan() {
     int durationMonths;
 
     // Get loan type
-    type = Utils::getString("Enter loan type: ");
+    type = Utils::getString("Enter loan type");
 
     // Get loan amount
     do {
-        amount = Utils::getNumber("Enter loan amount: ");
+        amount = Utils::getNumber("Enter loan amount");
         if (amount <= 0) {
             cout << "Invalid loan amount. Please enter a positive number." << endl;
         }
@@ -28,7 +28,7 @@ Loans LoanView::getLoan() {
 
     // Get interest rate
     do {
-        interestRate = Utils::getNumber("Enter interest rate (as a percentage): ");
+        interestRate = Utils::getNumber("Enter interest rate (as a percentage)");
         if (interestRate < 0) {
             cout << "Invalid interest rate. Please enter a non-negative number." << endl;
         }
@@ -36,7 +36,7 @@ Loans LoanView::getLoan() {
 
     // Get loan duration in months
     do {
-        durationMonths = Utils::getNumber("Enter loan duration (in months): ");
+        durationMonths = Utils::getNumber("Enter loan duration (in months)");
         if (durationMonths <= 0) {
             cout << "Invalid loan duration. Please enter a positive number." << endl;
         }

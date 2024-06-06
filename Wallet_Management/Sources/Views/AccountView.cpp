@@ -16,14 +16,14 @@ Accounts AccountView::getAccount(ClientsContainer &clients) {
 
     // Get account number
     do {
-        nr = Utils::getNumber("Account Number: ");
+        nr = Utils::getNumber("Account Number");
         if (nr <= 0) {
             cout << "Invalid Account Number. Please enter a positive number." << endl;
         }
     } while (nr <= 0);
 
     // Get balance (you might want to add validation for positive balance)
-    balance = Utils::getNumber("Initial Balance: ");
+    balance = Utils::getNumber("Initial Balance");
 
     // Select client for the account
     cout << "Select Client for the Account:" << endl;
@@ -36,7 +36,7 @@ Accounts AccountView::getAccount(ClientsContainer &clients) {
 
     int clientChoice;
     do {
-        clientChoice = Utils::getNumber("Enter Client Choice: ");
+        clientChoice = Utils::getNumber("Enter Client Choice");
         if (clientChoice <= 0 || clientChoice > allClients.size()) {
             cout << "Invalid client choice. Please select from the list." << endl;
         }
