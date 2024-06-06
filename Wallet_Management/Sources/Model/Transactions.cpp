@@ -1,20 +1,17 @@
-//
-// Created by Gabriel on 20/05/2024.
-//
-
 #include "Transactions.h"
 #include "InvalidDataException.h"
 
-Transactions::Transactions(float amount, const string& type, const Date& date, Accounts originAccount, AccountsdestinationAccount)
-        : amount(amount), type(type), date(date), originAccount(originAccount), destinationAccount(destinationAccount) {
+Transactions::Transactions(float amount, const string& type, const Date& date, Accounts* originAccount, Accounts* destinationAccount) :
+        amount(amount), type(type), date(date), originAccount(originAccount), destinationAccount(destinationAccount) {
+
     if (amount <= 0) {
-        throw InvalidDataException("Transaction amount must be greater than 0.");
+        throw InvalidDataException("Transaction amount must be positive.");
     }
-    // You might want to add validation for the transaction type here
 }
 
-Transactions::Transactions(const Transactions &obj)
-        : amount(obj.amount), type(obj.type), date(obj.date), originAccount(obj.originAccount), destinationAccount(obj.destinationAccount) {}
+Transactions::Transactions(const Transactions &obj) :
+        amount(obj.amount), type(obj.type), date(obj.date), originAccount(obj.originAccount),
+        destinationAccount(obj.destinationAccount) {}
 
 Transactions::~Transactions() {}
 
@@ -24,9 +21,9 @@ float Transactions::getAmount() const {
 
 void Transactions::setAmount(float amount) {
     if (amount <= 0) {
-        throw InvalidDataException("Transaction amount must be greater than 0.");
+        throw InvalidDataException("Transaction amount must be positive.");
     }
-    Transactions::amount = amount;
+    this->amount = amount;
 }
 
 const string& Transactions::getType() const {
@@ -34,7 +31,7 @@ const string& Transactions::getType() const {
 }
 
 void Transactions::setType(const string& type) {
-    Transactions::type = type;
+    this->type = type;
 }
 
 const Date& Transactions::getDate() const {
@@ -42,7 +39,7 @@ const Date& Transactions::getDate() const {
 }
 
 void Transactions::setDate(const Date& date) {
-    Transactions::date = date;
+    this->date = date;
 }
 
 Accounts* Transactions::getOriginAccount() const {
@@ -50,22 +47,21 @@ Accounts* Transactions::getOriginAccount() const {
 }
 
 void Transactions::setOriginAccount(Accounts* originAccount) {
-    Transactions::originAccount = originAccount;
+    this->originAccount = originAccount;
 }
+
 Accounts* Transactions::getDestinationAccount() const {
     return destinationAccount;
 }
 
 void Transactions::setDestinationAccount(Accounts* destinationAccount) {
-    Transactions::destinationAccount = destinationAccount;
+    this->destinationAccount = destinationAccount;
 }
 
 bool Transactions::operator==(const Transactions& rhs) const {
-    // You should define what makes two transactions equal based on your application logic
-    // For example, you might compare amount, type, date, and account numbers
     return amount == rhs.amount &&
            type == rhs.type &&
            date == rhs.date &&
-           (originAccount ? originAccount->getNumber() : 0) == (rhs.originAccount ? rhs.originAccount->getNumber() : 0) &&
-           (destinationAccount ? destinationAccount->getNumber() : 0) == (rhs.destinationAccount ? rhs.destinationAccount->getNumber() : 0);
+           (originAccount ? originAccount->getNr() : 0) == (rhs.originAccount ? rhs.originAccount->getNr() : 0) &&
+           (destinationAccount ? destinationAccount->getNr() : 0) == (rhs.destinationAccount ? rhs.destinationAccount->getNr() : 0);
 }
