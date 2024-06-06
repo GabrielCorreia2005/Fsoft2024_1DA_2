@@ -175,7 +175,7 @@
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Exceptions/DataConsistencyExceprion.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp">

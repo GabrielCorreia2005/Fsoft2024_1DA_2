@@ -38,7 +38,7 @@ add_executable(FSOFT_PROJECT
         ../Mock/MockData.cpp
         ../Mock/MockData.h
         ../Sources/Controllers/Controller.cpp
-        ../Sources/Exceptions/DataConsistencyExceprion.cpp
+        ../Sources/Exceptions/DataConsistencyException.cpp
         ../Sources/Exceptions/DuplicateDataException.cpp
         ../Sources/Exceptions/InvalidDataExcption.cpp
         ../Sources/Model/Accounts.cpp

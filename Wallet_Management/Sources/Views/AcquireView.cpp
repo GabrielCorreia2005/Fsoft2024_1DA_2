@@ -96,4 +96,8 @@ void AcquireView::printAcquire(Acquire *acquire){
         cout << "No acquire found (nullptr)." << endl;
     }
 
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

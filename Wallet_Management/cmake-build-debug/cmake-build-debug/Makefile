@@ -704,29 +704,29 @@ d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Vie
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
 .PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.obj: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.obj
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj
 
 # target to build an object file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.obj
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.i: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.i
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i
 
 # target to preprocess a source file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.i
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.s: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.s
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s
 
 # target to generate assembly for a file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.cpp.s
+eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
+.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
 
 eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.obj
 .PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj
@@ -833,9 +833,9 @@ help:
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.obj
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.i
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.s
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.obj
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.i
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyExceprion.s
+	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj
+	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i
+	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s
 	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj
 	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.i
 	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.s
