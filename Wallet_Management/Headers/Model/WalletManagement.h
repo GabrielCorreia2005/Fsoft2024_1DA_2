@@ -13,6 +13,7 @@
 
 class WalletManagement {
 private:
+    string name;
     /*
     LoansContainers loansContainer;
     InsuranceContainer insuranceContainer;
@@ -27,7 +28,10 @@ private:
 public:
     // Constructors
     WalletManagement();
-    WalletManagement(const char *obj);
+    WalletManagement(const string& name);
+    //WalletManagement(const char *obj);
+    const string getName() const;
+    void setName(const string &name);
     /*
       // Getters for the containers
 

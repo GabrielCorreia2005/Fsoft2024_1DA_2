@@ -33,6 +33,7 @@ private:
     void runLoan();
     void runTransactions();
     void runInsurance();
+    void runBank();
 
 
     WalletManagement model;

@@ -17,8 +17,8 @@ void Controller::run() {
         choice = view.menuBank();
 
         switch (choice) {
-            case 1: runAccount(); break;
-            case 2: runClient(); break;
+            case 1: runClient(); break;
+            case 2: runAccount(); break;
             case 3: runLoan(); break;
             case 4: runTransactions(); break;
             case 5: runInsurance(); break;

@@ -1,7 +1,11 @@
 #include "WalletManagement.h"
 
-
 WalletManagement::WalletManagement() {
+    this -> name = "";
+}
+
+WalletManagement::WalletManagement(const string& name) {
+    this -> name = name;
 }
 
 ClientsContainer &WalletManagement::getClientContainer() {
@@ -12,7 +16,10 @@ AccountsContainers &WalletManagement::getAccountsContainer() {
     return accountsContainer;
 }
 
-
+void WalletManagement::setName(const string &name)
+{
+    this ->name = name;
+}
 
 /*
 WalletManagement::WalletManagement(const char *obj) {
