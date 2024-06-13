@@ -80,12 +80,12 @@ clean: CMakeFiles/FSOFT_PROJECT.dir/clean
 CMakeFiles/FSOFT_PROJECT.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target FSOFT_PROJECT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target FSOFT_PROJECT"
 .PHONY : CMakeFiles/FSOFT_PROJECT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FSOFT_PROJECT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" 28
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FSOFT_PROJECT.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/FSOFT_PROJECT.dir/rule

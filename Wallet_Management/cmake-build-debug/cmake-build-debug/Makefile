@@ -632,6 +632,30 @@ d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Mod
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
 .PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
 
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
+
+# target to build an object file
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i
+
+# target to preprocess a source file
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s
+
+# target to generate assembly for a file
+d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+
 d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
 .PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
 
@@ -848,6 +872,9 @@ help:
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.obj
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.i
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.s
+	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
+	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i
+	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.i
 	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.s

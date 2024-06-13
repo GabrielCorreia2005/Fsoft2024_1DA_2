@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_13_06_2024_17_00_[Changes]" date="1718294439270" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_06_2024_17_00_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 13/06/2024 17:00 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj" />
+    <option name="AFTER_PATH" value="Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_06_2024_17_00_[Changes]/Client.cpp.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/objects.a" />
+    <option name="AFTER_PATH" value="Wallet_Management/cmake-build-debug/cmake-build-debug/CMakeFiles/FSOFT_PROJECT.dir/objects.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_06_2024_17_00_[Changes]/objects.a" />
+  </binary>
+</changelist>

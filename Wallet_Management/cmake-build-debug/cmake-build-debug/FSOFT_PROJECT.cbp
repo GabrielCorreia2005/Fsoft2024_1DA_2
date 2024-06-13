@@ -199,6 +199,9 @@
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp">
+			<Option target="FSOFT_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
