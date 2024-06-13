@@ -1,0 +1,65 @@
+cmake_minimum_required(VERSION 3.27)
+project(FSOFT_PROJECT)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(../../Wallet_Management)
+include_directories(../Headers)
+include_directories(../Headers/Controllers)
+include_directories(../Headers/Exceptions)
+include_directories(../Headers/Model)
+include_directories(../Headers/Views)
+include_directories(../Mock)
+
+add_executable(FSOFT_PROJECT
+        ../Headers/Controllers/Controller.h
+        ../Headers/Exceptions/DataConsistencyException.h
+        ../Headers/Exceptions/DuplicatedDataException.h
+        ../Headers/Exceptions/InvalidDataException.h
+        ../Headers/Model/Accounts.h
+        ../Headers/Model/AccountsContainers.h
+        ../Headers/Model/Acquire.h
+        ../Headers/Model/Client.h
+        ../Headers/Model/ClientsContainer.h
+        ../Headers/Model/Insurance.h
+        ../Headers/Model/InsuranceContainer.h
+        ../Headers/Model/Loans.h
+        ../Headers/Model/LoansContainers.h
+        ../Headers/Model/Transactions.h
+        ../Headers/Model/TransactionsContainers.h
+        ../Headers/Model/WalletManagement.h
+        ../Headers/Views/AccountView.h
+        ../Headers/Views/AcquireView.h
+        ../Headers/Views/ClientView.h
+        ../Headers/Views/InsuranceView.h
+        ../Headers/Views/LoanView.h
+        ../Headers/Views/TransactionsView.h
+        ../Headers/Views/View.h
+        ../Mock/MockData.cpp
+        ../Mock/MockData.h
+        ../Sources/Controllers/Controller.cpp
+        ../Sources/Exceptions/DataConsistencyException.cpp
+        ../Sources/Exceptions/DuplicateDataException.cpp
+        ../Sources/Exceptions/InvalidDataExcption.cpp
+        ../Sources/Model/Accounts.cpp
+        ../Sources/Model/AccountsContainers.cpp
+        ../Sources/Model/Acquire.cpp
+        ../Sources/Model/Client.cpp
+        ../Sources/Model/ClientsContainer.cpp
+        ../Sources/Model/Insurance.cpp
+        ../Sources/Model/InsuranceContainer.cpp
+        ../Sources/Model/Loans.cpp
+        ../Sources/Model/LoansContainers.cpp
+        ../Sources/Model/Transactions.cpp
+        ../Sources/Model/TransactionsContainers.cpp
+        ../Sources/Model/WalletManagement.cpp
+        ../Sources/Views/AccountView.cpp
+        ../Sources/Views/AcquireView.cpp
+        ../Sources/Views/ClientView.cpp
+        ../Sources/Views/InsuranceView.cpp
+        ../Sources/Views/LoanView.cpp
+        ../Sources/Views/TransactionsView.cpp
+        ../Sources/Views/Utils.cpp
+        ../Sources/Views/View.cpp
+        ../main.cpp
+        ../Headers/Views/Utils.h)
