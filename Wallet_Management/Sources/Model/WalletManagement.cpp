@@ -3,9 +3,6 @@
 
 WalletManagement::WalletManagement() {
 }
-/*
-WalletManagement::WalletManagement(const char *obj) {
-}
 
 ClientsContainer &WalletManagement::getClientContainer() {
     return clientsContainer;
@@ -13,6 +10,12 @@ ClientsContainer &WalletManagement::getClientContainer() {
 
 AccountsContainers &WalletManagement::getAccountsContainer() {
     return accountsContainer;
+}
+
+
+
+/*
+WalletManagement::WalletManagement(const char *obj) {
 }
 
 LoansContainers &WalletManagement::getLoansContainer() {
