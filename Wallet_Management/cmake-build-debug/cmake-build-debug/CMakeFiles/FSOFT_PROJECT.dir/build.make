@@ -458,6 +458,21 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\main.cpp" -o CMakeFiles\FSOFT_PROJECT.dir\D_\ISEP\Fundamenos_de_software\Wallet_Management2\Wallet-Management\Wallet_Management\main.cpp.s
 
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj: CMakeFiles/FSOFT_PROJECT.dir/flags.make
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj: CMakeFiles/FSOFT_PROJECT.dir/includes_CXX.rsp
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj: D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj: CMakeFiles/FSOFT_PROJECT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj -MF CMakeFiles\FSOFT_PROJECT.dir\4f29e1046087d4cedaf8c1f9b09a740e\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp.obj.d -o CMakeFiles\FSOFT_PROJECT.dir\4f29e1046087d4cedaf8c1f9b09a740e\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp.obj -c "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp"
+
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp" > CMakeFiles\FSOFT_PROJECT.dir\4f29e1046087d4cedaf8c1f9b09a740e\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp.i
+
+CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp" -o CMakeFiles\FSOFT_PROJECT.dir\4f29e1046087d4cedaf8c1f9b09a740e\Wallet_Management_Saver\Sources\Model\WalletManagement.cpp.s
+
 # Object files for target FSOFT_PROJECT
 FSOFT_PROJECT_OBJECTS = \
 "CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj" \
@@ -485,7 +500,8 @@ FSOFT_PROJECT_OBJECTS = \
 "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj" \
 "CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj" \
 "CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj" \
-"CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj"
+"CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj" \
+"CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj"
 
 # External object files for target FSOFT_PROJECT
 FSOFT_PROJECT_EXTERNAL_OBJECTS =
@@ -516,11 +532,12 @@ FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj
+FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/build.make
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/linkLibs.rsp
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/objects1.rsp
 FSOFT_PROJECT.exe: CMakeFiles/FSOFT_PROJECT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable FSOFT_PROJECT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable FSOFT_PROJECT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FSOFT_PROJECT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -247,6 +247,9 @@
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/main.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp">
+			<Option target="FSOFT_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/cmake-build-debug/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

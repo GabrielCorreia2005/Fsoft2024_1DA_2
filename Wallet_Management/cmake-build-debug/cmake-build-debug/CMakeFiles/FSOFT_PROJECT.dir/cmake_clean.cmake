@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.obj.d"
   "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj"
   "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj.d"
+  "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj"
+  "CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj.d"
   "CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj"
   "CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj.d"
   "CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj"

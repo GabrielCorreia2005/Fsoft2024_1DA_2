@@ -62,4 +62,5 @@ add_executable(FSOFT_PROJECT
         ../Sources/Views/Utils.cpp
         ../Sources/Views/View.cpp
         ../main.cpp
-        ../Headers/Views/Utils.h)
+        ../Headers/Views/Utils.h
+        ../../Wallet_Management_Saver/Sources/Model/WalletManagement.cpp)
