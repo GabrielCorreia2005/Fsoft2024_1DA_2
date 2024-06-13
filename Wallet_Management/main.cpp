@@ -1,20 +1,17 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
+// main.cpp
 #include <iostream>
-#include "WalletManagement.h"
+#include "View.h"
+#include "Utils.h"
 
-#include "Controller.h"
-using namespace std;
+int main() {
+    View view;
 
-int main()
-{
-    WalletManagement WalletManagement ("Wallet Management");
+    // Example usage:
+    int clientMenuChoice = view.menuClient();
+    std::cout << "Client Menu Choice: " << clientMenuChoice << std::endl;
 
-    Controller controller (WalletManagement);
-    controller.run();
+    int bankMenuChoice = view.menuBank();
+    std::cout << "Bank Menu Choice: " << bankMenuChoice << std::endl;
 
-    cout << "Application has existed" << endl;
     return 0;
 }
