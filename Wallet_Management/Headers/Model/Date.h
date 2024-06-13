@@ -18,7 +18,7 @@ private:
 public:
     Date();
     Date(int day, int month, int year);
-    Date(const Date & date);
+    Date(const Date & date); //khasdkjhas
 
     void setDate(int day, int month, int year);
     void getDate(int& day, int& month, int& year) const;
