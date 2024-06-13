@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FSOFT_PROJECT::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FSOFT_PROJECT-Debug-2e7cf3771b9718e3ab4e.json",
+					"jsonFile" : "target-FSOFT_PROJECT-Debug-6d2c8b7677ba57363dfa.json",
 					"name" : "FSOFT_PROJECT",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/josem/Documents/GitHub/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug",
-		"source" : "D:/josem/Documents/GitHub/Wallet-Management/Wallet_Management/cmake-build-debug"
+		"build" : "C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug",
+		"source" : "C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug"
 	},
 	"version" : 
 	{
