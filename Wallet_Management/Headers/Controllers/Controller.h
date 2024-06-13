@@ -18,13 +18,14 @@ class Controller{
 
 private:
     View view;
+    /*
     AcquireView acquireView;
     AccountView accountView;
     ClientView clientView;
     InsuranceView insuranceView;
     LoanView loanView;
     TransactionsView transactionsView;
-    WalletManagement model;
+
 
     // Private functions to handle specific modules
     void runAccount();
@@ -32,6 +33,9 @@ private:
     void runLoan();
     void runTransactions();
     void runInsurance();
+     */
+
+    WalletManagement model;
 
 public:
     // Constructor

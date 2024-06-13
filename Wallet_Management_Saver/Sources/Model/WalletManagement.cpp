@@ -1,4 +1,5 @@
 #include "WalletManagement.h"
+/*
 
 WalletManagement::WalletManagement() {
 }
@@ -28,4 +29,4 @@ TransactionsContainers &WalletManagement::getTransactionsContainer() {
 
 void WalletManagement::setDataForConsistency() {
 
-}
+}*/
