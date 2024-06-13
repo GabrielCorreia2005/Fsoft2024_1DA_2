@@ -31,7 +31,7 @@ int Utils::getNumber(const string& label)
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         return number;
-    }
+
 }
 
 string Utils::getString(const string& label)
