@@ -8,10 +8,10 @@ int main() {
 
     // Example usage:
     int clientMenuChoice = view.menuClient();
-    std::cout << "Client Menu Choice: " << clientMenuChoice << std::endl;
+    //std::cout << "Client Menu Choice: " << clientMenuChoice << std::endl;
 
     int bankMenuChoice = view.menuBank();
-    std::cout << "Bank Menu Choice: " << bankMenuChoice << std::endl;
+    //std::cout << "Bank Menu Choice: " << bankMenuChoice << std::endl;
 
     return 0;
 }
