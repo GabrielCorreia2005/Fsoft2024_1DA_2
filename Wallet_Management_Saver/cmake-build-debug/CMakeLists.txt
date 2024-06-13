@@ -3,7 +3,7 @@ project(FSOFT_PROJECT)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(..)
+include_directories(../../Wallet_Management)
 include_directories(../Headers)
 include_directories(../Headers/Controllers)
 include_directories(../Headers/Exceptions)

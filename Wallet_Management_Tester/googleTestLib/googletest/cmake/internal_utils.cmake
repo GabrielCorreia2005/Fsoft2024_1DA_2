@@ -324,7 +324,7 @@ function(install_project)
     # Configure and install pkgconfig files.
     foreach(t ${ARGN})
       set(configured_pc "${generated_dir}/${t}.pc")
-      configure_file("${PROJECT_SOURCE_DIR}/cmake/${t}.pc.in"
+      configure_file("../../../../Wallet_Management_Saver/cmake-build-debug/cmake/${t}.pc.in"
         "${configured_pc}" @ONLY)
       install(FILES "${configured_pc}"
         COMPONENT "${PROJECT_NAME}"

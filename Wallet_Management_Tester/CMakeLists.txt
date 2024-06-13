@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Wallet_Management_Tester main.cpp)
 
-set(PROJECT_HEADERS_DIR ../Wallet_Management/headers)
-set(PROJECT_SOURCES_DIR ../Wallet_Management/sources)
+set(PROJECT_HEADERS_DIR ../Wallet_Management_Saver/Headers)
+set(PROJECT_SOURCES_DIR ../Wallet_Management_Saver/Sources)
 
 include_directories(${PROJECT_HEADERS_DIR})
 include_directories(${PROJECT_SOURCES_DIR})
