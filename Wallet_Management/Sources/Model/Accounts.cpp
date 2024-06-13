@@ -46,3 +46,7 @@ Client *Accounts::getClient() const {
 void Accounts::setNumber(int &nr) {
     Accounts::nr = nr;
 }
+
+void Accounts::setBalance(float &balance) {
+    Accounts::balance = balance;
+}
