@@ -1101,6 +1101,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
  C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/13.2.0/cctype
  C:/msys64/mingw64/include/c++/13.2.0/cerrno
@@ -1131,6 +1132,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
  C:/msys64/mingw64/include/c++/13.2.0/streambuf
  C:/msys64/mingw64/include/c++/13.2.0/string
  C:/msys64/mingw64/include/c++/13.2.0/system_error
+ C:/msys64/mingw64/include/c++/13.2.0/tuple
  C:/msys64/mingw64/include/c++/13.2.0/type_traits
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h
@@ -1180,6 +1182,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Controllers/Controller.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/Accounts.h
@@ -1191,6 +1194,12 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/LoansContainers.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/TransactionsContainers.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/WalletManagement.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/AccountView.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/AcquireView.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/ClientView.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/InsuranceView.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/LoanView.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/TransactionsView.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/Utils.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/View.h
 

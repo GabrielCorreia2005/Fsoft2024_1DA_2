@@ -13,7 +13,10 @@ int main() {
 
     Controller controller(walletManagement);
     controller.run();
+
     cout << "Application has exited" << endl;
+
+
 
     return 0;
 }

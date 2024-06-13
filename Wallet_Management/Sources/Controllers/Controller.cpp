@@ -15,6 +15,7 @@ void Controller::run() {
     do {
         // Display main menu (you'll need to define this content)
         choice = view.menuBank();
+        cout << "teste" << endl;
 
         switch (choice) {
             case 1: runClient(); break;
