@@ -9,31 +9,25 @@
 
 using namespace std;
 
-Date ClientView::getDate()
-{
-    Date date;
-    bool flag = false;
+Date ClientView::getDate() {
+    int day, month, year;
+    bool validDate = false;
 
-    do
-    {
-        try
-        {
-            flag = true;
-            cout << "Date" << endl;
+    while (!validDate) {
+        cout << " Date" << endl;
+        day = Utils::getNumber("Day:");
+        month = Utils::getNumber("Month:");
+        year = Utils::getNumber("Year:");
 
-            int day = Utils::getNumber("Day");
-            int month = Utils::getNumber("Month");
-            int year = Utils::getNumber("Year");
-
-            date.setDate(day, month, year);
-        }catch(InvalidDataException& e)
-        {
-            flag = true;
+        try {
+            Date tempDate(day, month, year); // Try creating a Date object
+            validDate = true; // If successful, date is valid
+            return tempDate;   // Return the valid date
+        } catch (InvalidDataException &e) {
+            cout << e.what() << endl; // Print the exception message
         }
-    }while(flag == true);
-    return date;
+    }
 }
-
 
 Client ClientView:: getClient()
 {
@@ -55,7 +49,7 @@ Client ClientView:: getClient()
 
             Client.setName(name);
             Client.setBirth(birthday);
-        }catch(InvalidDataException& e)
+        }catch(InvalidDataException &e)
         {
             flag = true;
         }
@@ -74,9 +68,14 @@ void ClientView::printClient(Client *client)
     cout << client -> getNumber() << ":" << client -> getName() << ":" << date << endl;
 }
 
-void ClientView::printClients(list <Client>& students)
-{
-    for(list<Client>::iterator it = students.begin(); it != students.end(); ++it)
-        printClient(&*it);
-}
+void ClientView::printClients(list<Client>& clients) {
+    for (Client& client : clients) {
+        cout << client.getNumber() << ":";
+        cout << client.getName() << ":";
 
+        int day, month, year;
+        client.getBirth().getDate(day, month, year);  // Get date components
+
+        cout << day << "/" << month << "/" << year << endl;
+    }
+}

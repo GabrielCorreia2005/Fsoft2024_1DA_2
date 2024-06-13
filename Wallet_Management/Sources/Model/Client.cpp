@@ -1,77 +1,61 @@
-//
-// Created by Gabriel on 20/05/2024.
-//
-
 #include "Client.h"
-#include "InvalidDataException.h"
+#include <iostream>
 
-// Constructor
-Client::Client(const string& name, const Date& birth) : name(name), birth(birth) {
-    // Check if the name is valid
-    if (!isNameValid(name)) {
-        throw InvalidDataException("Invalid client name: " + name);
-    }
+using namespace std;
+
+Client::Client(const string &name, const Date &birth):
+        name(name), birth(birth), number(0) { // Initialize number here!
+    if (!isNameValid(name))
+        throw InvalidDataException("The name is invalid, you need to use only letters.");
+    // ... (other initialization or validation logic if needed) ...
 }
 
-// Copy Constructor
-Client::Client(const Client &obj) : name(obj.name), birth(obj.birth) {}
+Client::Client(const Client &obj) {
+    this->name = obj.name;
+    this->number = obj.number;
+    this->birth = obj.birth;
+}
 
-// Destructor
-Client::~Client() {}
+Client::~Client() = default;
 
-// Get the client's name
-const string& Client::getName() const {
+const string &Client::getName() const {
     return name;
 }
 
-// Set the client's name
 void Client::setName(const string &name) {
-    if (!isNameValid(name)) {
-        throw InvalidDataException("Invalid client name: " + name);
-    }
-    this->name = name;
+    if (!isNameValid(name))
+        throw InvalidDataException("The name is invalid, you need to use only letters.");
+    Client::name = name;
 }
 
-// Get the client's number
 int Client::getNumber() const {
     return number;
 }
 
-// Set the client's number
 void Client::setNumber(int number) {
-    this->number = number;
+    Client::number = number;
 }
 
-// Get the client's birth date
-const Date& Client::getBirth() const {
+const Date &Client::getBirth() const {
     return birth;
 }
 
-// Set the client's birth date
 void Client::setBirth(const Date &birth) {
-    this->birth = birth;
+    Client::birth = birth;
 }
 
-// Check if the client's name is valid
 bool Client::isNameValid(const string &name) {
-    // Name should not be empty and contain only letters and spaces
-    if (name.empty()) {
-        return false;
-    }
-    for (char c : name) {
-        if (!isalpha(c) && c != ' ') {
+    for (char c: name) {
+        if (!isalpha(c) && !isspace(c))
             return false;
-        }
     }
     return true;
 }
 
-// Equality operator
 bool Client::operator==(const Client &obj) const {
-    return number == obj.number;
+    return (number == obj.number);
 }
 
-// Equality operator for comparing with an integer (client number)
 bool Client::operator==(int nr) const {
-    return number == nr;
+    return (number == nr);
 }

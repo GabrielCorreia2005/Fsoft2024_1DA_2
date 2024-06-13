@@ -1,62 +1,68 @@
-//
-// Created by Gabriel on 13/05/2024.
-//
-
 #include "ClientsContainer.h"
-#include "DuplicatedDataException.h"
+#include <algorithm> // For std::find
+#include <iostream>
+using namespace std;
 
-// Get a list of all clients
+int ClientsContainer::nextClientNumber = 1; // Initialize static counter
+
+// Get a list of all clients in the container.
 list<Client> ClientsContainer::getAll() {
     return clients;
 }
 
-// Get a specific client by client number
+// Get a pointer to a specific client by their unique number.
+// Returns nullptr if the client is not found.
 Client* ClientsContainer::get(int number) {
     list<Client>::iterator it = search(number);
     if (it != clients.end()) {
-        return &(*it); // Return a pointer to the client object
-    } else {
-        return nullptr; // Client not found
+        return &(*it); // Return a pointer to the Client object
     }
+    return nullptr; // Client not found
 }
 
-// Add a new client to the container
+// Add a new client to the container.
+// Throws a DuplicatedDataException if a client with the same number already exists.
 void ClientsContainer::add(const Client& obj) {
-    if(search(obj.getNumber()) == clients.end()){
-        clients.push_back(obj);
+    if (!isThereClient(obj.getNumber())) {
+        Client newClient(obj);
+        newClient.setNumber(nextClientNumber++);
+        clients.push_back(newClient);
+        cout << "Client added successfully! Assigned client number: "
+             << newClient.getNumber() << endl; // For debugging
+    } else {
+        throw DuplicatedDataException("Client with this number already exists.");
     }
-    else
-        throw DuplicatedDataException ("Client with that number already exists");
 }
 
-// Remove a client by client number
+// Remove a client from the container by their unique number.
 void ClientsContainer::remove(int number) {
     list<Client>::iterator it = search(number);
     if (it != clients.end()) {
         clients.erase(it);
+        cout << "Client with number " << number << " removed." << endl; // For debugging
+    } else {
+        cout << "Client with number " << number << " not found." << endl; // For debugging
     }
 }
 
-// Update the information of an existing client
+// Update the name and birth date of an existing client in the container.
 void ClientsContainer::update(int number, const string& name, const Date& birth) {
     list<Client>::iterator it = search(number);
     if (it != clients.end()) {
         it->setName(name);
         it->setBirth(birth);
+        cout << "Client with number " << number << " updated." << endl; // For debugging
+    } else {
+        cout << "Client with number " << number << " not found." << endl; // For debugging
     }
 }
 
-// Check if a client with a specific number already exists
+// Check if a client with a specific number exists in the container.
 bool ClientsContainer::isThereClient(int number) {
-    return search(number) != clients.end();
+    return (search(number) != clients.end());
 }
 
-// Search for a client by client number
+// Private function to search for a client by number
 list<Client>::iterator ClientsContainer::search(int number) {
-    for (list<Client>::iterator it = clients.begin(); it != clients.end(); ++it) {
-        if (it->getNumber() == number) {
-            return it;
-        }
-    }
-    return clients.end(); // Client not found
+    return find(clients.begin(), clients.end(), number);
 }

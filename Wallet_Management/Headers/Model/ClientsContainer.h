@@ -36,6 +36,8 @@ public:
 
     // Check if a client with a specific number exists in the container.
     bool isThereClient(int number);
+
+    static int nextClientNumber;
 };
 
 #endif //WALLET_MANAGEMENT_CLIENTSCONTAINER_H
