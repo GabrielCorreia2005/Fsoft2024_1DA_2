@@ -24,7 +24,7 @@ private:
     ClientView clientView;
     InsuranceView insuranceView;
     LoanView loanView;
-    TransactionsView transactionsView;
+    TransactionsView transactionsView;*/
 
 
     // Private functions to handle specific modules
@@ -33,7 +33,7 @@ private:
     void runLoan();
     void runTransactions();
     void runInsurance();
-     */
+
 
     WalletManagement model;
 
