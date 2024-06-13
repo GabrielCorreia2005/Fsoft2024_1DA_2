@@ -48,7 +48,7 @@ NETBSD = ('NetBSD',)
 OPENBSD = ('OpenBSD',)
 
 
-def is_bsd_based_os() -> bool:
+def is_bsd_based_os() -> googletest:
   """Determine whether or not the OS is BSD-based."""
   if os.name != 'posix':
     return False

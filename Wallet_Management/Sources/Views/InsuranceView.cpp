@@ -1,5 +1,8 @@
 #include "InsuranceView.h"
 #include "Utils.h"
+#include <iostream>
+
+using namespace std;
 
 Insurance InsuranceView::getInsurance() {
     string name = Utils::getString("Enter insurance name");
