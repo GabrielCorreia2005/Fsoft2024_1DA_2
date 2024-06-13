@@ -23,6 +23,6 @@ void Controller::run() {
                 // ... handle other cases
             case 0: cout << "Exiting...\n"; break;
             default: cout << "Invalid choice. Please try again.\n";
-        }
+        }   
     } while (choice != 0);
 }

@@ -13,6 +13,7 @@
 
 class WalletManagement {
 private:
+    /*
     ClientsContainer clientsContainer;
     AccountsContainers accountsContainer;
     LoansContainers loansContainer;
@@ -20,20 +21,21 @@ private:
     TransactionsContainers transactionsContainer;
 
     void setDataForConsistency(); // Function to check and enforce data consistency
-
+*/
 public:
     // Constructors
     WalletManagement();
     WalletManagement(const char *obj);
+    /*
+      // Getters for the containers
+      ClientsContainer &getClientContainer();
+      AccountsContainers &getAccountsContainer();
+      LoansContainers &getLoansContainer();
+      InsuranceContainer &getInsuranceContainer();
+      TransactionsContainers &getTransactionsContainer();
 
-    // Getters for the containers
-    ClientsContainer &getClientContainer();
-    AccountsContainers &getAccountsContainer();
-    LoansContainers &getLoansContainer();
-    InsuranceContainer &getInsuranceContainer();
-    TransactionsContainers &getTransactionsContainer();
-
-    //por adicionar mais
+      //por adicionar mais
+      */
 };
 
 #endif //WALLET_MANAGEMENT_WALLETMANAGEMENT_H
