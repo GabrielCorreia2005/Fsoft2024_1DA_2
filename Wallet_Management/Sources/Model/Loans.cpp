@@ -5,8 +5,8 @@
 #include "Loans.h"
 #include "InvalidDataException.h"
 
-Loans::Loans(const string& type, float amount, float interestRate, int durationMonths)
-        : type(type), amount(amount), interestRate(interestRate), durationMonths(durationMonths) {
+Loans::Loans(int number, const string& type, float amount, float interestRate, int durationMonths)
+        : number(number), type(type), amount(amount), interestRate(interestRate), durationMonths(durationMonths) {
     if (amount <= 0) {
         throw InvalidDataException("Loan amount must be greater than 0.");
     }

@@ -8,6 +8,7 @@
 #include <list>
 #include "Loans.h"
 #include "DuplicatedDataException.h"
+#include <map>
 
 using namespace std;
 
@@ -15,10 +16,13 @@ class LoansContainers {
 private:
     list<Loans> loans;
     list<Loans>::iterator search(const string& type, float amount); // Private search function
+    map<int, Loans*> loansmap;
 
 public:
     // Get a list of all loans
     list<Loans> getAll();
+
+    Loans* getsingle(int number);
 
     // Get a specific loan by its type and amount
     // (You might need a more unique identifier for loans)

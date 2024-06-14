@@ -5,8 +5,8 @@
 
 using namespace std;
 
-Client::Client(const string &name, const Date &birth):
-        name(name), birth(birth), number(0) { // Initialize number here!
+Client::Client(const string &name, const Date &birth, const int number):
+        name(name), birth(birth), number(number) { // Initialize number here!
     if (!isNameValid(name))
         throw InvalidDataException("The name is invalid, you need to use only letters.");
     // ... (other initialization or validation logic if needed) ...
@@ -35,7 +35,7 @@ int Client::getNumber() const {
 }
 
 void Client::setNumber(int number) {
-    Client::number = number;
+    Client::number *= number;
 }
 
 const Date &Client::getBirth() const {

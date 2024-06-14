@@ -6,14 +6,22 @@
 #include "Utils.h"
 #include <iostream>
 #include <iomanip>
+#include "ClientsContainer.h"
+#include "Client.h"
+
 
 using namespace std;
 
 Loans LoanView::getLoan() {
+    Client setNumber(setNumber);
+
+    int number;
     string type;
     float amount;
     float interestRate;
     int durationMonths;
+
+    number = Utils::getNumber("Enter account number: ");
 
     // Get loan type
     type = Utils::getString("Enter loan type");
@@ -42,15 +50,17 @@ Loans LoanView::getLoan() {
         }
     } while (durationMonths <= 0);
 
-    return Loans(type, amount, interestRate, durationMonths);
+    return Loans(number, type, amount, interestRate, durationMonths);
 }
 
 void LoanView::printLoan(Loans *loan) {  // Change parameter to const Loans*
+
     if (loan) {
         cout << "Loan Type: " << loan->getType() << endl;
         cout << "Amount: " << fixed << setprecision(2) << loan->getAmount() << endl;
         cout << "Interest Rate: " << fixed << setprecision(2) << loan->getInterestRate() << "%" << endl;
         cout << "Duration (months): " << loan->getDurationMonths() << endl;
+
     } else {
         cout << "Invalid Loan (nullptr)" << endl;
     }

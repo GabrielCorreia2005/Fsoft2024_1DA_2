@@ -10,6 +10,14 @@ list<Loans> LoansContainers::getAll() {
     return loans;
 }
 
+Loans* LoansContainers::getsingle(int number) {
+
+    if (loansmap.find(number) != loansmap.end()) {
+        return loansmap[number]; // Return a pointer to the Loans object
+    } else {
+        return nullptr; // Loan not found
+    }
+}
 // Get a specific loan by its type and amount (you might need a more unique identifier)
 Loans* LoansContainers::get(const string& type, float amount) {
     list<Loans>::iterator it = search(type, amount);
