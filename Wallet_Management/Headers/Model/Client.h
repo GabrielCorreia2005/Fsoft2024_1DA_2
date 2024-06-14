@@ -14,7 +14,7 @@ private:
     Date birth;
 
 public:
-    Client(const string &name, const Date &birth);
+    Client(const string &name, const Date &birth, const int number);
     Client(const Client &obj);
     ~Client();
 

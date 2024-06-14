@@ -13,13 +13,14 @@ using namespace std;
 
 class Loans {
 private:
+    int number;
     string type;
     float amount;
     float interestRate;
     int durationMonths;
 
 public:
-    Loans(const string& type, float amount, float interestRate, int durationMonths);
+    Loans(int number, const string& type, float amount, float interestRate, int durationMonths);
     Loans(const Loans &obj);
     ~Loans();
 

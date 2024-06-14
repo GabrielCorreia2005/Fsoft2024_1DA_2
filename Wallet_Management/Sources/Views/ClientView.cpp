@@ -10,6 +10,7 @@
 using namespace std;
 
 Client ClientView::getClient() {
+    int number;
     string name;
     Date birth;
 
@@ -19,7 +20,9 @@ Client ClientView::getClient() {
 
     birth = getDate(); // Get the birth date
 
-    return Client(name, birth);
+
+
+    return Client(name, birth, number);
 }
 
 Date ClientView::getDate() {

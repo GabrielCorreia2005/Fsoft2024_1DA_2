@@ -160,14 +160,27 @@ void Controller::runLoan() {
             }
             case 3: {
                 // Remove Loan (You might need a unique ID for loans)
-                string type = Utils::getString("Enter the loan type to remove:");
+                /*string type = Utils::getString("Enter the loan type to remove:");
                 float amount = Utils::getNumber("Enter the loan amount to remove:");
                 try {
                     model.getLoansContainer().remove(type, amount);
                     cout << "Loan removed successfully." << endl;
                 } catch (const exception &e) {
                     cerr << "Error: " << e.what() << endl;
+                }*/
+
+                int number = Utils::getNumber("Enter the client number");
+
+                LoansContainers container = this -> model.getLoansContainer();
+                Loans * ptr = container.getsingle(number);
+
+                try {
+                    this -> loanView.printLoan(ptr);
                 }
+                catch(exception &e){
+                    cerr << "Error: " << e.what() << endl;
+                }
+
                 break;
             }
             case 4: {
