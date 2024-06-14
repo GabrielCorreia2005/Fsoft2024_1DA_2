@@ -1,43 +1,47 @@
-//
-// Created by Gabriel on 13/05/2024.
-//
-
 #include "LoansContainers.h"
 #include "DuplicatedDataException.h"
+#include <algorithm>
+#include "Client.h" // Include Client.h here
 
-// Get a list of all loans
 list<Loans> LoansContainers::getAll() {
     return loans;
 }
 
 Loans* LoansContainers::getsingle(int number) {
-
-    if (loansmap.find(number) != loansmap.end()) {
-        return loansmap[number]; // Return a pointer to the Loans object
-    } else {
-        return nullptr; // Loan not found
+    for (const Loans& loan : loans) {
+        if (loan.getAccountNumber() == number) {
+            return const_cast<Loans*>(&loan);
+        }
     }
+    return nullptr;
 }
-// Get a specific loan by its type and amount (you might need a more unique identifier)
+
 Loans* LoansContainers::get(const string& type, float amount) {
     list<Loans>::iterator it = search(type, amount);
     if (it != loans.end()) {
-        return &(*it); // Return a pointer to the Loans object
+        return &(*it);
     } else {
-        return nullptr; // Loan not found
+        return nullptr;
     }
 }
 
-// Add a new loan to the container
-void LoansContainers::add(const Loans& obj) {
-    if (search(obj.getType(), obj.getAmount()) == loans.end()) {
-        loans.push_back(obj);
-    } else {
-        throw DuplicatedDataException("Loan with that type and amount already exists");
+void LoansContainers::add(const Loans& obj, Client* client) {
+    // Check if a loan with the same account number already exists for this client
+    for (const Loans& existingLoan : loans) {
+        if (existingLoan.getClient() == client && existingLoan.getAccountNumber() == obj.getAccountNumber()) {
+            throw DuplicatedDataException("Loan with this account number already exists for this client.");
+        }
     }
+
+    loans.push_back(obj);
+    loans.back().setClient(client);
 }
 
-// Remove a loan by its type and amount
+list<Loans>::iterator LoansContainers::searchByClient(int clientNumber) {
+    return find_if(loans.begin(), loans.end(),
+                   [clientNumber](const Loans& l) { return l.getClient() != nullptr && l.getClient()->getNumber() == clientNumber; });
+}
+
 void LoansContainers::remove(const string& type, float amount) {
     list<Loans>::iterator it = search(type, amount);
     if (it != loans.end()) {
@@ -45,26 +49,22 @@ void LoansContainers::remove(const string& type, float amount) {
     }
 }
 
-// Update the information of an existing loan
 void LoansContainers::update(const string& type, float amount, float interestRate, int durationMonths) {
     list<Loans>::iterator it = search(type, amount);
     if (it != loans.end()) {
-        it->setInterestRate(interestRate);
         it->setDurationMonths(durationMonths);
     }
 }
 
-// Check if a loan with a specific type and amount already exists
 bool LoansContainers::isThereLoan(const string& type, float amount) {
     return search(type, amount) != loans.end();
 }
 
-// Search for a loan by its type and amount
 list<Loans>::iterator LoansContainers::search(const string& type, float amount) {
     for (list<Loans>::iterator it = loans.begin(); it != loans.end(); ++it) {
         if (it->getType() == type && it->getAmount() == amount) {
             return it;
         }
     }
-    return loans.end(); // Loan not found
+    return loans.end();
 }

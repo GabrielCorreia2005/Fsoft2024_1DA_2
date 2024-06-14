@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int ClientsContainer::nextClientNumber = 1; // Initialize static counter
+// Initialize the static member
+int ClientsContainer::nextClientNumber = 1;
 
 // Get a list of all clients in the container.
 list<Client> ClientsContainer::getAll() {
@@ -23,16 +24,15 @@ Client* ClientsContainer::get(int number) {
 // Add a new client to the container.
 // Throws a DuplicatedDataException if a client with the same number already exists.
 void ClientsContainer::add(const Client& obj) {
-    if (!isThereClient(obj.getNumber())) {
-        Client newClient(obj);
-        newClient.setNumber(nextClientNumber++);
-        clients.push_back(newClient);
-        cout << "Client added successfully! Assigned client number: "
-             << newClient.getNumber() << endl; // For debugging
-    } else {
+    Client newClient(obj.getName(), obj.getBirth(), nextClientNumber); // Assign number here!
+    if (isThereClient(newClient.getNumber())) { // Now check for duplicates
         throw DuplicatedDataException("Client with this number already exists.");
+    } else {
+        clients.push_back(newClient);
+        nextClientNumber++; // Increment for the next client
     }
 }
+
 
 // Remove a client from the container by their unique number.
 void ClientsContainer::remove(int number) {
@@ -64,5 +64,6 @@ bool ClientsContainer::isThereClient(int number) {
 
 // Private function to search for a client by number
 list<Client>::iterator ClientsContainer::search(int number) {
-    return find(clients.begin(), clients.end(), number);
+    return find_if(clients.begin(), clients.end(),
+                   [number](const Client& c) { return c.getNumber() == number; });
 }

@@ -1,33 +1,22 @@
-//
-// Created by corre on 20/05/2024.
-//
-
 #include "Loans.h"
-#include "InvalidDataException.h"
+#include "Client.h"
 
-Loans::Loans(int number, const string& type, float amount, float interestRate, int durationMonths)
-        : number(number), type(type), amount(amount), interestRate(interestRate), durationMonths(durationMonths) {
-    if (amount <= 0) {
-        throw InvalidDataException("Loan amount must be greater than 0.");
-    }
-    if (interestRate < 0) {
-        throw InvalidDataException("Interest rate cannot be negative.");
-    }
-    if (durationMonths <= 0) {
-        throw InvalidDataException("Loan duration must be greater than 0 months.");
-    }
-}
+const float Loans::fixedInterestRate = 0.04f;
 
-Loans::Loans(const Loans &obj)
-        : type(obj.type), amount(obj.amount), interestRate(obj.interestRate), durationMonths(obj.durationMonths) {}
+Loans::Loans(int accountNumber, const string& type, float amount, int durationMonths, Client* client) :
+        accountNumber(accountNumber), type(type), amount(amount), durationMonths(durationMonths), client(client) {}
 
-Loans::~Loans() {}
+Loans::Loans(const Loans &obj) :
+        accountNumber(obj.accountNumber), type(obj.type), amount(obj.amount),
+        durationMonths(obj.durationMonths), client(obj.client) {}
 
-const string& Loans::getType() const {
+Loans::~Loans() = default;
+
+const string &Loans::getType() const {
     return type;
 }
 
-void Loans::setType(const string& type) {
+void Loans::setType(const string &type) {
     Loans::type = type;
 }
 
@@ -36,21 +25,11 @@ float Loans::getAmount() const {
 }
 
 void Loans::setAmount(float amount) {
-    if (amount <= 0) {
-        throw InvalidDataException("Loan amount must be greater than 0.");
-    }
     Loans::amount = amount;
 }
 
-float Loans::getInterestRate() const {
-    return interestRate;
-}
-
-void Loans::setInterestRate(float interestRate) {
-    if (interestRate < 0) {
-        throw InvalidDataException("Interest rate cannot be negative.");
-    }
-    Loans::interestRate = interestRate;
+float Loans::getFixedInterestRate() {
+    return fixedInterestRate;
 }
 
 int Loans::getDurationMonths() const {
@@ -58,13 +37,21 @@ int Loans::getDurationMonths() const {
 }
 
 void Loans::setDurationMonths(int durationMonths) {
-    if (durationMonths <= 0) {
-        throw InvalidDataException("Loan duration must be greater than 0 months.");
-    }
     Loans::durationMonths = durationMonths;
 }
 
-bool Loans::operator==(const Loans& rhs) const {
-    return type == rhs.type && amount == rhs.amount;
+int Loans::getAccountNumber() const {
+    return accountNumber;
 }
 
+Client* Loans::getClient() const {
+    return client;
+}
+
+void Loans::setClient(Client* client) {
+    Loans::client = client;
+}
+
+bool Loans::operator==(const Loans &rhs) const {
+    return accountNumber == rhs.accountNumber && client == rhs.client;
+}

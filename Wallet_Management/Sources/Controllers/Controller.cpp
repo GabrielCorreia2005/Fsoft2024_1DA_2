@@ -4,7 +4,8 @@
 
 #include "Controller.h"
 #include "Utils.h"
-#include <iostream> // For input/output
+#include <iostream>
+
 
 using namespace std;
 
@@ -136,19 +137,25 @@ void Controller::runClient() {
 
 
 void Controller::runLoan() {
-    int choice;
+    int option;
     do {
-        choice = view.menuLoans(); // Display the Loans menu (you need to define this in View.h/View.cpp)
-
-        switch (choice) {
-            case 1: {
-                // Add Loan
-                Loans loan = loanView.getLoan();
-                try {
-                    model.getLoansContainer().add(loan);
-                    cout << "Loan added successfully." << endl;
-                } catch (DuplicatedDataException &e) {
-                    cerr << "Error: " << e.what() << endl;
+        option = view.menuLoans();
+        switch (option) {
+            case 1: { // Acquire Loan
+                int AccountNumber = Utils::getNumber("Enter account number: ");
+                Client* client = model.getClientContainer().get(AccountNumber);
+                if (client) {
+                    try {
+                        Loans loan = loanView.getLoan(AccountNumber, client);
+                        model.getLoansContainer().add(loan, client);
+                        cout << "Loan added successfully." << endl;
+                    }catch (const InvalidDataException& e) {
+                        cerr << "Error: " << static_cast<InvalidDataException&>(const_cast<InvalidDataException &>(e)).what() << endl;
+                    } catch (const DuplicatedDataException& e) {
+                        cerr << "Error: " << static_cast<DuplicatedDataException&>(const_cast<DuplicatedDataException &>(e)).what() << " duplicated!!" << endl;
+                    }
+                } else {
+                    cout << "Client not found." << endl;
                 }
                 break;
             }
@@ -158,29 +165,20 @@ void Controller::runLoan() {
                 loanView.printLoans(loans);
                 break;
             }
-            case 3: {
-                // Remove Loan (You might need a unique ID for loans)
-                /*string type = Utils::getString("Enter the loan type to remove:");
-                float amount = Utils::getNumber("Enter the loan amount to remove:");
-                try {
-                    model.getLoansContainer().remove(type, amount);
-                    cout << "Loan removed successfully." << endl;
-                } catch (const exception &e) {
-                    cerr << "Error: " << e.what() << endl;
-                }*/
-
-                int number = Utils::getNumber("Enter the client number");
-
-                LoansContainers container = this -> model.getLoansContainer();
-                Loans * ptr = container.getsingle(number);
-
-                try {
-                    this -> loanView.printLoan(ptr);
+            case 3: { // Monitor Loan
+                int clientNumber = Utils::getNumber("Enter the client number: ");
+                Client *client = model.getClientContainer().get(clientNumber);
+                if (client) {
+                    list<Loans> clientLoans;
+                    for (const Loans &loan: model.getLoansContainer().getAll()) {
+                        if (loan.getClient() == client) {
+                            clientLoans.push_back(loan);
+                        }
+                    }
+                    loanView.printLoans(clientLoans); // Print loans associated with the client
+                } else {
+                    cout << "Client not found." << endl;
                 }
-                catch(exception &e){
-                    cerr << "Error: " << e.what() << endl;
-                }
-
                 break;
             }
             case 4: {
@@ -203,7 +201,7 @@ void Controller::runLoan() {
             default:
                 cerr << "Invalid choice. Please try again." << endl;
         }
-    } while (choice != 0);
+    } while (option != 0);
 }
 
 void Controller::runTransactions() {

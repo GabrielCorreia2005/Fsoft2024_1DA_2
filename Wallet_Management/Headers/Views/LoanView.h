@@ -1,18 +1,15 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
+// LoanView.h
 #ifndef FSOFT_PROJECT_LOANVIEW_H
 #define FSOFT_PROJECT_LOANVIEW_H
 
-#include <list>  // Add this line
+#include <list>
 #include "Loans.h"
 
 class LoanView {
 public:
-    Loans getLoan();
+    Loans getLoan(int accountNumber, Client* client); // Add client to getLoan
     void printLoan(Loans *loan);
     void printLoans(list<Loans> &loans);
 };
 
-#endif //FSOFT_PROJECT_LOANVIEW_HANVIEW_H
+#endif //FSOFT_PROJECT_LOANVIEW_H
