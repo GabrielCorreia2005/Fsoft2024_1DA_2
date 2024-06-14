@@ -87,13 +87,12 @@ void Controller::runClient() {
     do {
         option = view.menuClient();
         switch (option) {
-            case 1: {
-                // Add Client
-                Client client = clientView.getClient();
+            case 1: {  // Create Account
+                Client client = clientView.getClient(); // Get the client data with validation
                 try {
                     model.getClientContainer().add(client);
                     cout << "Client added successfully." << endl;
-                } catch (DuplicatedDataException e) {
+                } catch (DuplicatedDataException &e) {
                     cerr << "Error: " << e.what() << endl;
                 }
                 break;

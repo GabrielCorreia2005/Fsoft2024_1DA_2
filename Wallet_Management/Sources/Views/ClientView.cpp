@@ -9,53 +9,28 @@
 
 using namespace std;
 
+Client ClientView::getClient() {
+    string name;
+    Date birth;
+
+    do {
+        name = Utils::getString("Name:");
+    } while (!Client::isNameValid(name)); // Validate name immediately
+
+    birth = getDate(); // Get the birth date
+
+    return Client(name, birth);
+}
+
 Date ClientView::getDate() {
     int day, month, year;
-    bool validDate = false;
-
-    while (!validDate) {
-        cout << " Date" << endl;
+    do {
         day = Utils::getNumber("Day:");
         month = Utils::getNumber("Month:");
         year = Utils::getNumber("Year:");
+    } while (!Date::isValid(day, month, year));
 
-        try {
-            Date tempDate(day, month, year); // Try creating a Date object
-            validDate = true; // If successful, date is valid
-            return tempDate;   // Return the valid date
-        } catch (InvalidDataException &e) {
-            cout << e.what() << endl; // Print the exception message
-        }
-    }
-}
-
-Client ClientView:: getClient()
-{
-    Date birthday;
-    Client Client("Temporary Name", birthday);
-
-    bool flag = false;
-
-    do
-    {
-        try
-        {
-            flag = false;
-
-            cout << "Client" << endl;
-
-            string name = Utils::getString("Name");
-            birthday = getDate();
-
-            Client.setName(name);
-            Client.setBirth(birthday);
-        }catch(InvalidDataException &e)
-        {
-            flag = true;
-        }
-    }while(flag == true);
-
-    return Client;
+    return Date(day, month, year);
 }
 
 void ClientView::printClient(Client *client)

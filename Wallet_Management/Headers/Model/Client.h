@@ -12,7 +12,6 @@ private:
     string name;
     int number;
     Date birth;
-    bool isNameValid(const string& name);
 
 public:
     Client(const string &name, const Date &birth);
@@ -30,6 +29,8 @@ public:
 
     bool operator==(const Client &obj) const;
     bool operator==(int nr) const;
+
+    static bool isNameValid(const string& name);
 };
 
 #endif //WALLET_MANAGEMENT_CLIENT_H
