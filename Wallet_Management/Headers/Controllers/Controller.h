@@ -21,12 +21,12 @@ private:
     /*
     AcquireView acquireView;
     InsuranceView insuranceView;
-    LoanView loanView;
+
     TransactionsView transactionsView;*/
 
     AccountView accountView;
     ClientView clientView;
-
+    LoanView loanView;
     // Private functions to handle specific modules
     void runAccount();
     void runClient();

@@ -41,7 +41,6 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/Utils.h \
  C:/msys64/mingw64/include/c++/13.2.0/string \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
@@ -93,9 +92,7 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/iostream \
- C:/msys64/mingw64/include/c++/13.2.0/ostream \
- C:/msys64/mingw64/include/c++/13.2.0/ios \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
  C:/msys64/mingw64/include/c++/13.2.0/exception \
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
@@ -103,6 +100,10 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/Utils.h \
+ C:/msys64/mingw64/include/c++/13.2.0/iostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ios \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ios_base.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \

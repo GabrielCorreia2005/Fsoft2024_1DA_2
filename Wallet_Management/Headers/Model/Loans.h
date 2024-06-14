@@ -2,26 +2,40 @@
 // Created by gvice on 20/05/2024.
 //
 
-#ifndef FSOFT_PROJECT_LOANVIEW_H
-#define FSOFT_PROJECT_LOANVIEW_H
+#ifndef WALLET_MANAGEMENT_LOANS_H
+#define WALLET_MANAGEMENT_LOANS_H
 
-#include <list>
-#include "Loans.h"
+#include <string>
+#include <list> // Add this line
+#include "InvalidDataException.h"
+
+using namespace std;
 
 class Loans {
+private:
+    string type;
+    float amount;
+    float interestRate;
+    int durationMonths;
+
 public:
-    // Get loan data from user input
-    Loans getLoan();
+    Loans(const string& type, float amount, float interestRate, int durationMonths);
+    Loans(const Loans &obj);
+    ~Loans();
 
-    // Print details of a single loan to the console
-    void printLoan(Loans *loan);
+    const string& getType() const;
+    void setType(const string& type);
 
-    // Print a list of loans to the console
-    void printLoans(list<Loans> &loans);
+    float getAmount() const;
+    void setAmount(float amount);
 
-    // You might want to add functions like:
-    // void printClientLoans(Client * client, list<Loans>& loans); // To print loans for a specific client
-    // Loans* selectLoan(list<Loans>& loans); // To allow user to select a loan from a list
+    float getInterestRate() const;
+    void setInterestRate(float interestRate);
+
+    int getDurationMonths() const;
+    void setDurationMonths(int durationMonths);
+
+    bool operator==(const Loans& rhs) const;
 };
 
-#endif //FSOFT_PROJECT_LOANVIEW_H
+#endif //WALLET_MANAGEMENT_LOANS_H H

@@ -45,7 +45,7 @@ Loans LoanView::getLoan() {
     return Loans(type, amount, interestRate, durationMonths);
 }
 
-void LoanView::printLoan(Loans *loan) {
+void LoanView::printLoan(Loans *loan) {  // Change parameter to const Loans*
     if (loan) {
         cout << "Loan Type: " << loan->getType() << endl;
         cout << "Amount: " << fixed << setprecision(2) << loan->getAmount() << endl;
@@ -63,7 +63,7 @@ void LoanView::printLoans(list<Loans> &loans) {
     }
 
     cout << "List of Loans:" << endl;
-    for (const Loans &loan : loans) {
+    for ( Loans &loan : loans) {
         printLoan(&loan);
         cout << "--------------------" << endl;
     }

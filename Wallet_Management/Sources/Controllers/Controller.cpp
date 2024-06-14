@@ -18,10 +18,9 @@ void Controller::run() {
 
         switch (choice) {
             case 1: runClient(); break;
-            case 2: runAccount(); break;
-            case 3: runLoan(); break;
-            case 4: runTransactions(); break;
-            case 5: runInsurance(); break;
+            case 2: runLoan(); break;
+            case 3: runTransactions(); break;
+            case 4: runInsurance(); break;
             case 0: cout << "Exiting...\n"; break;
             default: cout << "Invalid choice. Please try again.\n";
         }

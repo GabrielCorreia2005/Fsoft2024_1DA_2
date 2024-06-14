@@ -41,26 +41,17 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
- C:/msys64/mingw64/include/c++/13.2.0/exception \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
- C:/msys64/mingw64/include/stddef.h C:/msys64/mingw64/include/crtdefs.h \
- C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
- C:/msys64/mingw64/include/_mingw_mac.h \
- C:/msys64/mingw64/include/_mingw_secapi.h \
- C:/msys64/mingw64/include/vadefs.h \
- C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
- C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
- C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
  C:/msys64/mingw64/include/c++/13.2.0/string \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h \
  C:/msys64/mingw64/include/c++/13.2.0/cwchar \
- C:/msys64/mingw64/include/wchar.h \
+ C:/msys64/mingw64/include/wchar.h C:/msys64/mingw64/include/corecrt.h \
+ C:/msys64/mingw64/include/_mingw.h \
+ C:/msys64/mingw64/include/_mingw_mac.h \
+ C:/msys64/mingw64/include/_mingw_secapi.h \
+ C:/msys64/mingw64/include/vadefs.h \
+ C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/include/corecrt_stdio_config.h \
  C:/msys64/mingw64/include/corecrt_wstdlib.h \
  C:/msys64/mingw64/include/_mingw_off_t.h \
@@ -70,7 +61,8 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/13.2.0/clocale \
- C:/msys64/mingw64/include/locale.h C:/msys64/mingw64/include/stdio.h \
+ C:/msys64/mingw64/include/locale.h C:/msys64/mingw64/include/crtdefs.h \
+ C:/msys64/mingw64/include/stdio.h \
  C:/msys64/mingw64/include/sec_api/stdio_s.h \
  C:/msys64/mingw64/include/c++/13.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/13.2.0/cctype \
@@ -98,4 +90,14 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/c++/13.2.0/cerrno \
  C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
+ C:/msys64/mingw64/include/c++/13.2.0/exception \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
+ C:/msys64/mingw64/include/stddef.h \
+ C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h

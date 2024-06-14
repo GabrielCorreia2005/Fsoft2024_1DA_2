@@ -21,13 +21,14 @@ void WalletManagement::setName(const string &name)
     this ->name = name;
 }
 
+LoansContainers &WalletManagement::getLoansContainer() {
+    return loansContainer;
+}
 /*
 WalletManagement::WalletManagement(const char *obj) {
 }
 
-LoansContainers &WalletManagement::getLoansContainer() {
-    return loansContainer;
-}
+
 
 InsuranceContainer &WalletManagement::getInsuranceContainer() {
     return insuranceContainer;

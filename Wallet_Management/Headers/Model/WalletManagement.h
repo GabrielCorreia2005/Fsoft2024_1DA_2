@@ -15,7 +15,7 @@ class WalletManagement {
 private:
     string name;
     /*
-    LoansContainers loansContainer;
+
     InsuranceContainer insuranceContainer;
     TransactionsContainers transactionsContainer;
 
@@ -24,7 +24,7 @@ private:
 
     ClientsContainer clientsContainer;
     AccountsContainers accountsContainer;
-
+    LoansContainers loansContainer;
 public:
     // Constructors
     WalletManagement();
@@ -35,7 +35,7 @@ public:
     /*
       // Getters for the containers
 
-      LoansContainers &getLoansContainer();
+
       InsuranceContainer &getInsuranceContainer();
       TransactionsContainers &getTransactionsContainer();
 
@@ -43,7 +43,7 @@ public:
       */
     ClientsContainer &getClientContainer();
     AccountsContainers &getAccountsContainer();
-
+    LoansContainers &getLoansContainer();
 
 };
 
