@@ -8,7 +8,7 @@
 #include <list>
 #include "Loans.h"
 
-class LoanView {
+class Loans {
 public:
     // Get loan data from user input
     Loans getLoan();
