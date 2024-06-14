@@ -53,7 +53,7 @@ void Controller::runAccount() {
             }
             case 3:{
                 // Remove Account
-                int number = Utils::getNumber("Enter the account number to remove: ");
+                int number = Utils::getNumber("Enter the account number to remove");
                 try {
                     model.getAccountsContainer().remove(number);
                     cout << "Account removed successfully." << endl;
@@ -64,7 +64,7 @@ void Controller::runAccount() {
             }
             case 4:{
                 // Update Account (Example: Update balance)
-                int number = Utils::getNumber("Enter the account number to update: ");
+                int number = Utils::getNumber("Enter the account number to update");
                 float balance = Utils::getNumber("Enter the new balance: ");
                 try {
                     model.getAccountsContainer().update(number, balance);
@@ -106,7 +106,7 @@ void Controller::runClient() {
             }
             case 3: {
                 // Remove Client
-                int number = Utils::getNumber("Enter the client number to remove: ");
+                int number = Utils::getNumber("Enter the client number to remove");
                 try {
                     model.getClientContainer().remove(number);
                     cout << "Client removed successfully." << endl;
@@ -117,7 +117,7 @@ void Controller::runClient() {
             }
             case 4: {
                 // Update Client
-                int number = Utils::getNumber("Enter the client number to update: ");
+                int number = Utils::getNumber("Enter the client number to update");
                 string name = Utils::getString("Enter the new name: ");
                 Date birth = clientView.getDate();
                 try {
