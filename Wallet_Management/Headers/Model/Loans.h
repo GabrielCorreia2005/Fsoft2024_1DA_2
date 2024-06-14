@@ -1,26 +1,24 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_LOANS_H
 #define WALLET_MANAGEMENT_LOANS_H
 
 #include <string>
-#include <list> // Add this line
 #include "InvalidDataException.h"
 
 using namespace std;
 
+class Client; // Forward declaration of the Client class
+
 class Loans {
 private:
-    int number;
+    int accountNumber;
     string type;
     float amount;
-    float interestRate;
     int durationMonths;
+    static const float fixedInterestRate;
+    Client *client;
 
 public:
-    Loans(int number, const string& type, float amount, float interestRate, int durationMonths);
+    Loans(int accountNumber, const string& type, float amount, int durationMonths, Client* client);
     Loans(const Loans &obj);
     ~Loans();
 
@@ -30,13 +28,17 @@ public:
     float getAmount() const;
     void setAmount(float amount);
 
-    float getInterestRate() const;
-    void setInterestRate(float interestRate);
+    static float getFixedInterestRate();
 
     int getDurationMonths() const;
     void setDurationMonths(int durationMonths);
 
+    int getAccountNumber() const;
+
+    Client* getClient() const;
+    void setClient(Client* client);
+
     bool operator==(const Loans& rhs) const;
 };
 
-#endif //WALLET_MANAGEMENT_LOANS_H H
+#endif //WALLET_MANAGEMENT_LOANS_H

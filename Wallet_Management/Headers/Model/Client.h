@@ -4,6 +4,7 @@
 #include <string>
 #include "Date.h"
 #include "InvalidDataException.h"
+#include "Loans.h"  // Include Loans.h
 
 using namespace std;
 
