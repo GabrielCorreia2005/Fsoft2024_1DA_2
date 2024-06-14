@@ -145,5 +145,6 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/AccountsContainers.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Accounts.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/LoansContainers.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/InsuranceContainer.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/TransactionsContainers.h

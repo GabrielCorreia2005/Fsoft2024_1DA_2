@@ -137,7 +137,61 @@ void Controller::runClient() {
 
 
 void Controller::runLoan() {
-    // ... implement logic for managing loans
+    int choice;
+    do {
+        choice = view.menuLoans(); // Display the Loans menu (you need to define this in View.h/View.cpp)
+
+        switch (choice) {
+            case 1: {
+                // Add Loan
+                Loans loan = loanView.getLoan();
+                try {
+                    model.getLoansContainer().add(loan);
+                    cout << "Loan added successfully." << endl;
+                } catch (DuplicatedDataException &e) {
+                    cerr << "Error: " << e.what() << endl;
+                }
+                break;
+            }
+            case 2: {
+                // List Loans
+                list<Loans> loans = model.getLoansContainer().getAll();
+                loanView.printLoans(loans);
+                break;
+            }
+            case 3: {
+                // Remove Loan (You might need a unique ID for loans)
+                string type = Utils::getString("Enter the loan type to remove:");
+                float amount = Utils::getNumber("Enter the loan amount to remove:");
+                try {
+                    model.getLoansContainer().remove(type, amount);
+                    cout << "Loan removed successfully." << endl;
+                } catch (const exception &e) {
+                    cerr << "Error: " << e.what() << endl;
+                }
+                break;
+            }
+            case 4: {
+                // Update Loan (Example: Update interest rate or duration)
+                string type = Utils::getString("Enter the loan type to update:");
+                float amount = Utils::getNumber("Enter the loan amount to update:");
+                float newInterestRate = Utils::getNumber("Enter the new interest rate:");
+                int newDurationMonths = Utils::getNumber("Enter the new loan duration (in months):");
+
+                try {
+                    model.getLoansContainer().update(type, amount, newInterestRate, newDurationMonths);
+                    cout << "Loan updated successfully." << endl;
+                } catch (const exception &e) {
+                    cerr << "Error: " << e.what() << endl;
+                }
+                break;
+            }
+            case 0:
+                break; // Exit the Loan Management menu
+            default:
+                cerr << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 0);
 }
 
 void Controller::runTransactions() {
