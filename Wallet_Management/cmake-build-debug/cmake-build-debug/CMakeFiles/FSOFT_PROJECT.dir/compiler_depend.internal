@@ -1623,6 +1623,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/W
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/TransactionsView.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/Utils.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Views/View.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Mock/MockData.h
 
 CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Mock/MockData.cpp
@@ -1795,6 +1796,7 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/Client.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/ClientsContainer.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/Date.h
+ D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/InsuranceContainer.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h
  D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/Headers/Model/LoansContainers.h

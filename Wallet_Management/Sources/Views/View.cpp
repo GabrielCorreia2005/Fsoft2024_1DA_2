@@ -12,21 +12,18 @@ using namespace std;
 View::View(){
 }
 
-int View::menuClient()
-{
-    int op = -1;
+int View::menuClient() {
+    cout << "\n**************** Menu Client ****************" << endl;
+    cout << "1- Create Account" << endl;
+    cout << "2- List" << endl;
+    cout << "3- Account Information" << endl; // New option
+    cout << "4- Delete" << endl;
+    cout << "0- Exit" << endl;
+    cout << "Option: ";
 
-    do{
-        cout << "\n**************** Menu Client ****************\n";
-        cout << "1- Create Account\n";
-        cout << "2- List\n";
-        cout << "3- Delete\n";
-
-        cout << "0- Exit\n";
-        op = Utils::getNumber("Option");
-
-    }while(op < 0 || op > 3);
-    return op;
+    int option;
+    cin >> option;
+    return option;
 }
 
 int View::menuBank()

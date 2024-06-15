@@ -34,7 +34,7 @@ private:
     void runTransactions();
     void runInsurance();
     void runBank();
-
+    void runAccountInformation(); // New method
 
     WalletManagement model;
 

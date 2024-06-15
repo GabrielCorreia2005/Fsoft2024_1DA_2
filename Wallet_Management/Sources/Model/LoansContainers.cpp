@@ -26,15 +26,10 @@ Loans* LoansContainers::get(const string& type, float amount) {
 }
 
 void LoansContainers::add(const Loans& obj, Client* client) {
-    // Check if a loan with the same account number already exists for this client
-    for (const Loans& existingLoan : loans) {
-        if (existingLoan.getClient() == client && existingLoan.getAccountNumber() == obj.getAccountNumber()) {
-            throw DuplicatedDataException("Loan with this account number already exists for this client.");
-        }
+    if (isThereLoan(obj.getType(), obj.getAmount())) {
+        throw DuplicatedDataException("Error: [Loan with this account number already exists for this client.] duplicated!!");
     }
-
     loans.push_back(obj);
-    loans.back().setClient(client);
 }
 
 list<Loans>::iterator LoansContainers::searchByClient(int clientNumber) {
