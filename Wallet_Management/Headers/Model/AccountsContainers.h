@@ -6,11 +6,11 @@
 
 class AccountsContainers {
 private:
-    list<Accounts> accounts;
-
+    std::list<Accounts> accounts;
 public:
     list<Accounts> getAll();
-    Accounts* get(int nr); // Declaration ONLY - No function body here
+    Accounts* get(int nr);
+    ~AccountsContainers(); // Declaration only
     void add(const Accounts &obj);
     void remove(int nr);
     void update(int nr, float balance);

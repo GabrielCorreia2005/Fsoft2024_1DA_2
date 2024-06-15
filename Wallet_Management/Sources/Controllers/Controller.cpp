@@ -255,14 +255,7 @@ Client* Controller::selectClient() {
     }
 }
 
-Accounts* AccountsContainers::get(int nr) {
-    for (Accounts& account : accounts) {
-        if (account.getNr() == nr) {
-            return &account;
-        }
-    }
-    return nullptr;
-}
+
 
 void Controller::runTransactions() {
     // ... implement logic for managing transactions
