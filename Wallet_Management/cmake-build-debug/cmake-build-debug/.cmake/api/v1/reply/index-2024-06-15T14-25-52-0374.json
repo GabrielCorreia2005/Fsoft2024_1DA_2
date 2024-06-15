@@ -1,0 +1,116 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "MinGW Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.28"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 28,
+			"patch" : 1,
+			"string" : "3.28.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-ce8ec85bc257343b2fc8.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		{
+<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
+			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
+========
+			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
+>>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-140f48578653d0255cbc.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
+			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
+========
+			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
+>>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-ce8ec85bc257343b2fc8.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		"toolchains-v1" : 
+		{
+			"jsonFile" : "toolchains-v1-140f48578653d0255cbc.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	}
+}
