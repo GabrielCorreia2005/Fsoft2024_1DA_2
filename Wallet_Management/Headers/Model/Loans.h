@@ -28,7 +28,7 @@ public:
     float getAmount() const;
     void setAmount(float amount);
 
-    static float getFixedInterestRate();
+    float getFixedInterestRate() const;
 
     int getDurationMonths() const;
     void setDurationMonths(int durationMonths);

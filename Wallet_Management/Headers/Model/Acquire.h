@@ -24,11 +24,11 @@ public:
     void setInsurance(Insurance insurance);
 
     const Loans getLoans() const;
-    void setLoans(Loans::loans);
+
+    void setLoans(Loans *loans);
 
     bool operator==(const Acquire &rhs) const;
 
-    void setLoans(Loans *loans);
 
     void setInsurance(Insurance *insurance);
 };

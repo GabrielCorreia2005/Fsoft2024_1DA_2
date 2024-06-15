@@ -25,9 +25,7 @@ void InsuranceView::printInsurance(Insurance insurance) {
 }
 
 void InsuranceView::printInsurances(list<Insurance> &insurances) {
-    cout << "=== List of Insurances ===" << endl;
-    for (const Insurance& insurance : insurances) {
-        printInsurance(insurance);
+    for (Insurance &insurance : insurances) {
+        printInsurance(&insurance);
     }
-    cout << "=========================" << endl;
 }

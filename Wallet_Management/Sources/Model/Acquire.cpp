@@ -26,9 +26,6 @@ void Acquire::setInsurance(Insurance insurance) {
     this->insurance = insurance;
 }
 
-void Acquire::setLoans(Loans loans) {
-    this->loans = loans;
-}
 
 // Equality Operator (if needed)
 bool Acquire::operator==(const Acquire &rhs) const {
@@ -52,9 +49,6 @@ void Acquire::setInsurance(Insurance *insurance) {
 
 void Acquire::setLoans(Loans *loans) {
     if (isPointerNotNull(loans)) {
-        this->loans = *loans;  // Assign the value pointed to
-    } else {
-        // Handle the nullptr case (e.g., throw an exception or set a default)
-        std::cerr << "Error: Null pointer passed to setLoans" << std::endl;
+        this->loans = *loans;
     }
 }

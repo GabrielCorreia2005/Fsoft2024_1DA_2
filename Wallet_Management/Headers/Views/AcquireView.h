@@ -17,6 +17,9 @@ public:
     // Print the details of a single Acquire object
     void printAcquire(Acquire *acquire);
 
+    Insurance getInsuranceOnly(InsuranceContainer &insurances);
+    Loans getLoanOnly(LoansContainers &loans);
+
     // void printAcquires(list<Acquire>& acquires); // To print a list of Acquire objects
 };
 
