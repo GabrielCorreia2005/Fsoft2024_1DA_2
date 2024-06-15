@@ -11,7 +11,6 @@ using namespace std;
 class Client {
 private:
     string name;
-    int number;
     Date birth;
 
 public:

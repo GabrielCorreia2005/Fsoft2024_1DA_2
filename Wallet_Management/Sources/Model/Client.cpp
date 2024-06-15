@@ -1,83 +1,64 @@
 #include "Client.h"
 #include <iostream>
-#include <regex> // Include the regular expressions library
-#include <ctime>
+#include "InvalidDataException.h"
+#include "ClientsContainer.h" // Add this include
 
 using namespace std;
 
-Client::Client(const string &name, const Date &birth, const int number):
-        name(name), birth(birth), number(number) { // Initialize number here!
-    if (!isNameValid(name))
-        throw InvalidDataException("The name is invalid, you need to use only letters.");
-    // ... (other initialization or validation logic if needed) ...
+Client::Client(const string &name, const Date &birth, const int number) : //  Remove 'number' argument
+        name(name), birth(birth)
+{
+    if(!isNameValid(name)){
+        throw InvalidDataException("Name is invalid");
+    }
 }
 
-Client::Client(const Client &obj) {
-    this->name = obj.name;
-    this->number = obj.number;
-    this->birth = obj.birth;
+Client::Client(const Client &obj) :
+        name(obj.name), birth(obj.birth)
+{
+    // Remove 'number' assignment
 }
 
-Client::~Client() = default;
+Client::~Client() {
 
-const string &Client::getName() const {
+}
+
+const string& Client::getName() const {
     return name;
 }
 
 void Client::setName(const string &name) {
-    if (!isNameValid(name))
-        throw InvalidDataException("The name is invalid, you need to use only letters.");
-    Client::name = name;
+    if(!isNameValid(name)){
+        throw InvalidDataException("Name is invalid");
+    }
+    this->name = name;
 }
 
-int Client::getNumber() const {
-    return number;
-}
+// Remove getNumber() and setNumber()
 
-void Client::setNumber(int number) {
-    Client::number *= number;
-}
-
-const Date &Client::getBirth() const {
+const Date& Client::getBirth() const {
     return birth;
 }
 
 void Client::setBirth(const Date &birth) {
-    Client::birth = birth;
+    this->birth = birth;
 }
-
-bool Client::isNameValid(const string& name) {
-    // Check for minimum length (3 characters)
-    if (name.length() < 3) {
-        cout << "Invalid name. Name must be at least 3 characters long." << endl;
-        return false;
-    }
-
-    // Check for maximum length (100 characters)
-    if (name.length() > 100) {
-        cout << "Invalid name. Name must be no more than 100 characters long." << endl;
-        return false;
-    }
-
-    // Regular expression for allowing letters, spaces, and common accents
-    regex namePattern("^[a-zA-Z\\sáàâãäåçéèêëíìîïñóòôõöúùûüýÿÁÀÂÃÄÅÇÉÈÊËÍÌÎÏÑÓÒÔÕÖÚÙÛÜÝ]+$");
-
-    // Check if the name matches the pattern
-    if (!regex_match(name, namePattern)) {
-        cout << "Invalid name. Name can only contain letters, spaces, and common accents." << endl;
-        return false;
-    }
-
-    return true; // Name is valids
-}
-
-
-
 
 bool Client::operator==(const Client &obj) const {
-    return (number == obj.number);
+    // Compare only the 'name' now
+    return (name == obj.name);
 }
 
-bool Client::operator==(int nr) const {
-    return (number == nr);
+// Remove operator==(int)
+
+bool Client::isNameValid(const string &name) {
+    // Your name validation logic here
+    // For example:
+    if (name.empty()) {
+        return false;
+    }
+    // Additional checks (e.g., only letters and spaces)
+    return true;
 }
+
+int ClientsContainer::nextClientNumber = 1; // Now ClientsContainer is known

@@ -8,30 +8,17 @@
 #include <list>
 #include "Accounts.h"
 
-using namespace std;
-
 class AccountsContainers {
 private:
     list<Accounts> accounts;
 
 public:
-    // Get a list of all accounts
     list<Accounts> getAll();
-
-    // Get a specific account by account number
-    Accounts* get(int nr);
-
-    // Add a new account to the container
+    Accounts* get(int nr); // Declaration only
     void add(const Accounts &obj);
-
-    // Remove an account by account number
-    void remove(int nr);
-
-    // Update the balance of an existing account
+    void remove(int nr); // Remove account by account number
     void update(int nr, float balance);
-
     void setBalance(float &balance);
 };
-
 
 #endif //WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H

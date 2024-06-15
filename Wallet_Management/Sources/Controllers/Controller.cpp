@@ -153,10 +153,6 @@ void Controller::runLoan() {
     } while (option != 0);
 }
 
-// In Controller.cpp
-#include "Controller.h"
-#include "Utils.h"
-#include "WalletManagement.h"
 
 void Controller::runAccount() {
     int option;
@@ -248,14 +244,24 @@ void Controller::runAccount() {
 }
 
 Client* Controller::selectClient() {
-    int clientNumber = Utils::getNumber("Enter Client Number: ");
+    int accountNumber = Utils::getNumber("Enter account number: ");
+    Accounts* account = model.getAccountsContainer().get(accountNumber);
 
-    Client* client = model.getClientContainer().get(clientNumber);
-    if (client == nullptr) {
-        cout << "Client not found!" << endl;
+    if (account != nullptr) {
+        return account->getClient();
+    } else {
+        cout << "Account not found." << endl;
         return nullptr;
     }
-    return client;
+}
+
+Accounts* AccountsContainers::get(int nr) {
+    for (Accounts& account : accounts) {
+        if (account.getNr() == nr) {
+            return &account;
+        }
+    }
+    return nullptr;
 }
 
 void Controller::runTransactions() {

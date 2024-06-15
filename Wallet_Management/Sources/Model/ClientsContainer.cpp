@@ -4,7 +4,6 @@
 using namespace std;
 
 // Initialize the static member
-int ClientsContainer::nextClientNumber = 1;
 
 // Get a list of all clients in the container.
 list<Client> ClientsContainer::getAll() {

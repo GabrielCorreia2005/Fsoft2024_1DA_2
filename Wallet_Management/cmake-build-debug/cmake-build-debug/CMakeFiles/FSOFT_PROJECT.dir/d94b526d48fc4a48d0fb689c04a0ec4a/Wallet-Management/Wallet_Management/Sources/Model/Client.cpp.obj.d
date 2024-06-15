@@ -135,52 +135,11 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
- C:/msys64/mingw64/include/c++/13.2.0/regex \
- C:/msys64/mingw64/include/c++/13.2.0/bitset \
- C:/msys64/mingw64/include/c++/13.2.0/locale \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.h \
- C:/msys64/mingw64/include/c++/13.2.0/ctime \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_conv.h \
- C:/msys64/mingw64/include/c++/13.2.0/sstream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/stack \
- C:/msys64/mingw64/include/c++/13.2.0/deque \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_deque.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/deque.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_stack.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/shared_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/ClientsContainer.h \
+ C:/msys64/mingw64/include/c++/13.2.0/list \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_list.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/allocated_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/unique_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/tuple \
- C:/msys64/mingw64/include/c++/13.2.0/ext/concurrence.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/std_function.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tree.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_map.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_constants.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_error.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_automaton.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_automaton.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_scanner.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_scanner.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_compiler.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_compiler.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_executor.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/regex_executor.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h
