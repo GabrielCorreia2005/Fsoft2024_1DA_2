@@ -33,8 +33,8 @@ private:
     void runBank();
     void runAccount(); // New method to handle account options
     void runAccountInformation(); // New method
-    InsuranceView insuranceView;
-    AcquireView acquireView;
+    //InsuranceView insuranceView;
+    //AcquireView acquireView;
 
     WalletManagement model;
 

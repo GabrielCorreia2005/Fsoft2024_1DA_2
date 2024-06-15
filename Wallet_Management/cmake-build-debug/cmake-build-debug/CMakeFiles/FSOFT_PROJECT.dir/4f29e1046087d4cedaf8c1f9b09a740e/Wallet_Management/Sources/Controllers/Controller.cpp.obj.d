@@ -3,15 +3,53 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Controllers/Controller.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/View.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/AcquireView.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Acquire.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h \
- C:/msys64/mingw64/include/c++/13.2.0/string \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/AccountView.h \
+ C:/msys64/mingw64/include/c++/13.2.0/list \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h \
+ C:/msys64/mingw64/include/c++/13.2.0/type_traits \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/concept_check.h \
+ C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/ptr_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/predefined_ops.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bit \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/new \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/memoryfwd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/range_access.h \
+ C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_list.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/alloc_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
+ C:/msys64/mingw64/include/c++/13.2.0/tuple \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/invoke.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Accounts.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Client.h \
+ C:/msys64/mingw64/include/c++/13.2.0/string \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h \
  C:/msys64/mingw64/include/c++/13.2.0/cwchar \
@@ -27,16 +65,6 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/_mingw_stat64.h \
  C:/msys64/mingw64/include/swprintf.inl \
  C:/msys64/mingw64/include/sec_api/wchar_s.h \
- C:/msys64/mingw64/include/c++/13.2.0/type_traits \
- C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/new \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/13.2.0/clocale \
@@ -48,30 +76,10 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/ctype.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream_insert.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/concept_check.h \
- C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/ptr_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_function.h \
  C:/msys64/mingw64/include/c++/13.2.0/backward/binders.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h \
- C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/predefined_ops.h \
- C:/msys64/mingw64/include/c++/13.2.0/bit \
  C:/msys64/mingw64/include/c++/13.2.0/bits/refwrap.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/invoke.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/range_access.h \
- C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/alloc_traits.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h \
  C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
  C:/msys64/mingw64/include/stdlib.h \
@@ -90,7 +98,10 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Date.h \
+ C:/msys64/mingw64/include/c++/13.2.0/iostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ios \
  C:/msys64/mingw64/include/c++/13.2.0/exception \
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
@@ -98,24 +109,6 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/InsuranceContainer.h \
- C:/msys64/mingw64/include/c++/13.2.0/list \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_list.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/allocated_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/LoansContainers.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/AccountView.h \
- C:/msys64/mingw64/include/c++/13.2.0/tuple \
- C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Accounts.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Client.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Date.h \
- C:/msys64/mingw64/include/c++/13.2.0/iostream \
- C:/msys64/mingw64/include/c++/13.2.0/ostream \
- C:/msys64/mingw64/include/c++/13.2.0/ios \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ios_base.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
@@ -152,11 +145,13 @@ CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/istream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/ClientsContainer.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/ClientView.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Client.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/InsuranceView.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/LoanView.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Loans.h \
  D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Views/TransactionsView.h \
