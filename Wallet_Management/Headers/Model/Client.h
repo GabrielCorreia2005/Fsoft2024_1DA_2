@@ -11,8 +11,9 @@ using namespace std;
 class Client {
 private:
     string name;
+    int number;
     Date birth;
-    int number; // Declare 'number' as a private member variable
+
 public:
     Client(const string &name, const Date &birth, const int number);
     Client(const Client &obj);

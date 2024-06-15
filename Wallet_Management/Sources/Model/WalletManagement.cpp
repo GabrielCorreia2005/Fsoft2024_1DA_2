@@ -24,15 +24,6 @@ void WalletManagement::setName(const string &name)
 LoansContainers &WalletManagement::getLoansContainer() {
     return loansContainer;
 }
-
-WalletManagement::~WalletManagement() {
-    // Make sure to call the destructors of the containers
-    // if they have any resources to clean up.
-    // Example:
-    clientsContainer.~ClientsContainer();
-    accountsContainer.~AccountsContainers();
-    loansContainer.~LoansContainers();
-}
 /*
 WalletManagement::WalletManagement(const char *obj) {
 }

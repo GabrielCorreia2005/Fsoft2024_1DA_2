@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug"
+CMAKE_SOURCE_DIR = C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Man
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,677 +128,677 @@ FSOFT_PROJECT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/build
 .PHONY : FSOFT_PROJECT/fast
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.obj: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.obj
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.i: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.i
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.i
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.s: 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.cpp.s
+7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.s
+.PHONY : 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.obj: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.i: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.s: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.cpp.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.obj: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.i: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.s: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.cpp.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.obj: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.i: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.s: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.cpp.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.obj: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.obj
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.i: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.i
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.s: 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.cpp.s
+9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
+.PHONY : 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.obj: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.obj
 
 # target to build an object file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.i: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.i
 
 # target to preprocess a source file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
 
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.s: 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.s
 
 # target to generate assembly for a file
-4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
-.PHONY : 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
 
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.obj: D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
 
 # target to build an object file
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
 
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.i: D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.i
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.i
 
 # target to preprocess a source file
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.i
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
 
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.s: D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.s
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.s
 
 # target to generate assembly for a file
-D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.s
-.PHONY : D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp.s
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.obj: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj
 
 # target to build an object file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.obj
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.i: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.i
 
 # target to preprocess a source file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.i
 
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.s: d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.s
 
 # target to generate assembly for a file
-d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
-.PHONY : d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp.s
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.obj
 
 # target to build an object file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.obj
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.i
 
 # target to preprocess a source file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.i
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.s
 
 # target to generate assembly for a file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp.s
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.obj: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.obj
 
 # target to build an object file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.obj
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.obj
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.obj
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.obj
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.i: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.i: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.i
 
 # target to preprocess a source file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.i
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.i
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.i
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.i
 
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.s: eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.s: C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.s
 
 # target to generate assembly for a file
-eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.s
-.PHONY : eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.cpp.s
+C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FSOFT_PROJECT.dir\build.make CMakeFiles/FSOFT_PROJECT.dir/C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.s
+.PHONY : C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp.s
 
 # Help Target
 help:
@@ -809,90 +809,90 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... FSOFT_PROJECT
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Controllers/Controller.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/AccountsContainers.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/ClientsContainer.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Insurance.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/InsuranceContainer.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/LoansContainers.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/Transactions.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/TransactionsContainers.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Model/WalletManagement.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AccountView.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/AcquireView.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/ClientView.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/InsuranceView.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management/Sources/Views/TransactionsView.s
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.obj
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.i
-	@echo ... 4f29e1046087d4cedaf8c1f9b09a740e/Wallet_Management_Saver/Sources/Model/WalletManagement.s
-	@echo ... D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.obj
-	@echo ... D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.i
-	@echo ... D_/ISEP/Fundamenos_de_software/Wallet_Management2/Wallet-Management/Wallet_Management/main.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Mock/MockData.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Client.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Date.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Model/Loans.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/Utils.s
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.obj
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.i
-	@echo ... d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/Wallet_Management/Sources/Views/View.s
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.obj
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.i
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DataConsistencyException.s
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.obj
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.i
-	@echo ... eb7e1068d0d1911dc886567a57b54014/Sources/Exceptions/DuplicateDataException.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.s
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.obj
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.i
+	@echo ... 7a62510ffd02f0164483f55442e46d3d/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.s
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.obj
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.i
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DataConsistencyException.s
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.obj
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.i
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/DuplicateDataException.s
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.obj
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.i
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Exceptions/InvalidDataExcption.s
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.obj
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.i
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management/Sources/Model/TransactionsContainers.s
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.obj
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.i
+	@echo ... 9a71d8adbe00d39025f0ab6f6c66e91d/Wallet_Management_Saver/Sources/Model/WalletManagement.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.s
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.obj
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.i
+	@echo ... C_/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.s
 .PHONY : help
 
 

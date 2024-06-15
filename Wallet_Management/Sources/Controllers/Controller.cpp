@@ -4,15 +4,8 @@
 
 #include "Controller.h"
 #include "Utils.h"
-<<<<<<< HEAD
-
-
-#include "AccountView.h"
-
-=======
->>>>>>> parent of 5c509e1 (update)
 #include <iostream>
-#include "Accounts.h"
+
 
 using namespace std;
 
@@ -158,67 +151,6 @@ void Controller::runLoan() {
     } while (option != 0);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 5c509e1 (update)
-void Controller::runAccount() {
-    int choice = view.menuAccount();
-
-    switch (choice) {
-        case 1: { // Create Account
-            Client* client = selectClient();
-            if (client != nullptr) {
-                Accounts account = accountView.getAccount(model.getClientContainer());
-                account.setClient(client); // Call setClient on the 'account' object
-                model.getAccountsContainer().add(account);
-            }
-            break;
-        }
-<<<<<<< HEAD
-
-
-    } while (option != 0);
-}
-
-Client* Controller::selectClient() {
-    int accountNumber = Utils::getNumber("Enter account number: ");
-    Accounts* account = model.getAccountsContainer().get(accountNumber);
-
-    if (account != nullptr) {
-        return account->getClient();
-    } else {
-        cout << "Account not found." << endl;
-        return nullptr;
-
-=======
->>>>>>> parent of 5c509e1 (update)
-        case 2: {
-            int accountNumber = Utils::getNumber("Enter Account Number: ");
-            Accounts *account = model.getAccountsContainer().get(accountNumber);
-            if (account != nullptr) {
-                accountView.printAccountInformation(account);
-            } else {
-                cout << "Account not found." << endl;
-            }
-            break;
-        }
-        case 0:
-            return;
-        default:
-            cout << "Invalid choice." << endl;
-            break;
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 5c509e1 (update)
-    }
-}
-
-
-
-=======
->>>>>>> parent of 98b8e65 (update teste)
 void Controller::runTransactions() {
     // ... implement logic for managing transactions
 }

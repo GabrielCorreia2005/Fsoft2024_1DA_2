@@ -28,7 +28,7 @@ void Loans::setAmount(float amount) {
     Loans::amount = amount;
 }
 
-float Loans::getFixedInterestRate() const {
+float Loans::getFixedInterestRate() {
     return fixedInterestRate;
 }
 

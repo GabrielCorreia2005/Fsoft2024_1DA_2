@@ -12,12 +12,14 @@ Loans LoanView::getLoan(int accountNumber, Client* client) {
 }
 
 void LoanView::printLoan(Loans *loan) {
-    if (loan != nullptr) { // Make sure the pointer is valid
-        cout << "Account Number: " << loan->getAccountNumber() << endl;
-        cout << "Type: " << loan->getType() << endl;
+    if (loan != nullptr) {
+        cout << "Loan Type: " << loan->getType() << endl;
         cout << "Amount: " << loan->getAmount() << endl;
-        cout << "Duration (Months): " << loan->getDurationMonths() << endl;
-        cout << "Interest Rate: " << loan->getFixedInterestRate() * 100 << "%" << endl; // Access through the object pointer
+        cout << "Interest Rate: " << Loans::getFixedInterestRate() * 100 << "%" << endl;
+        cout << "Duration (months): " << loan->getDurationMonths() << endl;
+        cout << "--------------------" << endl;
+    } else {
+        cout << "Invalid Loan (nullptr)" << endl;
     }
 }
 

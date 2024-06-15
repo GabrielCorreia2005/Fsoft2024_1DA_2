@@ -6,21 +6,24 @@
 #include "ClientView.h"
 #include "Utils.h"
 #include "InvalidDataException.h"
-#include "ClientsContainer.h"
-
 
 using namespace std;
 
-// Keep only one definition of getClient()
-
 Client ClientView::getClient() {
-    string name = Utils::getString("Name: ");
-    Date birth = getDate();
-    int number = ClientsContainer::nextClientNumber; // Assign the next available number
+    int number;
+    string name;
+    Date birth;
+
+    do {
+        name = Utils::getString("Name:");
+    } while (!Client::isNameValid(name)); // Validate name immediately
+
+    birth = getDate(); // Get the birth date
+
+
 
     return Client(name, birth, number);
 }
-
 
 Date ClientView::getDate() {
     int day, month, year;

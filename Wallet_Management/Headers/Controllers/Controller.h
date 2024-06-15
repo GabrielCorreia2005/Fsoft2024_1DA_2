@@ -19,6 +19,8 @@ class Controller{
 private:
     View view;
     /*
+    AcquireView acquireView;
+    InsuranceView insuranceView;
 
     TransactionsView transactionsView;*/
 
@@ -32,8 +34,6 @@ private:
     void runInsurance();
     void runBank();
     void runAccountInformation(); // New method
-    //InsuranceView insuranceView;
-    //AcquireView acquireView;
 
     WalletManagement model;
 

@@ -1,26 +1,37 @@
+//
+// Created by gvice on 13/05/2024.
+//
+
 #ifndef WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 #define WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 
 #include <list>
 #include "Accounts.h"
 
+using namespace std;
+
 class AccountsContainers {
 private:
-    std::list<Accounts> accounts;
-    int nextAccountNumber = 1; // Start from a non-zero value
-
+    list<Accounts> accounts;
 
 public:
-    AccountsContainers() : nextAccountNumber(1) {} // Initialize in the constructor
+    // Get a list of all accounts
     list<Accounts> getAll();
+
+    // Get a specific account by account number
     Accounts* get(int nr);
-    ~AccountsContainers(); // Declaration only
+
+    // Add a new account to the container
     void add(const Accounts &obj);
+
+    // Remove an account by account number
     void remove(int nr);
+
+    // Update the balance of an existing account
     void update(int nr, float balance);
+
     void setBalance(float &balance);
-
-
 };
+
 
 #endif //WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H

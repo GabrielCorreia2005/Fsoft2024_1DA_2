@@ -51,7 +51,6 @@ Accounts AccountView::getAccount(ClientsContainer &clients) {
 }
 
 // Function to print the details of a single account
-<<<<<<< HEAD
 void AccountView::printAccount(Accounts *account) {
     if (account) {
         cout << "Account Number: " << account->getNr() << endl;
@@ -60,11 +59,6 @@ void AccountView::printAccount(Accounts *account) {
     } else {
         cout << "Invalid Account (nullptr)" << endl;
     }
-=======
-void AccountView::printAccountInformation(Accounts *account) {
-    cout << "Account Number: " << account->getNr() << endl;
-    cout << "Balance: " << account->getBalance() << endl;
->>>>>>> parent of 5c509e1 (update)
 }
 
 // Function to print a list of accounts

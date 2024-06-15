@@ -18,14 +18,11 @@ Accounts* AccountsContainers::get(int nr) {
     return nullptr; // Return nullptr if no account with the given number is found
 }
 
-void AccountsContainers::add(const Accounts& obj) {
-    // Example using a static counter for account numbers:
-    static int nextAccountNumber = 1; // Start from 1 or a suitable initial value
-
-    // Assign a unique ID to the new account
-    Accounts newAccount(nextAccountNumber++, obj.getBalance(), obj.getClient()); // Assuming a constructor like this exists
-
-    accounts.push_back(newAccount);
+void AccountsContainers::add(const Accounts &obj) {
+    if (get(obj.getNr()) != nullptr) { // Check if an account with the same number already exists
+        throw DuplicatedDataException("Account with this number already exists.");
+    }
+    accounts.push_back(obj);
 }
 
 void AccountsContainers::remove(int nr) {
@@ -47,10 +44,3 @@ void AccountsContainers::update(int nr, float balance) {
     }
     // No account found with the given number
 }
-
-AccountsContainers::~AccountsContainers() {
-    // You might want to clear or deallocate the resources
-    // used by the 'accounts' list if necessary.
-    accounts.clear(); // Or any other cleanup logic
-}
-

@@ -12,17 +12,15 @@ using namespace std;
 class Accounts{
 
 private:
-    Accounts(int nr, float balance, void* client); // Modify the private constructor to accept a Client*
+    Accounts(int nr, float balance, void  *client);
     int nr;
     float balance;
     Client * client;
 
-    bool isPointerNotNull(void* pointer);
-    void setNumber(int newNr) { //  Make sure setNumber is not const
-        nr = newNr;
-    }
+    bool isPointerNotNull(void * pointer);
+
 public:
-    Accounts(int nr, float balance, Client* client); // Accept Client* in the constructor
+    Accounts(int nr, float balance, Client * client);
     Accounts(const Accounts& obj);
     ~Accounts();
 
