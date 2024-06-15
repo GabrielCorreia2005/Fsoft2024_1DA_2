@@ -11,7 +11,7 @@ using namespace std;
 
 View::View(){
 }
-//as
+
 int View::menuClient() {
     cout << "\n**************** Menu Client ****************" << endl;
     cout << "1- Create Account" << endl;
