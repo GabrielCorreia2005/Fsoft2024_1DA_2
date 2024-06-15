@@ -28,59 +28,6 @@ void Controller::run() {
     } while (choice != 0);
 }
 
-void Controller::runAccount() {
-    int choice;
-    do{
-        choice = view.menuAccount();
-
-        switch (choice) {
-            case 1:{
-                // Add Account
-                Accounts account = accountView.getAccount(model.getClientContainer());
-                try {
-                    model.getAccountsContainer().add(account);
-                    cout << "Account added successfully." << endl;
-                } catch (DuplicatedDataException &e) {
-                    cerr << "Error: " << e.what() << endl;
-                }
-                break;
-            }
-            case 2:{
-                // List Accounts
-                list<Accounts> accounts = model.getAccountsContainer().getAll();
-                accountView.printAccounts(accounts);
-                break;
-            }
-            case 3:{
-                // Remove Account
-                int number = Utils::getNumber("Enter the account number to remove");
-                try {
-                    model.getAccountsContainer().remove(number);
-                    cout << "Account removed successfully." << endl;
-                } catch (const exception &e) { // Catch a more general exception if remove might throw other types
-                    cerr << "Error: " << e.what() << endl;
-                }
-                break;
-            }
-            case 4:{
-                // Update Account (Example: Update balance)
-                int number = Utils::getNumber("Enter the account number to update");
-                float balance = Utils::getNumber("Enter the new balance: ");
-                try {
-                    model.getAccountsContainer().update(number, balance);
-                    cout << "Account updated successfully." << endl;
-                } catch (exception &e) { // Catch a more general exception here as well
-                    cerr << "Error: " << e.what() << endl;
-                }
-                break;
-            }
-            case 0:
-                break; // Exit the Account Management menu
-            default:
-                cerr << "Invalid choice. Please try again." << endl;
-        }
-    }while(choice != 0);
-}
 
 void Controller::runClient() {
     int option;
