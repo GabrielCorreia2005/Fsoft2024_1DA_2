@@ -1,7 +1,3 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 #define WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 
@@ -14,9 +10,9 @@ private:
 
 public:
     list<Accounts> getAll();
-    Accounts* get(int nr); // Declaration only; No function body here!
+    Accounts* get(int nr); // Declaration ONLY - No function body here
     void add(const Accounts &obj);
-    void remove(int nr); // Remove account by account number
+    void remove(int nr);
     void update(int nr, float balance);
     void setBalance(float &balance);
 };
