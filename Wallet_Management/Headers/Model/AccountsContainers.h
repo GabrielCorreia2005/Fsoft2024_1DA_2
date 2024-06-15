@@ -14,7 +14,7 @@ private:
 
 public:
     list<Accounts> getAll();
-    Accounts* get(int nr); // Declaration only
+    Accounts* get(int nr); // Declaration only; No function body here!
     void add(const Accounts &obj);
     void remove(int nr); // Remove account by account number
     void update(int nr, float balance);

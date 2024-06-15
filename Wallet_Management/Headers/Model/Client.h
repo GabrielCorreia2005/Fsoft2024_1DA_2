@@ -12,7 +12,7 @@ class Client {
 private:
     string name;
     Date birth;
-
+    int number; // Declare 'number' as a private member variable
 public:
     Client(const string &name, const Date &birth, const int number);
     Client(const Client &obj);

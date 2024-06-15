@@ -61,4 +61,12 @@ bool Client::isNameValid(const string &name) {
     return true;
 }
 
+int Client::getNumber() const {
+    return number; // Now 'number' is accessible
+}
+
+void Client::setNumber(int number) {
+    this->number = number;
+}
+
 int ClientsContainer::nextClientNumber = 1; // Now ClientsContainer is known
