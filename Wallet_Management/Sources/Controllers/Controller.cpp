@@ -4,11 +4,10 @@
 
 #include "Controller.h"
 #include "Utils.h"
-<<<<<<< HEAD
+
 
 #include "AccountView.h"
-=======
->>>>>>> parent of 5c509e1 (update)
+
 #include <iostream>
 #include "Accounts.h"
 
@@ -156,10 +155,6 @@ void Controller::runLoan() {
     } while (option != 0);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 5c509e1 (update)
 void Controller::runAccount() {
     int choice = view.menuAccount();
 
@@ -173,7 +168,7 @@ void Controller::runAccount() {
             }
             break;
         }
-<<<<<<< HEAD
+
 
     } while (option != 0);
 }
@@ -187,7 +182,7 @@ Client* Controller::selectClient() {
     } else {
         cout << "Account not found." << endl;
         return nullptr;
-=======
+
         case 2: {
             int accountNumber = Utils::getNumber("Enter Account Number: ");
             Accounts *account = model.getAccountsContainer().get(accountNumber);
@@ -203,7 +198,7 @@ Client* Controller::selectClient() {
         default:
             cout << "Invalid choice." << endl;
             break;
->>>>>>> parent of 5c509e1 (update)
+
     }
 }
 
