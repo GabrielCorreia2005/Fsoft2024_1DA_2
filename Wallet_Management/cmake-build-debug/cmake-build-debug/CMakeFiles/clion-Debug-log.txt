@@ -20,6 +20,10 @@ CMake Deprecation Warning:
 -- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+<<<<<<< Updated upstream
 -- Configuring done (4.5s)
+=======
+-- Configuring done (6.6s)
+>>>>>>> Stashed changes
 -- Generating done (0.1s)
 -- Build files have been written to: D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
