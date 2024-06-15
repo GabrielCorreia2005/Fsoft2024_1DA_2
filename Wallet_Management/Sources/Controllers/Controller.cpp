@@ -4,6 +4,8 @@
 
 #include "Controller.h"
 #include "Utils.h"
+#include "WalletManagement.h"
+#include "AccountView.h"
 #include <iostream>
 
 
@@ -18,7 +20,7 @@ void Controller::run() {
         choice = view.menuBank();
 
         switch (choice) {
-            case 1: runClient(); break;
+            case 1: runAccount(); break;
             case 2: runLoan(); break;
             case 3: runTransactions(); break;
             case 4: runInsurance(); break;
@@ -149,6 +151,111 @@ void Controller::runLoan() {
                 cerr << "Invalid choice. Please try again." << endl;
         }
     } while (option != 0);
+}
+
+// In Controller.cpp
+#include "Controller.h"
+#include "Utils.h"
+#include "WalletManagement.h"
+
+void Controller::runAccount() {
+    int option;
+    do {
+        option = view.menuAccount(); // Display the account menu
+
+        switch (option) {
+            case 1: { // Create Account
+                try {
+                    Client newClient = clientView.getClient();
+                    model.getClientContainer().add(newClient);
+                    Accounts newAccount = accountView.getAccount(model.getClientContainer());
+                    model.getAccountsContainer().add(newAccount);
+                    cout << "Client and Account created successfully!" << endl;
+                } catch ( InvalidDataException& e) {
+                    cerr << "Error: " << e.what() << endl;
+                } catch ( DuplicatedDataException& e) {
+                    cerr << "Error: " << e.what() << endl;
+                }
+                break;
+            }
+            case 2: { // Monitor Account (For a specific client)
+                int clientNumber = Utils::getNumber("Enter Client Number: ");
+                Client *client = model.getClientContainer().get(clientNumber);
+                if (client != nullptr) {
+                    // Get all accounts associated with the client (you'll need to implement this logic)
+                    list<Accounts> clientAccounts = model.getAccountsContainer().getAll();
+                    if (!clientAccounts.empty()) {
+                        accountView.printAccounts(clientAccounts);
+                    } else {
+                        cout << "Client has no accounts." << endl;
+                    }
+                } else {
+                    cout << "Client not found." << endl;
+                }
+                break;
+            }
+            case 3: { // Close Account (For a specific client)
+                int clientNumber = Utils::getNumber("Enter Client Number: ");
+                Client *client = model.getClientContainer().get(clientNumber);
+                if (client != nullptr) {
+                    // Get all accounts associated with the client (you'll need to implement this logic)
+                    list<Accounts> clientAccounts = model.getAccountsContainer().getAll();
+                    if (!clientAccounts.empty()) {
+                        // Display accounts and prompt for account selection
+                        int accountChoice = Utils::getNumber("Choose account to close:");
+                        if (accountChoice > 0 && accountChoice <= clientAccounts.size()) {
+                            auto it = clientAccounts.begin();
+                            advance(it, accountChoice - 1);
+                            int accountNumber = (*it).getNr();
+                            model.getAccountsContainer().remove(accountNumber);
+                            cout << "Account closed successfully!" << endl;
+                        } else {
+                            cout << "Invalid account choice." << endl;
+                        }
+                    } else {
+                        cout << "Client has no accounts." << endl;
+                    }
+                } else {
+                    cout << "Client not found." << endl;
+                }
+                break;
+            }
+            case 4: { // List Clients
+                list<Client> clients = model.getClientContainer().getAll();
+                clientView.printClients(clients);
+                break;
+            }
+            case 5: { // Remove Client
+                int clientNumber = Utils::getNumber("Enter Client Number to Remove: ");
+                if (model.getClientContainer().isThereClient(clientNumber)) {
+                    // Remove the client and associated accounts
+                    model.getClientContainer().remove(clientNumber);
+                    cout << "Client and associated accounts removed successfully!" << endl;
+                } else {
+                    cout << "Client not found." << endl;
+                }
+                break;
+            }
+            case 0: // Exit
+                cout << "Exiting Account Management..." << endl;
+                break;
+            default:
+                cout << "Invalid option. Please try again." << endl;
+                break;
+        }
+
+    } while (option != 0);
+}
+
+Client* Controller::selectClient() {
+    int clientNumber = Utils::getNumber("Enter Client Number: ");
+
+    Client* client = model.getClientContainer().get(clientNumber);
+    if (client == nullptr) {
+        cout << "Client not found!" << endl;
+        return nullptr;
+    }
+    return client;
 }
 
 void Controller::runTransactions() {
