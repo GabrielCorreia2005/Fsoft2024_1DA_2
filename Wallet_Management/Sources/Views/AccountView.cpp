@@ -62,18 +62,8 @@ void AccountView::printAccountInformation(Accounts *account) {
     cout << "Balance: " << account->getBalance() << endl;
 }
 
-void AccountView::printAccount(Accounts* account) {
-    if (account == nullptr) {
-        cout << "Invalid account (null pointer)." << endl;
-        return;
-    }
-
-    cout << "Account Number: " << account->getNr() << endl;
-    cout << "Balance: " << account->getBalance() << endl;
-    cout << "Client: " << account->getClient()->getName() << endl;
-}
-
-void AccountView::printAccounts(list<Accounts>& accounts) {
+// Function to print a list of accounts
+void AccountView::printAccounts(list<Accounts> &accounts) {
     if (accounts.empty()) {
         cout << "There are no accounts to display." << endl;
         return;
@@ -81,7 +71,7 @@ void AccountView::printAccounts(list<Accounts>& accounts) {
 
     cout << "List of Accounts:" << endl;
     for (const Accounts& account : accounts) {
-        printAccount(const_cast<Accounts *>(&account)); // Call the printAccount function
+        printAccount(const_cast<Accounts *>(&account));
         cout << "--------------------" << endl;
     }
 }

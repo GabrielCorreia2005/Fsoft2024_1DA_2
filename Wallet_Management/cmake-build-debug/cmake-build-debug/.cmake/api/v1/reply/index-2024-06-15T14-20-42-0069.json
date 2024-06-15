@@ -48,7 +48,15 @@
 			}
 		},
 		{
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
 			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+			"jsonFile" : "cmakeFiles-v1-0d91eda0ad6b3cd37425.json",
+>>>>>>>> 588f3bcddfe40d9f24bfc5da66c9a9f3146c8d28:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+>>>>>>>> parent of 5c509e1 (update):Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -84,7 +92,15 @@
 		},
 		"cmakeFiles-v1" : 
 		{
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
 			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+			"jsonFile" : "cmakeFiles-v1-0d91eda0ad6b3cd37425.json",
+>>>>>>>> 588f3bcddfe40d9f24bfc5da66c9a9f3146c8d28:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+>>>>>>>> parent of 5c509e1 (update):Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
 			"kind" : "cmakeFiles",
 			"version" : 
 			{

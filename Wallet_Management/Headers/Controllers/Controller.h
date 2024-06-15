@@ -21,7 +21,7 @@ private:
     /*
 
     TransactionsView transactionsView;*/
-    Client* selectClient(); // Declare the function
+
     AccountView accountView;
     ClientView clientView;
     LoanView loanView;
