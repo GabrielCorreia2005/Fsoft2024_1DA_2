@@ -28,6 +28,7 @@ private:
 public:
     // Constructors
     WalletManagement();
+    ~WalletManagement();
     WalletManagement(const string& name);
     //WalletManagement(const char *obj);
     const string getName() const;

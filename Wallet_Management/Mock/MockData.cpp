@@ -4,6 +4,7 @@
 #include "Loans.h"
 #include <random>
 #include "Insurance.h"
+#include "ClientsContainer.h"
 
 using namespace std;
 
@@ -113,4 +114,11 @@ void MockData::generateData(WalletManagement &walletManagement) {
       //  Transactions transaction(transactionAmount, transactionType, transactionDate, originAccount, destinationAccount);
        // walletManagement.getTransactionsContainer().add(transaction);
     }
+}
+
+void MockData::insertClients(ClientsContainer& container) {
+    // Add your code to insert mock clients into the container
+    // Example:
+    container.add(Client("John Doe", Date(1, 1, 1980), 12345));
+    container.add(Client("Jane Smith", Date(15, 7, 1992), 67890));
 }

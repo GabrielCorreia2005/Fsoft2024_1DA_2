@@ -175,4 +175,5 @@ CMakeFiles/FSOFT_PROJECT.dir/d94b526d48fc4a48d0fb689c04a0ec4a/Wallet-Management/
  C:/msys64/mingw64/include/c++/13.2.0/bits/random.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/numeric \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_numeric.h \
- D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h \
+ D:/ISEP/Fundamenos\ de\ software/Wallet\ Management2/Wallet-Management/Wallet_Management/Headers/Model/ClientsContainer.h
