@@ -33,6 +33,7 @@ private:
     void runTransactions();
     void runInsurance();
     void runBank();
+    void runAccount(); // New method to handle account options
     void runAccountInformation(); // New method
 
     WalletManagement model;

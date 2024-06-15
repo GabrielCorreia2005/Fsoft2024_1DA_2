@@ -5,7 +5,7 @@
 #include "Controller.h"
 #include "Utils.h"
 #include <iostream>
-
+#include "Accounts.h"
 
 using namespace std;
 
@@ -149,6 +149,37 @@ void Controller::runLoan() {
                 cerr << "Invalid choice. Please try again." << endl;
         }
     } while (option != 0);
+}
+
+void Controller::runAccount() {
+    int choice = view.menuAccount();
+
+    switch (choice) {
+        case 1: { // Create Account
+            Client* client = selectClient();
+            if (client != nullptr) {
+                Accounts account = accountView.getAccount(model.getClientContainer());
+                account.setClient(client); // Call setClient on the 'account' object
+                model.getAccountsContainer().add(account);
+            }
+            break;
+        }
+        case 2: {
+            int accountNumber = Utils::getNumber("Enter Account Number: ");
+            Accounts *account = model.getAccountsContainer().get(accountNumber);
+            if (account != nullptr) {
+                accountView.printAccountInformation(account);
+            } else {
+                cout << "Account not found." << endl;
+            }
+            break;
+        }
+        case 0:
+            return;
+        default:
+            cout << "Invalid choice." << endl;
+            break;
+    }
 }
 
 void Controller::runTransactions() {
