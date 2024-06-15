@@ -19,8 +19,16 @@ class Controller{
 private:
     View view;
     /*
+<<<<<<< HEAD
     AcquireView acquireView;
     InsuranceView insuranceView;
+=======
+<<<<<<< Updated upstream
+=======
+    AcquireView acquireView; //new //new
+    InsuranceView insuranceView;
+>>>>>>> Stashed changes
+>>>>>>> f7dcb996e1eafc76dfda2c3c452279b14a232467
 
     TransactionsView transactionsView;*/
 
