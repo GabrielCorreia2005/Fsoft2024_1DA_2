@@ -35,11 +35,7 @@
 			}
 		},
 		{
-<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
 			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
-========
-			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
->>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
 			"kind" : "cache",
 			"version" : 
 			{
@@ -48,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+			"jsonFile" : "cmakeFiles-v1-bbc83edc561cf8032a13.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -70,11 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
 			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
-========
-			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
->>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
 			"kind" : "cache",
 			"version" : 
 			{
@@ -84,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+			"jsonFile" : "cmakeFiles-v1-bbc83edc561cf8032a13.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{

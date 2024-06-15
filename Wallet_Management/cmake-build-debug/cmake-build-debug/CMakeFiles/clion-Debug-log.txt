@@ -16,6 +16,7 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
+<<<<<<< Updated upstream
 -- The C compiler identification is GNU 13.2.0
 -- The CXX compiler identification is GNU 13.2.0
 -- Detecting C compiler ABI info
@@ -39,3 +40,8 @@ CMake Deprecation Warning:
 >>>>>>> parent of 5c509e1 (update)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
+=======
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
+>>>>>>> Stashed changes
