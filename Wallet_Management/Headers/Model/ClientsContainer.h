@@ -1,4 +1,3 @@
-// ClientsContainer.h
 #ifndef WALLET_MANAGEMENT_CLIENTSCONTAINER_H
 #define WALLET_MANAGEMENT_CLIENTSCONTAINER_H
 
@@ -21,7 +20,7 @@ public:
     void update(int number, const string& name, const Date& birth);
     bool isThereClient(int number);
 
-    static int nextClientNumber; // Static member to store the next client number
+    static int nextClientNumber; // Only declare, don't define here
 };
 
 #endif //WALLET_MANAGEMENT_CLIENTSCONTAINER_H

@@ -69,4 +69,3 @@ void Client::setNumber(int number) {
     this->number = number;
 }
 
-int ClientsContainer::nextClientNumber = 1; // Now ClientsContainer is known

@@ -16,6 +16,7 @@ int getRandomNumber(int min, int max) {
 }
 
 void MockData::generateData(WalletManagement &walletManagement) {
+    insertClients(walletManagement.getClientContainer());
     // Clients
     vector<string> names = {
             "Alice", "Bob", "Charlie", "David", "Emily", "Frank", "Grace", "Henry", "Isabella", "Jack"

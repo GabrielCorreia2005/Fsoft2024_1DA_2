@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-// Initialize the static member
+// Define nextClientNumber only once in the .cpp file
+int ClientsContainer::nextClientNumber = 1;
 
 // Get a list of all clients in the container.
 list<Client> ClientsContainer::getAll() {
@@ -23,13 +24,12 @@ Client* ClientsContainer::get(int number) {
 // Add a new client to the container.
 // Throws a DuplicatedDataException if a client with the same number already exists.
 void ClientsContainer::add(const Client& obj) {
-    Client newClient(obj.getName(), obj.getBirth(), nextClientNumber); // Assign number here!
-    if (isThereClient(newClient.getNumber())) { // Now check for duplicates
+    if (isThereClient(obj.getNumber())) {
         throw DuplicatedDataException("Client with this number already exists.");
-    } else {
-        clients.push_back(newClient);
-        nextClientNumber++; // Increment for the next client
     }
+
+    clients.push_back(obj);
+    nextClientNumber++; // Increment after adding the client
 }
 
 
