@@ -126,8 +126,13 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FSOFT_PROJECT
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/msys64/mingw64/bin/ld.exe
 
+<<<<<<< Updated upstream
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/ucrt64/bin/mingw32-make.exe
+=======
+//make program
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/ninja/win/x64/ninja.exe
+>>>>>>> Stashed changes
 
 //Flags used by the linker during the creation of modules during
 // all build types.

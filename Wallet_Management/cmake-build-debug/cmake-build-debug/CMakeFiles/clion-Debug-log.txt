@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 "D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug" -B "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug"
 CMake Deprecation Warning:
   Support for "Extra Generators" like
@@ -23,3 +24,18 @@ CMake Deprecation Warning:
 -- Configuring done (4.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
+=======
+"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug -B C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug
+-- Configuring done (0.2s)
+CMake Error at CMakeLists.txt:14 (add_executable):
+  Cannot find source file:
+
+    ../Headers/Model/AccountsContainers.
+
+
+CMake Error at CMakeLists.txt:14 (add_executable):
+  No SOURCES given to target: FSOFT_PROJECT
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+>>>>>>> Stashed changes

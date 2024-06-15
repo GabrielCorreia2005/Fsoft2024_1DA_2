@@ -15,8 +15,6 @@ class WalletManagement {
 private:
     string name;
     /*
-
-    InsuranceContainer insuranceContainer;
     TransactionsContainers transactionsContainer;
 
     void setDataForConsistency(); // Function to check and enforce data consistency
