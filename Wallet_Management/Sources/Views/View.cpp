@@ -12,15 +12,6 @@ using namespace std;
 View::View(){
 }
 
-int View::menuAccount() {
-    cout << "Account Menu" << endl;
-    cout << "1. Create Account" << endl;
-    cout << "2. Account Information" << endl; // New option
-    cout << "0. Back" << endl;
-    cout << "Enter your choice: ";
-    return Utils::getNumber("Choice");
-}
-
 int View::menuClient() {
     cout << "\n**************** Menu Client ****************" << endl;
     cout << "1- Create Account" << endl;

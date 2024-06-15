@@ -31,7 +31,6 @@ private:
     void runTransactions();
     void runInsurance();
     void runBank();
-    void runAccount(); // New method to handle account options
     void runAccountInformation(); // New method
     //InsuranceView insuranceView;
     //AcquireView acquireView;

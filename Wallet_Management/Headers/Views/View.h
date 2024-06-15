@@ -15,7 +15,6 @@ public:
     int menuLoans();
     int menuTransactions();
     int menuInsurance();
-    int menuAccount(); // New menu for account options
 };
 
 #endif //FSOFT_PROJECT_VIEW_H

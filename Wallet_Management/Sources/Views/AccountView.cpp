@@ -10,14 +10,8 @@
 using namespace std;
 
 Accounts AccountView::getAccount(ClientsContainer &clients) {
-    int nr = Utils::getNumber("Account Number: ");
-    float balance = Utils::getNumber("Initial Balance (minimum 500): ");
-
-    // Validate the balance
-    if (!Accounts::isBalanceValid(balance)) {
-        throw InvalidDataException("Initial balance must be at least 500.");
-    }
-
+    int nr;
+    float balance;
     Client *client;
 
     // Get account number
@@ -57,9 +51,14 @@ Accounts AccountView::getAccount(ClientsContainer &clients) {
 }
 
 // Function to print the details of a single account
-void AccountView::printAccountInformation(Accounts *account) {
-    cout << "Account Number: " << account->getNr() << endl;
-    cout << "Balance: " << account->getBalance() << endl;
+void AccountView::printAccount(Accounts *account) {
+    if (account) {
+        cout << "Account Number: " << account->getNr() << endl;
+        cout << "Balance: " << fixed << setprecision(2) << account->getBalance() << endl; // Assuming you have a getBalance() method in Accounts
+        cout << "Client: " << account->getClient()->getName() << endl; // Assuming you have getClient() and getName() methods
+    } else {
+        cout << "Invalid Account (nullptr)" << endl;
+    }
 }
 
 // Function to print a list of accounts

@@ -9,7 +9,7 @@
 #include "AccountView.h"
 
 #include <iostream>
-#include "Accounts.h"
+
 
 using namespace std;
 
@@ -155,6 +155,7 @@ void Controller::runLoan() {
     } while (option != 0);
 }
 
+<<<<<<< HEAD
 void Controller::runAccount() {
     int choice = view.menuAccount();
 
@@ -204,6 +205,8 @@ Client* Controller::selectClient() {
 
 
 
+=======
+>>>>>>> parent of 98b8e65 (update teste)
 void Controller::runTransactions() {
     // ... implement logic for managing transactions
 }

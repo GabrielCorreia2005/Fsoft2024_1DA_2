@@ -23,9 +23,6 @@ public:
 
     // Print accounts associated with a specific client (To be implemented based on your requirements)
     void printStudentAccounts(Client *client, list<tuple<Accounts *, int>> &subjects);
-
-    // New function to display account information
-    void printAccountInformation(Accounts *account);
 };
 
 #endif //FSOFT_PROJECT_ACCOUNTVIEW_H
