@@ -1,3 +1,3 @@
-"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\FSOFT_PROJECT.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\FSOFT_PROJECT.dir/objects.a @CMakeFiles\FSOFT_PROJECT.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\FSOFT_PROJECT.dir/objects.a -Wl,--no-whole-archive -o FSOFT_PROJECT.exe -Wl,--out-implib,libFSOFT_PROJECT.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FSOFT_PROJECT.dir\linkLibs.rsp
+"D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\FSOFT_PROJECT.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\FSOFT_PROJECT.dir/objects.a @CMakeFiles\FSOFT_PROJECT.dir\objects1.rsp
+C:\msys64\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\FSOFT_PROJECT.dir/objects.a -Wl,--no-whole-archive -o FSOFT_PROJECT.exe -Wl,--out-implib,libFSOFT_PROJECT.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FSOFT_PROJECT.dir\linkLibs.rsp

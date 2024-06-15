@@ -8,254 +8,252 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
+				<Option working_dir="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FSOFT_PROJECT">
-				<Option output="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/FSOFT_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
+				<Option output="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/FSOFT_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../../Wallet_Management"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Controllers"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Exceptions"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Model"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Views"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Mock"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../../Wallet_Management"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Controllers"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Exceptions"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Model"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Views"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Mock"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 FSOFT_PROJECT"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 FSOFT_PROJECT"/>
+					<CompileFile command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FSOFT_PROJECT/fast">
-				<Option output="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/FSOFT_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
+				<Option output="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/FSOFT_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../../Wallet_Management"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Controllers"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Exceptions"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Model"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Headers/Views"/>
-					<Add directory="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/../Mock"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../../Wallet_Management"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Controllers"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Exceptions"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Model"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Headers/Views"/>
+					<Add directory="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/../Mock"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 FSOFT_PROJECT/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 FSOFT_PROJECT/fast"/>
+					<CompileFile command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
+				<Option working_dir="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
+				<Option working_dir="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/ucrt64/bin/mingw32-make.exe -f &quot;D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Controllers/Controller.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Controllers/Controller.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Exceptions/DataConsistencyException.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DataConsistencyException.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Exceptions/InvalidDataException.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Accounts.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/AccountsContainers.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/AccountsContainers.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Acquire.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Acquire.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Client.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/ClientsContainer.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/ClientsContainer.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Insurance.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Insurance.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/InsuranceContainer.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/InsuranceContainer.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Loans.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/LoansContainers.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/LoansContainers.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/Transactions.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Transactions.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/TransactionsContainers.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/TransactionsContainers.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Model/WalletManagement.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/WalletManagement.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/AccountView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/AccountView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/AcquireView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/AcquireView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/ClientView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/ClientView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/InsuranceView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/InsuranceView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/LoanView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/LoanView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/TransactionsView.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/TransactionsView.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/Utils.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Headers/Views/View.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/View.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Mock/MockData.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Mock/MockData.h">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Mock/MockData.h">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Controllers/Controller.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Controllers/Controller.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Exceptions/DataConsistencyException.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Exceptions/DuplicateDataException.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Exceptions/InvalidDataExcption.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Accounts.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Accounts.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/AccountsContainers.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/AccountsContainers.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Acquire.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Acquire.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Client.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Client.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/ClientsContainer.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/ClientsContainer.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Date.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Date.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Insurance.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Insurance.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/InsuranceContainer.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/InsuranceContainer.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Loans.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Loans.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/LoansContainers.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/LoansContainers.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/Transactions.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/Transactions.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/TransactionsContainers.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/TransactionsContainers.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Model/WalletManagement.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/WalletManagement.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AccountView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/AccountView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/AcquireView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/AcquireView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/ClientView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/ClientView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/InsuranceView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/InsuranceView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/LoanView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/LoanView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/TransactionsView.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/TransactionsView.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/Utils.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/Utils.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/Sources/Views/View.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/View.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/main.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/main.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management_Saver/Sources/Model/WalletManagement.cpp">
 			<Option target="FSOFT_PROJECT"/>
 		</Unit>
-		<Unit filename="C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/CMakeLists.txt">
+		<Unit filename="D:/ISEP/Fundamenos de software/Fsoft2024_1DA_2/Wallet_Management/cmake-build-debug/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

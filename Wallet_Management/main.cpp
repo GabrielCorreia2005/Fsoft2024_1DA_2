@@ -21,3 +21,5 @@ int main() {
     cout << "Application has exited" << endl;
     return 0;
 }
+
+//isto é um comentario
