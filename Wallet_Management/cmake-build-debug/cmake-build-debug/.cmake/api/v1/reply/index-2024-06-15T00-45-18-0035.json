@@ -1,0 +1,124 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.28"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 28,
+			"patch" : 1,
+			"string" : "3.28.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-b6f4df64eb9647b6a8cb.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-6e3e4aa28b1de6f91d59.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-41-35-0062.json
+			"jsonFile" : "cmakeFiles-v1-2997d49cfeab2ee97c91.json",
+========
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+			"jsonFile" : "cmakeFiles-v1-0d91eda0ad6b3cd37425.json",
+>>>>>>>> 588f3bcddfe40d9f24bfc5da66c9a9f3146c8d28:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+>>>>>>>> parent of 5c509e1 (update):Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-f1b2b3b9642b509dfa7c.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-6e3e4aa28b1de6f91d59.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-41-35-0062.json
+			"jsonFile" : "cmakeFiles-v1-2997d49cfeab2ee97c91.json",
+========
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
+			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+========
+			"jsonFile" : "cmakeFiles-v1-0d91eda0ad6b3cd37425.json",
+>>>>>>>> 588f3bcddfe40d9f24bfc5da66c9a9f3146c8d28:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+>>>>>>>> parent of 5c509e1 (update):Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-45-18-0035.json
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-b6f4df64eb9647b6a8cb.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		"toolchains-v1" : 
+		{
+			"jsonFile" : "toolchains-v1-f1b2b3b9642b509dfa7c.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	}
+}
