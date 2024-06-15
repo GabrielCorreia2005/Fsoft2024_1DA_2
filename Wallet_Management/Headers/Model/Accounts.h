@@ -19,7 +19,9 @@ private:
     Client * client;
 
     bool isPointerNotNull(void* pointer);
-
+    void setNumber(int newNr) { //  Make sure setNumber is not const
+        nr = newNr;
+    }
 public:
     Accounts(int nr, float balance, Client* client); // Accept Client* in the constructor
     Accounts(const Accounts& obj);
