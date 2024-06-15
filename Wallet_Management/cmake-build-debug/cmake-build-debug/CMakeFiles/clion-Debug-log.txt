@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "D:\ISEP\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug" -B "D:\ISEP\Fundamenos de software\Wallet Management2\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug"
 CMake Deprecation Warning:
   Support for "Extra Generators" like
@@ -11,3 +12,9 @@ CMake Deprecation Warning:
 -- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: D:/ISEP/Fundamenos de software/Wallet Management2/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
+=======
+"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug -B C:\Users\gvice\Documents\FSOFT_PROJECT\Wallet-Management\Wallet_Management\cmake-build-debug\cmake-build-debug
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/gvice/Documents/FSOFT_PROJECT/Wallet-Management/Wallet_Management/cmake-build-debug/cmake-build-debug
+>>>>>>> 5c998557e8f0aced47209c209520452afccd9174
