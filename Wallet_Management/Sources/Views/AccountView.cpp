@@ -10,14 +10,8 @@
 using namespace std;
 
 Accounts AccountView::getAccount(ClientsContainer &clients) {
-    int nr = Utils::getNumber("Account Number: ");
-    float balance = Utils::getNumber("Initial Balance (minimum 500): ");
-
-    // Validate the balance
-    if (!Accounts::isBalanceValid(balance)) {
-        throw InvalidDataException("Initial balance must be at least 500.");
-    }
-
+    int nr;
+    float balance;
     Client *client;
 
     // Get account number
@@ -57,23 +51,24 @@ Accounts AccountView::getAccount(ClientsContainer &clients) {
 }
 
 // Function to print the details of a single account
+<<<<<<< HEAD
+void AccountView::printAccount(Accounts *account) {
+    if (account) {
+        cout << "Account Number: " << account->getNr() << endl;
+        cout << "Balance: " << fixed << setprecision(2) << account->getBalance() << endl; // Assuming you have a getBalance() method in Accounts
+        cout << "Client: " << account->getClient()->getName() << endl; // Assuming you have getClient() and getName() methods
+    } else {
+        cout << "Invalid Account (nullptr)" << endl;
+    }
+=======
 void AccountView::printAccountInformation(Accounts *account) {
     cout << "Account Number: " << account->getNr() << endl;
     cout << "Balance: " << account->getBalance() << endl;
+>>>>>>> parent of 5c509e1 (update)
 }
 
-void AccountView::printAccount(Accounts* account) {
-    if (account == nullptr) {
-        cout << "Invalid account (null pointer)." << endl;
-        return;
-    }
-
-    cout << "Account Number: " << account->getNr() << endl;
-    cout << "Balance: " << account->getBalance() << endl;
-    cout << "Client: " << account->getClient()->getName() << endl;
-}
-
-void AccountView::printAccounts(list<Accounts>& accounts) {
+// Function to print a list of accounts
+void AccountView::printAccounts(list<Accounts> &accounts) {
     if (accounts.empty()) {
         cout << "There are no accounts to display." << endl;
         return;
@@ -81,7 +76,7 @@ void AccountView::printAccounts(list<Accounts>& accounts) {
 
     cout << "List of Accounts:" << endl;
     for (const Accounts& account : accounts) {
-        printAccount(const_cast<Accounts *>(&account)); // Call the printAccount function
+        printAccount(const_cast<Accounts *>(&account));
         cout << "--------------------" << endl;
     }
 }

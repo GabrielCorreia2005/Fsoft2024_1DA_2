@@ -50,15 +50,3 @@ void Accounts::setNumber(int &nr) {
 void Accounts::setBalance(float &balance) {
     Accounts::balance = balance;
 }
-
-void Accounts::setClient(Client* client) {
-    if (isPointerNotNull(client)) {
-        this->client = client;
-    } else {
-        throw InvalidDataException("Invalid client pointer.");
-    }
-}
-
-bool Accounts::isBalanceValid(float balance) {
-    return balance >= 500;
-}

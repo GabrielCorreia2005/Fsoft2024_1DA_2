@@ -4,14 +4,14 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
-			"cmake" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe",
-			"cpack" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/cpack.exe",
-			"ctest" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/bin/ctest.exe",
-			"root" : "D:/ISEP/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.28"
+			"cmake" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.28"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-ce8ec85bc257343b2fc8.json",
+			"jsonFile" : "codemodel-v2-b6f4df64eb9647b6a8cb.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,11 +35,7 @@
 			}
 		},
 		{
-<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
-			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
-========
-			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
->>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
+			"jsonFile" : "cache-v2-6e3e4aa28b1de6f91d59.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -48,8 +44,8 @@
 			}
 		},
 		{
-<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
-			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-41-35-0062.json
+			"jsonFile" : "cmakeFiles-v1-2997d49cfeab2ee97c91.json",
 ========
 <<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
 			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
@@ -65,7 +61,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-140f48578653d0255cbc.json",
+			"jsonFile" : "toolchains-v1-f1b2b3b9642b509dfa7c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -78,11 +74,7 @@
 	{
 		"cache-v2" : 
 		{
-<<<<<<<< Updated upstream:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
-			"jsonFile" : "cache-v2-fc3f737e6cc76fb6e72e.json",
-========
-			"jsonFile" : "cache-v2-09a313beb7c77a0f4648.json",
->>>>>>>> Stashed changes:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-25-52-0374.json
+			"jsonFile" : "cache-v2-6e3e4aa28b1de6f91d59.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -92,8 +84,8 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-20-42-0069.json
-			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
+<<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T14-41-35-0062.json
+			"jsonFile" : "cmakeFiles-v1-2997d49cfeab2ee97c91.json",
 ========
 <<<<<<<< HEAD:Wallet_Management/cmake-build-debug/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-15T00-46-14-0505.json
 			"jsonFile" : "cmakeFiles-v1-646ff7f4435133ff88b6.json",
@@ -110,7 +102,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-ce8ec85bc257343b2fc8.json",
+			"jsonFile" : "codemodel-v2-b6f4df64eb9647b6a8cb.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -120,7 +112,7 @@
 		},
 		"toolchains-v1" : 
 		{
-			"jsonFile" : "toolchains-v1-140f48578653d0255cbc.json",
+			"jsonFile" : "toolchains-v1-f1b2b3b9642b509dfa7c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{

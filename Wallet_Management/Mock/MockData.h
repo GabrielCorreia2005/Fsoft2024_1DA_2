@@ -6,8 +6,6 @@
 class MockData {
 public:
     void generateData(WalletManagement &walletManagement);
-
-private:
     void insertClients(ClientsContainer& container);
 
 };

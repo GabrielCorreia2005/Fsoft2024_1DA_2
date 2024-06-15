@@ -21,7 +21,7 @@ private:
     /*
 
     TransactionsView transactionsView;*/
-    Client* selectClient(); // Declare the function
+
     AccountView accountView;
     ClientView clientView;
     LoanView loanView;
@@ -31,7 +31,6 @@ private:
     void runTransactions();
     void runInsurance();
     void runBank();
-    void runAccount(); // New method to handle account options
     void runAccountInformation(); // New method
     //InsuranceView insuranceView;
     //AcquireView acquireView;

@@ -8,6 +8,14 @@
 
 using namespace std;
 
+AccountsContainers::~AccountsContainers() {
+    // Implementation
+}
+
+void MockData::insertClients(ClientsContainer& clients) {
+    // Implementation
+}
+
 // Function to generate a random number within a range
 int getRandomNumber(int min, int max) {
     random_device rd;
