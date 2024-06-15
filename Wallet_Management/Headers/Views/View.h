@@ -12,7 +12,6 @@ public:
 
     int menuClient();
     int menuBank();
-    int menuAccount();
     int menuLoans();
     int menuTransactions();
     int menuInsurance();

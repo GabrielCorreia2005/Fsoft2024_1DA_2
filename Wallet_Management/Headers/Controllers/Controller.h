@@ -28,7 +28,6 @@ private:
     ClientView clientView;
     LoanView loanView;
     // Private functions to handle specific modules
-    void runAccount();
     void runClient();
     void runLoan();
     void runTransactions();
