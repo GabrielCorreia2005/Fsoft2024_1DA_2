@@ -4,7 +4,7 @@
 
 #include "Controller.h"
 #include "Utils.h"
-#include "WalletManagement.h"
+
 #include "AccountView.h"
 #include <iostream>
 
