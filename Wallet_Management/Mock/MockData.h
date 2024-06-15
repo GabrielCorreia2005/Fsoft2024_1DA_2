@@ -5,8 +5,11 @@
 
 class MockData {
 public:
-    // Generates mock data for the WalletManagement system
     void generateData(WalletManagement &walletManagement);
+
+private:
+    void insertClients(ClientsContainer& container);
+
 };
 
 #endif //WALLET_MANAGEMENT_MOCKDATA_H
