@@ -8,11 +8,7 @@ using namespace std;
 Transactions TransactionsView::getTransaction(Accounts *sourceAccount, Accounts *destinationAccount) {
     int transactionId = 1; // Assuming you have a way to generate unique transaction IDs
     Date date = getCurrentDate(); // Use getCurrentDate() to get the current date
-    string type;
     float amount;
-
-    cout << "Enter transaction type (e.g., Transfer, Deposit, Withdrawal): ";
-    cin >> type;
 
     cout << "Enter amount: ";
     cin >> amount;
@@ -20,7 +16,7 @@ Transactions TransactionsView::getTransaction(Accounts *sourceAccount, Accounts 
     // Validate the amount here (e.g., ensure it's positive and within limits)
 
     // Create the transaction
-    Transactions transaction(transactionId, date, type, amount, sourceAccount);
+    Transactions transaction(transactionId, date, amount, sourceAccount);
     // Pass sourceAccount to the constructor for tracking
 
     // You might need additional validation based on your requirements, like:
@@ -42,7 +38,6 @@ Date TransactionsView::getCurrentDate() {
 void TransactionsView::printTransaction(Transactions *transaction) {
     cout << "Transaction Number: " << transaction->getTransactionId() << endl;
     cout << "Date: " << transaction->getDate() << endl;
-    cout << "Type: " << transaction->getType() << endl;
     cout << "Amount: " << transaction->getAmount() << endl;
     cout << "Account: " << transaction->getAccount()->getNr() << endl; // Display the source account
 }

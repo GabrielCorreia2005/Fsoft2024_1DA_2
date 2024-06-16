@@ -11,13 +11,12 @@ class Transactions {
 private:
     int transactionId;
     Date date;
-    string type;
     float amount;
     Accounts *account; // Pointer to the associated account
 
 public:
     // Constructor for creating a new transaction
-    Transactions(int transactionId, const Date &date, const string &type, float amount, Accounts *account);
+    Transactions(int transactionId, const Date &date, float amount, Accounts *account);
     // Copy constructor
     Transactions(const Transactions& obj);
     // Destructor
@@ -31,7 +30,6 @@ public:
     Accounts* getAccount() const;
 
     // Setters
-    void setType(const string& type);
     void setAmount(float amount);
     void setAccount(Accounts *account);
     void setDate(const Date& date); // Add setDate() method

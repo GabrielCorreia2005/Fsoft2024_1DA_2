@@ -28,7 +28,6 @@ void TransactionsContainers::update(int transactionId, const Date &date, const s
     list<Transactions>::iterator it = search(transactionId);
     if (it != transactions.end()) {
         it->setDate(date);
-        it->setType(type);
         it->setAmount(amount);
         it->setAccount(account);
     }

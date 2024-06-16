@@ -223,8 +223,6 @@ void Controller::runTransactions() {
                 // 2. Get Transaction Details from the View
                 Transactions newTransaction = transactionsView.getTransaction(sourceAccount, destAccount);
 
-                // 3. Update Account Balances in the Controller
-                if (newTransaction.getType() == "Transfer" && sourceAccount != nullptr && destAccount != nullptr) {
                     if (sourceAccount->getBalance() >= newTransaction.getAmount()) {
                         sourceAccount->setBalance(sourceAccount->getBalance() - newTransaction.getAmount());
                         destAccount->setBalance(destAccount->getBalance() + newTransaction.getAmount());
@@ -233,21 +231,6 @@ void Controller::runTransactions() {
                         cout << "Error: Insufficient funds in the source account." << endl;
                         break;
                     }
-                } else if (newTransaction.getType() == "Deposit" && destAccount != nullptr) {
-                    destAccount->setBalance(destAccount->getBalance() + newTransaction.getAmount());
-                    cout << "Transaction added successfully!" << endl;
-                } else if (newTransaction.getType() == "Withdrawal" && sourceAccount != nullptr) {
-                    if (sourceAccount->getBalance() >= newTransaction.getAmount()) {
-                        sourceAccount->setBalance(sourceAccount->getBalance() - newTransaction.getAmount());
-                        cout << "Transaction added successfully!" << endl;
-                    } else {
-                        cout << "Error: Insufficient funds in the account." << endl;
-                        break;
-                    }
-                } else {
-                    cout << "Error: Invalid transaction type." << endl;
-                    break;
-                }
 
                 // 4. Add the Transaction to the Model (if balances were updated successfully)
                 model.getTransactionsContainer().add(newTransaction);
