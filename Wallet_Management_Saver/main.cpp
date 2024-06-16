@@ -1,20 +1,22 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
 #include <iostream>
+#include "View.h"
+#include "Utils.h"
 #include "WalletManagement.h"
-
 #include "Controller.h"
+#include "MockData.h"
+
 using namespace std;
 
-int main()
-{
-    WalletManagement WalletManagement ("Wallet Management");
+int main() {
+    WalletManagement walletManagement("Wallet Management");
 
-    Controller controller (WalletManagement);
+    // Generate mock data
+    MockData mockData;
+    mockData.generateData(walletManagement);
+
+    Controller controller(walletManagement);
     controller.run();
 
-    cout << "Application has existed" << endl;
+    cout << "Application has exited" << endl;
     return 0;
 }

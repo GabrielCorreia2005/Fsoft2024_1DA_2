@@ -7,7 +7,7 @@ using namespace std;
 View::View() {}
 
 int View::menuClient() {
-    int choice;
+    int option;
     cout << "**************** Menu Client ****************" << endl;
     cout << "1- Create Account" << endl;
     cout << "2- List" << endl;
@@ -15,12 +15,12 @@ int View::menuClient() {
     cout << "4- Delete" << endl;
     cout << "0- Exit" << endl;
     cout << "Option: ";
-    cin >> choice;
-    return choice;
+    option = Utils::getNumber("Option: ");
+    return option;
 }
 
 int View::menuBank() {
-    int choice;
+    int option;
     cout << "**************** Menu Bank ****************" << endl;
     cout << "1- Account" << endl;
     cout << "2- Loans" << endl;
@@ -28,8 +28,8 @@ int View::menuBank() {
     cout << "4- Insurance" << endl;
     cout << "0- Log Out" << endl;
     cout << "Option: ";
-    cin >> choice;
-    return choice;
+    option = Utils::getNumber("Option: ");
+    return option;
 }
 
 int View::menuLoans() {
