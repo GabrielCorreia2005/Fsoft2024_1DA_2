@@ -1,7 +1,3 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 #define WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H
 
@@ -18,7 +14,7 @@ public:
     // Get a list of all accounts
     list<Accounts> getAll();
 
-    // Get a specific account by account number
+    // Get a specific account by account number (Declaration only)
     Accounts* get(int nr);
 
     // Add a new account to the container
@@ -32,6 +28,5 @@ public:
 
     void setBalance(float &balance);
 };
-
 
 #endif //WALLET_MANAGEMENT_ACCOUNTSCONTAINERS_H

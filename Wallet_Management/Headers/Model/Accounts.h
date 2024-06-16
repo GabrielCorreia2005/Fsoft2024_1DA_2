@@ -9,7 +9,7 @@ using namespace std;
 class Accounts {
 private:
     static const float MIN_BALANCE; // Declare the minimum balance as a constant
-    int nr;
+    int nr;  // Account number
     float balance;
     Client * client;
 
@@ -23,7 +23,7 @@ public:
     Accounts(const Accounts& obj);
     ~Accounts();
 
-    int getNr() const;
+    int getNr() const; // This method goes here!
     float getBalance() const;
     Client *getClient() const;
 

@@ -198,51 +198,54 @@ Client* Controller::selectClient() {
 }
 
 void Controller::runTransactions() {
-    int choice;
+    int option;
     do {
-        choice = view.menuTransactions();
+        option = view.menuTransactions();
+        switch (option) {
+            case 1: { // Add Transaction
+                int sourceClientNumber, destinationClientNumber;
+                cout << "Enter Source Client Number: ";
+                cin >> sourceClientNumber;
+                cout << "Enter Destination Client Number: ";
+                cin >> destinationClientNumber;
 
-        switch (choice) {
-            case 1: {
-                // Make Transaction
-                Client* client = selectClient();
-                if (client != nullptr) {
-                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
-                    if (account != nullptr) {
-                        Transactions newTransaction = transactionsView.getTransaction(account); // Get transaction
-                        try {
-                            model.getTransactionsContainer().add(newTransaction);
-                            cout << "Transaction registered successfully!" << endl;
-                        } catch (const InvalidDataException &e) {
-                            cout << "Error: " << e.what() << endl;
-                        }
-                    } else {
-                        cout << "Account not found." << endl;
-                    }
+                // Fetch Clients (You'll likely have a getClient() method in ClientsContainer)
+                Client* sourceClient = model.getClientContainer().get(sourceClientNumber);
+                Client* destClient = model.getClientContainer().get(destinationClientNumber);
+
+                if (sourceClient == nullptr || destClient == nullptr) {
+                    cout << "One or both clients not found." << endl;
+                    break; // Exit the 'case' if clients aren't found
                 }
+
+                // Since client number is the same as account number:
+                Accounts* sourceAccount = model.getAccountsContainer().get(sourceClientNumber);
+                Accounts* destAccount = model.getAccountsContainer().get(destinationClientNumber);
+
+                if (sourceAccount == nullptr || destAccount == nullptr) {
+                    cout << "One or both accounts not found." << endl;
+                    break;
+                }
+
+                // If accounts are found, proceed with getting transaction details:
+                Transactions newTransaction = transactionsView.getTransaction(sourceAccount, destAccount);
+                model.getTransactionsContainer().add(newTransaction);
+                cout << "Transaction added successfully!" << endl;
                 break;
             }
             case 2: {
-                // View Transaction History
-                Client* client = selectClient();
-                if (client != nullptr) {
-                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
-                    if (account != nullptr) {
-                        list<Transactions> transactions = model.getTransactionsContainer().getAll();
-                        transactionsView.printTransactions(transactions);
-                    } else {
-                        cout << "Account not found." << endl;
-                    }
-                }
+                // List Transactions Logic (similar to your existing code)
+                list<Transactions> allTransactions = model.getTransactionsContainer().getAll();
+                transactionsView.printTransactions(allTransactions);
                 break;
             }
             case 0:
-                cout << "Returning to main menu..." << endl;
+                cout << "Exiting Transactions Menu." << endl;
                 break;
             default:
                 cout << "Invalid option. Please try again." << endl;
         }
-    } while (choice != 0);
+    } while (option != 0);
 }
 
 void Controller::runInsurance() {

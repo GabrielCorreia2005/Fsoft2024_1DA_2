@@ -1,30 +1,50 @@
-// TransactionsView.cpp
 #include "TransactionsView.h"
 #include "Utils.h"
-#include "Date.h" // Include Date.h for date input
+#include <iostream>
+#include <ctime> // Include for time functions
 
-Transactions TransactionsView::getTransaction(Accounts *account) {
-    int transactionId = Utils::getNumber("Enter Transaction ID: ");
+using namespace std;
+
+Transactions TransactionsView::getTransaction(Accounts *sourceAccount, Accounts *destinationAccount) {
+    int transactionId = 1; // Assuming you have a way to generate unique transaction IDs
+    Date date = getCurrentDate(); // Use getCurrentDate() to get the current date
     string type;
-    do {
-        type = Utils::getString("Enter Transaction Type (deposit/withdrawal): ");
-        if (type != "deposit" && type != "withdrawal") {
-            cout << "Invalid transaction type. Please enter 'deposit' or 'withdrawal'." << endl;
-        }
-    } while (type != "deposit" && type != "withdrawal");
+    float amount;
 
-    float amount = Utils::getNumber("Enter Amount: ");
-    Date date = Date(Utils::getNumber("Enter Day: "), Utils::getNumber("Enter Month: "), Utils::getNumber("Enter Year: "));
+    cout << "Enter transaction type (e.g., Transfer, Deposit, Withdrawal): ";
+    cin >> type;
 
-    return Transactions(transactionId, date, type, amount, account);
+    cout << "Enter amount: ";
+    cin >> amount;
+
+    // Validate the amount here (e.g., ensure it's positive and within limits)
+
+    // Create the transaction
+    Transactions transaction(transactionId, date, type, amount, sourceAccount);
+    // Pass sourceAccount to the constructor for tracking
+
+    // You might need additional validation based on your requirements, like:
+    // - Checking if the source account has enough balance for the transfer.
+    // - Ensuring the type is valid (e.g., "Transfer", "Deposit", "Withdrawal")
+    // - ...
+
+    return transaction;
+}
+
+// Get the current date
+Date TransactionsView::getCurrentDate() {
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+
+    return Date(ltm->tm_mday, 1 + ltm->tm_mon, 1900 + ltm->tm_year);
 }
 
 void TransactionsView::printTransaction(Transactions *transaction) {
-    cout << "Transaction ID: " << transaction->getTransactionId() << endl;
+    cout << "Transaction Number: " << transaction->getTransactionId() << endl;
     cout << "Date: " << transaction->getDate() << endl;
     cout << "Type: " << transaction->getType() << endl;
     cout << "Amount: " << transaction->getAmount() << endl;
-    cout << "Account: " << transaction->getAccount()->getNr() << endl;
+    cout << "Account: " << transaction->getAccount()->getNr() << endl; // Display the source account
 }
 
 void TransactionsView::printTransactions(list<Transactions>& transactions) {
@@ -32,8 +52,9 @@ void TransactionsView::printTransactions(list<Transactions>& transactions) {
         cout << "No transactions found." << endl;
         return;
     }
+
     for (Transactions& transaction : transactions) {
         printTransaction(&transaction);
-        cout << "-------------------------" << endl;
+        cout << "---------------------" << endl;
     }
 }

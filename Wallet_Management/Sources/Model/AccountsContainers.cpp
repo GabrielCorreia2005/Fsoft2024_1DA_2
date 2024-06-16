@@ -1,46 +1,45 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
 #include "AccountsContainers.h"
-#include "DuplicatedDataException.h"
+#include <iostream> // For debugging output
 
+using namespace std;
+
+// Get a list of all accounts
 list<Accounts> AccountsContainers::getAll() {
     return accounts;
 }
 
+// Get a specific account by account number
 Accounts* AccountsContainers::get(int nr) {
     for (auto it = accounts.begin(); it != accounts.end(); ++it) {
         if (it->getNr() == nr) {
-            return &(*it); // Return a pointer to the found Account object
+            return &(*it);
         }
     }
-    return nullptr; // Return nullptr if no account with the given number is found
+    return nullptr;
 }
 
+// Add a new account to the container
 void AccountsContainers::add(const Accounts &obj) {
-    if (get(obj.getNr()) != nullptr) { // Check if an account with the same number already exists
-        throw DuplicatedDataException("Account with this number already exists.");
-    }
     accounts.push_back(obj);
+    cout << "Added Account: Number=" << obj.getNr()
+         << ", Balance=" << obj.getBalance()
+         << ", Client=" << obj.getClient()->getNumber()
+         << endl;
 }
 
+// Remove an account by account number
 void AccountsContainers::remove(int nr) {
-    for (auto it = accounts.begin(); it != accounts.end(); ++it) {
-        if (it->getNr() == nr) {
-            accounts.erase(it);
-            return; // Account removed, exit the function
-        }
-    }
-    // No account found with the given number
+    // Implement removal logic here!
+    // This is just a placeholder
 }
 
+// Update the balance of an existing account
 void AccountsContainers::update(int nr, float balance) {
-    for (auto it = accounts.begin(); it != accounts.end(); ++it) {
-        if (it->getNr() == nr) {
-            it->setBalance(balance); // Assuming setBalance is in Accounts.cpp
-            return; // Account updated, exit the function
-        }
-    }
-    // No account found with the given number
+    // Implement update logic here!
+    // This is just a placeholder
+}
+
+void AccountsContainers::setBalance(float &balance) {
+    // Implement setBalance logic here!
+    // This is just a placeholder
 }

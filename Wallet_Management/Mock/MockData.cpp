@@ -32,7 +32,7 @@ void MockData::generateData(WalletManagement &walletManagement) {
     }
 
     // Accounts (ensure minimum balance)
-    int accountNumber = 100;
+    int accountNumber = 1;
     for (int i = 0; i < names.size(); ++i) {
         Client *client = walletManagement.getClientContainer().get(i + 1);
 

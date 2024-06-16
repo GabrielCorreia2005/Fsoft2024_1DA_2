@@ -141,5 +141,4 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/istream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h
