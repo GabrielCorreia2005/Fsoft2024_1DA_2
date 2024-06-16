@@ -28,7 +28,7 @@ public:
     Client *getClient() const;
 
     void setNumber(int &nr);
-    void setBalance(float &balance);
+    void setBalance(float balance); // Change to regular float
     static float getMinBalance() {
         return MIN_BALANCE;
     }

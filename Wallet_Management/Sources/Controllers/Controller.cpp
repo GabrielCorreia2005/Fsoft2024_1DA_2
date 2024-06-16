@@ -199,55 +199,66 @@ Client* Controller::selectClient() {
 
 void Controller::runTransactions() {
     int option;
+
     do {
         option = view.menuTransactions();
+
         switch (option) {
-            case 1: { // Add Transaction
-                int sourceClientNumber, destinationClientNumber;
-                cout << "Enter Source Client Number: ";
-                cin >> sourceClientNumber;
-                cout << "Enter Destination Client Number: ";
-                cin >> destinationClientNumber;
+            case 1: {
+                // Add a transaction
+                Client* sourceClient = selectClient(); // Get the source client
+                Client* destinationClient = selectClient(); // Get the destination client
 
-                // Fetch Clients (You'll likely have a getClient() method in ClientsContainer)
-                Client* sourceClient = model.getClientContainer().get(sourceClientNumber);
-                Client* destClient = model.getClientContainer().get(destinationClientNumber);
+                if (sourceClient != nullptr && destinationClient != nullptr) { // Check if both clients are selected
+                    // Get accounts for the selected clients
+                    Accounts *sourceAccount = model.getAccountsContainer().get(sourceClient->getNumber());
+                    Accounts *destinationAccount = model.getAccountsContainer().get(destinationClient->getNumber());
 
-                if (sourceClient == nullptr || destClient == nullptr) {
-                    cout << "One or both clients not found." << endl;
-                    break; // Exit the 'case' if clients aren't found
+                    if (sourceAccount != nullptr && destinationAccount != nullptr) { // Check if both accounts exist
+                        Transactions transaction = transactionsView.getTransaction(sourceAccount, destinationAccount);
+
+                        // Update account balances based on transaction type
+                        if (transaction.getType() == "Transfer") {
+                            // Update the accounts
+                            sourceAccount->setBalance(sourceAccount->getBalance() - transaction.getAmount());
+                            destinationAccount->setBalance(destinationAccount->getBalance() + transaction.getAmount());
+                            // Update the AccountsContainer
+                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
+                            model.getAccountsContainer().update(destinationAccount->getNr(), destinationAccount->getBalance());
+
+                        } else if (transaction.getType() == "Deposit") {
+                            sourceAccount->setBalance(sourceAccount->getBalance() + transaction.getAmount());
+                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
+                        } else if (transaction.getType() == "Withdrawal") {
+                            sourceAccount->setBalance(sourceAccount->getBalance() - transaction.getAmount());
+                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
+                        }
+
+                        // Add the transaction to the container
+                        transaction.setAccount(sourceAccount);
+                        model.getTransactionsContainer().add(transaction);
+                        cout << "Transaction added successfully!" << endl;
+                    } else {
+                        cout << "Invalid account numbers!" << endl;
+                    }
+                } else {
+                    cout << "Invalid client numbers!" << endl;
                 }
-
-                // Since client number is the same as account number:
-                Accounts* sourceAccount = model.getAccountsContainer().get(sourceClientNumber);
-                Accounts* destAccount = model.getAccountsContainer().get(destinationClientNumber);
-
-                if (sourceAccount == nullptr || destAccount == nullptr) {
-                    cout << "One or both accounts not found." << endl;
-                    break;
-                }
-
-                // If accounts are found, proceed with getting transaction details:
-                Transactions newTransaction = transactionsView.getTransaction(sourceAccount, destAccount);
-                model.getTransactionsContainer().add(newTransaction);
-                cout << "Transaction added successfully!" << endl;
                 break;
             }
             case 2: {
-                // List Transactions Logic (similar to your existing code)
-                list<Transactions> allTransactions = model.getTransactionsContainer().getAll();
-                transactionsView.printTransactions(allTransactions);
+                // List transactions
+                // ... (Show list of transactions)
                 break;
             }
             case 0:
                 cout << "Exiting Transactions Menu." << endl;
                 break;
             default:
-                cout << "Invalid option. Please try again." << endl;
+                cout << "Invalid option." << endl;
         }
     } while (option != 0);
 }
-
 void Controller::runInsurance() {
     // ... implement logic for managing insurance
 }

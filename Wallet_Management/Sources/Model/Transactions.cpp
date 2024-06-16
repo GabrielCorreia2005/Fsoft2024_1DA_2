@@ -1,3 +1,4 @@
+// Transactions.cpp 
 #include "Transactions.h"
 
 Transactions::Transactions(int transactionId, const Date &date, const string &type, float amount, Accounts *account) :
@@ -7,6 +8,7 @@ Transactions::Transactions(const Transactions &obj) :
         transactionId(obj.transactionId), date(obj.date), type(obj.type), amount(obj.amount), account(obj.account) {}
 
 Transactions::~Transactions() {}
+
 
 int Transactions::getTransactionId() const {
     return transactionId;
@@ -47,3 +49,5 @@ void Transactions::setDate(const Date& date) {
 bool Transactions::operator==(const Transactions &rhs) const {
     return transactionId == rhs.transactionId;
 }
+
+// Remove the redundant setAccount function here
