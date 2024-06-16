@@ -10,46 +10,58 @@ Client ClientView::getClient() {
     Date birth;
 
     while (true) {
-            // Prompt for name input
-            cout << "Name:";
-            cin.ignore(); // Ignore any leftover newline characters
-            getline(cin, name);
+        // Prompt for name input
+        cout << "Name:";
+        cin.ignore(); // Ignore any leftover newline characters
+        getline(cin, name);
 
-            // Check if user wants to cancel
-            if (name.empty() || name.length() < 3) {
-                char choice;
-                cout << "Invalid name. Name must be at least 3 characters long." << endl;
-                cout << "Enter 'Y' to try again or 'N' to cancel:";
-                cin >> choice;
-                cin.ignore(); // Ignore any leftover newline character
-                if (toupper(choice) != 'Y') {
-                    cout << "Operation canceled." << endl;
-                    return Client("", Date(), 0); // Return empty client or handle accordingly
-                } else {
-                    continue; // Prompt again for name
-                }
-            }
-
-            // Validate the name
-            Client::isNameValid(name); // This should throw an exception if the name is invalid
-
-            birth = getDate();
-
-            int age = birth.calculateAge();
-            if (age >= 18) {
-                // Generate a client number (replace with your logic)
-                int number = 1; // Replace with actual logic
-                return Client(name, birth, number);
+        // Check if user wants to cancel
+        if (name.empty() || name.length() < 3 || name.length() > 100) {
+            char choice;
+            cout << "Invalid name. Name must be between 3 and 100 characters long." << endl;
+            cout << "Enter 'Y' to try again or 'N' to cancel:";
+            cin >> choice;
+            cin.ignore(); // Ignore any leftover newline character
+            if (toupper(choice) != 'Y') {
+                cout << "Operation canceled." << endl;
+                return Client("", Date(), 0); // Return empty client or handle accordingly
             } else {
-                char choice;
-                cout << "Client must be 18 years or older. Enter 'Y' to try again or 'N' to cancel:";
-                cin >> choice;
-                cin.ignore(); // Ignore any leftover newline character
-                if (toupper(choice) != 'Y') {
-                    cout << "Operation canceled." << endl;
-                    return Client("", Date(), 0); // Return empty client or handle accordingly
-                }
+                continue; // Prompt again for name
             }
+        }
+
+        // Validate the name (ensure it only contains letters)
+        if (!Client::isNameValid(name)) {
+            char choice;
+            cout << "Invalid name. Name must contain only letters." << endl;
+            cout << "Enter 'Y' to try again or 'N' to cancel:";
+            cin >> choice;
+            cin.ignore(); // Ignore any leftover newline character
+            if (toupper(choice) != 'Y') {
+                cout << "Operation canceled." << endl;
+                return Client("", Date(), 0); // Return empty client or handle accordingly
+            } else {
+                continue; // Prompt again for name
+            }
+        }
+
+        birth = getDate();
+
+        int age = birth.calculateAge();
+        if (age >= 18 && age <= 150) {
+            // Generate a client number (replace with your logic)
+            int number = 1; // Replace with actual logic
+            return Client(name, birth, number);
+        } else {
+            char choice;
+            cout << "Client must be between 18 and 150 years old. Enter 'Y' to try again or 'N' to cancel:";
+            cin >> choice;
+            cin.ignore(); // Ignore any leftover newline character
+            if (toupper(choice) != 'Y') {
+                cout << "Operation canceled." << endl;
+                return Client("", Date(), 0); // Return empty client or handle accordingly
+            }
+        }
     }
 }
 
@@ -67,16 +79,7 @@ Date ClientView::getDate() {
     return Date(day, month, year);
 }
 
-void ClientView::printClient(Client *client) {
-    if (client != nullptr) {
-        int day, month, year;
-        client->getBirth().getDate(day, month, year);
-        string date = to_string(day) + "/" + to_string(month) + "/" + to_string(year);
-        cout << client->getNumber() << ":" << client->getName() << ":" << date << endl;
-    } else {
-        cout << "Invalid Client (nullptr)" << endl;
-    }
-}
+
 
 void ClientView::printClients(list<Client>& clients) {
     for (Client& client : clients) {

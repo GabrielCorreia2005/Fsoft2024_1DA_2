@@ -12,12 +12,12 @@ using namespace std;
 Controller::Controller(WalletManagement &walletManagement) : model(walletManagement) {}
 
 void Controller::run() {
-    int choice;
+    int option;
     do {
         // Display main menu (you'll need to define this content)
-        choice = view.menuBank();
+        option = view.menuBank();
 
-        switch (choice) {
+        switch (option) {
             case 1: runClient(); break;
             case 2: runLoan(); break;
             case 3: runTransactions(); break;
@@ -25,7 +25,7 @@ void Controller::run() {
             case 0: cout << "Exiting...\n"; break;
             default: cout << "Invalid choice. Please try again.\n";
         }
-    } while (choice != 0);
+    } while (option != 0);
 }
 
 
@@ -120,7 +120,7 @@ void Controller::runLoan() {
                     float amount = (float)Utils::getNumber("Enter the loan amount: ");
                     int durationMonths = Utils::getNumber("Enter the loan duration in months: ");
 
-                    Client *client = selectClient();
+                    Client *client = model.getClientContainer().get(accountNumber);
                     if (client != nullptr) {
                         Loans loan(accountNumber, type, amount, durationMonths, client);
                         model.getLoansContainer().add(loan, client, model.getAccountsContainer()); // Pass accountsContainer here
