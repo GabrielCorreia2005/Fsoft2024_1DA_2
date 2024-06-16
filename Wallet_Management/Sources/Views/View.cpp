@@ -54,9 +54,9 @@ int View::menuTransactions() {
 
 int View::menuInsurance() {
     cout << "\n**************** Menu Insurance ****************" << endl;
-    cout << "1- Add new insurance" << endl;
-    cout << "2- List all insurances" << endl;
-    cout << "3- Monitor insurance for a client" << endl; // Add new option
-    cout << "0- Back to main menu" << endl;
+    cout << "1- Add  insurance" << endl;
+    cout << "2- List insurances" << endl;
+    cout << "3- Monitor insurance" << endl; // Add new option
+    cout << "0- Exit" << endl;
     return Utils::getNumber("Option");
 }
