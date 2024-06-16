@@ -12,10 +12,15 @@ class Loans {
 private:
     int accountNumber;
     string type;
-    float amount;
+    float amount;  // This will be the *principle* amount
     int durationMonths;
     static const float fixedInterestRate;
     Client *client;
+
+    // Function to calculate the total loan amount
+    float calculateTotalLoanAmount() const {
+        return amount * (1 + (fixedInterestRate / 100) * durationMonths);
+    }
 
 public:
     Loans(int accountNumber, const string& type, float amount, int durationMonths, Client* client);

@@ -100,7 +100,8 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
  C:/msys64/mingw64/include/c++/13.2.0/iostream \
  C:/msys64/mingw64/include/c++/13.2.0/ostream \
  C:/msys64/mingw64/include/c++/13.2.0/ios \
@@ -139,4 +140,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/istream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h

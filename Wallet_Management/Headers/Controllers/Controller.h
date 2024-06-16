@@ -1,4 +1,3 @@
-// Controller.h
 #ifndef WALLET_MANAGEMENT_CONTROLLER_H
 #define WALLET_MANAGEMENT_CONTROLLER_H
 
@@ -37,5 +36,8 @@ private:
 public:
     Controller(WalletManagement& walletManagement);
     void run();
+
+    // New function to amortize a loan
+    void runAmortizeLoan();
 };
 #endif //WALLET_MANAGEMENT_CONTROLLER_H

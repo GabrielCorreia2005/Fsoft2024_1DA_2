@@ -101,12 +101,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
- C:/msys64/mingw64/include/c++/13.2.0/algorithm \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
  C:/msys64/mingw64/include/c++/13.2.0/iostream \
@@ -147,4 +141,12 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/istream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/AccountsContainers.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h \
+ C:/msys64/mingw64/include/c++/13.2.0/algorithm \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h

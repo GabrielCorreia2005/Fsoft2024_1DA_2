@@ -18,7 +18,7 @@ public:
     Accounts* get(int nr);
 
     // Add a new account to the container
-    void add(const Accounts &obj);
+    void add(const Accounts &obj); // Corrected to use Accounts
 
     // Remove an account by account number
     void remove(int nr);

@@ -155,17 +155,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Insurance.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/TransactionsContainers.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Transactions.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h \
- C:/msys64/mingw64/include/c++/13.2.0/iomanip \
- C:/msys64/mingw64/include/c++/13.2.0/locale \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.h \
- C:/msys64/mingw64/include/c++/13.2.0/ctime \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_conv.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/quoted_string.h \
- C:/msys64/mingw64/include/c++/13.2.0/sstream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/limits
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h

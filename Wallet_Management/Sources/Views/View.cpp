@@ -33,16 +33,15 @@ int View::menuBank() {
 }
 
 int View::menuLoans() {
-    int choice;
+    int option;
     cout << "**************** Menu Loans ****************" << endl;
     cout << "1- Add Loan" << endl;
     cout << "2- List Loans" << endl;
     cout << "3- Loan Details" << endl;
-    cout << "4- Delete Loan" << endl;
+    cout << "4- Amortize Loan" << endl;
     cout << "0- Exit" << endl;
-    cout << "Option: ";
-    cin >> choice;
-    return choice;
+    option = Utils::getNumber("Option: ");
+    return option;
 }
 
 int View::menuTransactions() {

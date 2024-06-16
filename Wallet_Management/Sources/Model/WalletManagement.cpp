@@ -1,15 +1,36 @@
 #include "WalletManagement.h"
+#include "ClientsContainer.h"
+#include "AccountsContainers.h"
+#include "LoansContainers.h"
+#include "InsuranceContainer.h" // Include the InsuranceContainer header
+#include "TransactionsContainers.h"
 
-WalletManagement::WalletManagement() : nextAccountNumber(1) {}
+WalletManagement::WalletManagement() :
+        nextAccountNumber(1), // Initialize nextAccountNumber to 1
+        clientsContainer(),
+        accountsContainer(),
+        loansContainer(),
+        insuranceContainer(),
+        transactionsContainer()
+{}
 
-WalletManagement::WalletManagement(const string& name) : name(name), nextAccountNumber(1) {}
+WalletManagement::WalletManagement(const string& name) :
+        nextAccountNumber(1), // Initialize nextAccountNumber to 1
+        clientsContainer(),
+        accountsContainer(),
+        loansContainer(),
+        insuranceContainer(),
+        transactionsContainer()
+{
+    setName(name);
+}
 
 const string WalletManagement::getName() const {
     return name;
 }
 
 void WalletManagement::setName(const string &name) {
-    WalletManagement::name = name;
+    this->name = name;
 }
 
 ClientsContainer &WalletManagement::getClientContainer() {
