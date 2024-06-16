@@ -1,7 +1,3 @@
-//
-// Created by Gabriel on 20/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_WALLETMANAGEMENT_H
 #define WALLET_MANAGEMENT_WALLETMANAGEMENT_H
 
@@ -14,13 +10,7 @@
 class WalletManagement {
 private:
     string name;
-    /*
-
-    InsuranceContainer insuranceContainer;
-
-    void setDataForConsistency(); // Function to check and enforce data consistency
-*/
-
+    int nextAccountNumber; // Added to track the next account number
     ClientsContainer clientsContainer;
     AccountsContainers accountsContainer;
     LoansContainers loansContainer;
@@ -30,22 +20,16 @@ public:
     // Constructors
     WalletManagement();
     WalletManagement(const string& name);
-    //WalletManagement(const char *obj);
+
     const string getName() const;
     void setName(const string &name);
-    /*
-      // Getters for the containers
 
-
-      InsuranceContainer &getInsuranceContainer();
-
-      //por adicionar mais
-      */
     ClientsContainer &getClientContainer();
     AccountsContainers &getAccountsContainer();
     LoansContainers &getLoansContainer();
     TransactionsContainers &getTransactionsContainer();
 
+    int getNextAccountNumber(); // Added to get the next unique account number
 };
 
 #endif //WALLET_MANAGEMENT_WALLETMANAGEMENT_H

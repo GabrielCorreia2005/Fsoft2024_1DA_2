@@ -32,7 +32,6 @@ void MockData::generateData(WalletManagement &walletManagement) {
     }
 
     // Accounts (ensure minimum balance)
-    int accountNumber = 1;
     for (int i = 0; i < names.size(); ++i) {
         Client *client = walletManagement.getClientContainer().get(i + 1);
 
@@ -40,7 +39,9 @@ void MockData::generateData(WalletManagement &walletManagement) {
             // Generate a random balance that is at least 500
             float initialBalance = 500 + getRandomNumber(0, 9500);
 
-            Accounts account(accountNumber++, initialBalance, client);
+            // Use getNextAccountNumber to get a unique account number
+            int accountNumber = walletManagement.getNextAccountNumber();
+            Accounts account(accountNumber, initialBalance, client);
             try {
                 walletManagement.getAccountsContainer().add(account);
             } catch (DuplicatedDataException& e) {
@@ -80,7 +81,7 @@ void MockData::generateData(WalletManagement &walletManagement) {
         } else {
             // Create a new account with a random balance for the client
             float randomBalance = 500 + getRandomNumber(0, 9500);
-            Accounts account(accountNumber++, randomBalance, randomClient);
+            Accounts account(walletManagement.getNextAccountNumber(), randomBalance, randomClient);
             try {
                 walletManagement.getAccountsContainer().add(account);
             } catch (DuplicatedDataException& e) {
@@ -131,13 +132,5 @@ void MockData::generateData(WalletManagement &walletManagement) {
 
         //  Transactions transaction(transactionAmount, transactionType, transactionDate, originAccount, destinationAccount);
         // walletManagement.getTransactionsContainer().add(transaction);
-    }
-
-    // Ensure minimum balance in mock accounts
-    Client* mockClient = walletManagement.getClientContainer().get(1);
-    if (mockClient) {
-        float randomBalance = balanceDist(gen);
-        Accounts mockAccount(1, randomBalance, mockClient);
-        walletManagement.getAccountsContainer().add(mockAccount);
     }
 }
