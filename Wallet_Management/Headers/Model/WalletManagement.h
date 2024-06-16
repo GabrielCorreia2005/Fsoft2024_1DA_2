@@ -4,7 +4,7 @@
 #include "ClientsContainer.h"
 #include "AccountsContainers.h"
 #include "LoansContainers.h"
-#include "InsuranceContainer.h"
+#include "InsuranceContainer.h" // Include the InsuranceContainer header
 #include "TransactionsContainers.h"
 
 class WalletManagement {
@@ -14,6 +14,7 @@ private:
     ClientsContainer clientsContainer;
     AccountsContainers accountsContainer;
     LoansContainers loansContainer;
+    InsuranceContainer insuranceContainer; // Add the insuranceContainer member
     TransactionsContainers transactionsContainer;
 
 public:
@@ -27,6 +28,7 @@ public:
     ClientsContainer &getClientContainer();
     AccountsContainers &getAccountsContainer();
     LoansContainers &getLoansContainer();
+    InsuranceContainer &getInsuranceContainer(); // Add a getter for the insuranceContainer
     TransactionsContainers &getTransactionsContainer();
 
     int getNextAccountNumber(); // Added to get the next unique account number

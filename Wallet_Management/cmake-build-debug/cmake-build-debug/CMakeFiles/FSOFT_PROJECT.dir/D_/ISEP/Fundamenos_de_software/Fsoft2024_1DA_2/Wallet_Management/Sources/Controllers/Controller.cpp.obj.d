@@ -3,7 +3,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Controllers/Controller.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/View.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/AcquireView.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/AccountView.h \
  C:/msys64/mingw64/include/c++/13.2.0/list \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -43,11 +42,8 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/allocated_ptr.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
- C:/msys64/mingw64/include/c++/13.2.0/tuple \
- C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/invoke.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Acquire.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Insurance.h \
  C:/msys64/mingw64/include/c++/13.2.0/string \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
@@ -79,6 +75,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_function.h \
  C:/msys64/mingw64/include/c++/13.2.0/backward/binders.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/refwrap.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/invoke.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h \
  C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
@@ -98,10 +95,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
- C:/msys64/mingw64/include/c++/13.2.0/iostream \
- C:/msys64/mingw64/include/c++/13.2.0/ostream \
- C:/msys64/mingw64/include/c++/13.2.0/ios \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
  C:/msys64/mingw64/include/c++/13.2.0/exception \
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
@@ -109,6 +103,11 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
+ C:/msys64/mingw64/include/c++/13.2.0/iostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ios \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ios_base.h \
  C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
@@ -145,10 +144,16 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/istream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Insurance.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/InsuranceContainer.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/ClientsContainer.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/AccountView.h \
+ C:/msys64/mingw64/include/c++/13.2.0/tuple \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/WalletManagement.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/ClientsContainer.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/AccountsContainers.h \
@@ -158,7 +163,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/TransactionsContainers.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Transactions.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/ClientView.h \
- D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/InsuranceView.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/LoanView.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \

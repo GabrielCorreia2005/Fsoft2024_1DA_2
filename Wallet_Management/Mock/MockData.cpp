@@ -97,20 +97,25 @@ void MockData::generateData(WalletManagement &walletManagement) {
         }
     }
 
-    // Insurance
+    // Insurance (Correctly associating clients)
     vector<string> insuranceTypes = {"Health Insurance", "Life Insurance", "Car Insurance", "Home Insurance"};
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < names.size(); ++i) { // Generate insurance for each client
         string insuranceType = insuranceTypes[getRandomNumber(0, insuranceTypes.size() - 1)];
-        float price = getRandomNumber(100, 1000);
-        float length = getRandomNumber(1, 12); // Length in months
-        int installments = getRandomNumber(1, 12); // Number of installments for payment
-        float fees = getRandomNumber(0, 100); // Additional fees associated with the insurance
+        float price = getRandomNumber(100, 5000);
+        float length = 24; // Example: Fixed length for now
+        int installments = getRandomNumber(1, 12); // Example: Fixed installments for now
+        float fees = getRandomNumber(0, 100); // Example: Fixed fees for now
 
-        Insurance insurance(insuranceType, price, length, installments, fees);
-        try {
-            //     walletManagement.getInsuranceContainer().add(insurance);
-        } catch (DuplicatedDataException& e) {
-            cerr << "Error adding insurance: " << e.what() << endl;
+        Client* client = walletManagement.getClientContainer().get(i + 1); // Get the client
+        if (client) {
+            Insurance insurance(insuranceType, price, length, installments, fees, client);
+            try {
+                walletManagement.getInsuranceContainer().add(insurance);
+            } catch ( DuplicatedDataException &e) {
+                cerr << "Error: " << e.what() << endl;
+            }
+        } else {
+            cerr << "Error: Client not found for insurance creation." << endl;
         }
     }
 
@@ -130,7 +135,11 @@ void MockData::generateData(WalletManagement &walletManagement) {
         std::advance(it2, getRandomNumber(0, allAccounts.size() - 1));
         Accounts* destinationAccount = &(*it2);
 
-        //  Transactions transaction(transactionAmount, transactionType, transactionDate, originAccount, destinationAccount);
-        // walletManagement.getTransactionsContainer().add(transaction);
+        Transactions transaction(walletManagement.getNextAccountNumber(), transactionDate, transactionAmount, originAccount); // Correct constructor usage
+        try {
+            walletManagement.getTransactionsContainer().add(transaction);
+        } catch ( DuplicatedDataException &e) {
+            cerr << "Error: " << e.what() << endl;
+        }
     }
 }

@@ -1,34 +1,19 @@
-//
-// Created by Gabriel on 20/05/2024.
-//
-
 #include "Insurance.h"
-#include "InvalidDataException.h"
 
-Insurance::Insurance(const string& name, float price, float length, int installments, float fees) : name(name), price(price), length(length), installments(installments), fees(fees) {
-    if (price <= 0) {
-        throw InvalidDataException("Insurance price must be positive.");
-    }
-    if (length <= 0) {
-        throw InvalidDataException("Insurance length must be positive.");
-    }
-
-    if (installments <= 0) {
-        throw InvalidDataException("Number of installments must be positive.");
-    }
-
-    if (fees < 0) {
-        throw InvalidDataException("Fees cannot be negative.");
+Insurance::Insurance(const string &name, float price, float length, int installments, float fees, Client* client)
+        : name(name), price(price), length(length), installments(installments), fees(fees), client(client) {
+    if (!isNameValid(name)) {
+        throw InvalidDataException("Invalid Insurance name.");
     }
 }
 
-Insurance::Insurance(const Insurance &obj) : name(obj.name), price(obj.price), installments(obj.installments), fees(obj.fees) {}
+Insurance::Insurance(const Insurance &obj)
+        : name(obj.name), price(obj.price), length(obj.length),
+          installments(obj.installments), fees(obj.fees), client(obj.client) {}
 
-Insurance::~Insurance() {
+Insurance::~Insurance() {}
 
-}
-
-const string &Insurance::getName() const {
+const string& Insurance::getName() const {
     return name;
 }
 
@@ -48,17 +33,44 @@ float Insurance::getFees() const {
     return fees;
 }
 
+Client* Insurance::getClient() const {
+    return client;
+}
+
 void Insurance::setName(const string &name) {
-    Insurance::name = name;
+    if (isNameValid(name)) {
+        Insurance::name = name;
+    } else {
+        throw InvalidDataException("Invalid Insurance name.");
+    }
 }
 
 void Insurance::setPrice(float price) {
-    if (price <= 0) {
-        throw InvalidDataException("Insurance price must be greater than 0.");
-    }
     Insurance::price = price;
+}
+
+void Insurance::setLength(float length) {
+    Insurance::length = length;
+}
+
+void Insurance::setInstallments(int installments) {
+    Insurance::installments = installments;
+}
+
+void Insurance::setFees(float fees) {
+    Insurance::fees = fees;
+}
+
+void Insurance::setClient(Client *client) {
+    Insurance::client = client;
 }
 
 bool Insurance::operator==(const Insurance &rhs) const {
     return name == rhs.name;
+}
+
+bool Insurance::isNameValid(const string &name) {
+    // Add your validation logic for the insurance name here
+    // For example, check if the name is not empty, meets certain length requirements, etc.
+    return !name.empty();
 }

@@ -1,11 +1,15 @@
 #include "WalletManagement.h"
 
-WalletManagement::WalletManagement() : nextAccountNumber(1) { // Initialize nextAccountNumber
-    this->name = "";
+WalletManagement::WalletManagement() : nextAccountNumber(1) {}
+
+WalletManagement::WalletManagement(const string& name) : name(name), nextAccountNumber(1) {}
+
+const string WalletManagement::getName() const {
+    return name;
 }
 
-WalletManagement::WalletManagement(const string& name) : nextAccountNumber(1) { // Initialize nextAccountNumber
-    this->name = name;
+void WalletManagement::setName(const string &name) {
+    WalletManagement::name = name;
 }
 
 ClientsContainer &WalletManagement::getClientContainer() {
@@ -16,12 +20,12 @@ AccountsContainers &WalletManagement::getAccountsContainer() {
     return accountsContainer;
 }
 
-void WalletManagement::setName(const string &name) {
-    this->name = name;
-}
-
 LoansContainers &WalletManagement::getLoansContainer() {
     return loansContainer;
+}
+
+InsuranceContainer &WalletManagement::getInsuranceContainer() {
+    return insuranceContainer;
 }
 
 TransactionsContainers &WalletManagement::getTransactionsContainer() {

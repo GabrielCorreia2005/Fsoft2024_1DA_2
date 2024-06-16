@@ -250,6 +250,55 @@ void Controller::runTransactions() {
         }
     } while (option != 0);
 }
+
+
 void Controller::runInsurance() {
-    // ... implement logic for managing insurance
+    int option;
+    do {
+        option = view.menuInsurance();
+        switch (option) {
+            case 1: { // Add insurance
+                try {
+                    Insurance insurance = insuranceView.getInsurance(model.getClientContainer());
+                    model.getInsuranceContainer().add(insurance);
+                    cout << "Insurance added successfully." << endl;
+                } catch ( InvalidDataException &e) {
+                    cout << "Error: " << e.what() << endl;
+                } catch ( DuplicatedDataException &e) {
+                    cout << "Error: " << e.what() << endl;
+                }
+                break;
+            }
+            case 2: { // List insurances
+                list<Insurance> insurances = model.getInsuranceContainer().getAll();
+                insuranceView.printInsurances(insurances);
+                break;
+            }
+            case 3: // Monitor insurance for a client
+                runMonitorInsurance();
+                break;
+            case 0: // Back to main menu
+                cout << "Returning to main menu..." << endl;
+                break;
+            default:
+                cout << "Invalid option. Please try again." << endl;
+        }
+    } while (option != 0);
+}
+
+void Controller::runMonitorInsurance() {
+    int clientNumber = Utils::getNumber("Enter client number: ");
+    Client* client = model.getClientContainer().get(clientNumber);
+    if (client == nullptr) {
+        cout << "Client not found." << endl;
+        return;
+    }
+
+    list<Insurance> clientInsurances = model.getInsuranceContainer().getClientInsurances(clientNumber);
+    if (clientInsurances.empty()) {
+        cout << "Client has no insurances." << endl;
+    } else {
+        cout << "\nInsurances for client " << client->getName() << ":" << endl;
+        insuranceView.printInsurances(clientInsurances);
+    }
 }
