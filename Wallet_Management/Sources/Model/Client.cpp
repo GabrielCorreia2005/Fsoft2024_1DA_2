@@ -48,6 +48,8 @@ void Client::setBirth(const Date &birth) {
 
 bool Client::isNameValid(const string& name) {
     // Check for minimum length (3 characters)
+
+
     if (name.length() < 3) {
         cout << "Invalid name. Name must be at least 3 characters long." << endl;
         return false;
