@@ -44,7 +44,7 @@ void Controller::runClient() {
                     float balance;
                     do {
                         balance = Utils::getNumber("Initial Balance:");
-                        if (balance < Accounts::getMinBalance()) { // Use the getter
+                        if (balance < Accounts::getMinBalance()) {
                             cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
                         }
                     } while (balance < Accounts::getMinBalance());
@@ -53,7 +53,7 @@ void Controller::runClient() {
                     Accounts newAccount(newClient.getNumber(), balance, &newClient);
                     model.getAccountsContainer().add(newAccount);
 
-                    cout << "Client and account added successfully." << endl;
+                    cout << "Account added successfully." << endl;
                 } catch (const InvalidDataException& e) {
                     cerr << "Error: " << e.what() << endl;
                 }
@@ -66,19 +66,12 @@ void Controller::runClient() {
                 break;
             }
             case 3: {
-                // Account Information (New Logic)
+                // Account Information
                 int clientNumber = Utils::getNumber("Enter client number: ");
-
-                // Get the client object
                 Client* client = model.getClientContainer().get(clientNumber);
-
-                // Check if the client exists
                 if (client != nullptr) {
-                    // Get the account associated with the client (assuming one account per client)
-                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
-
+                    Accounts* account = model.getAccountsContainer().get(clientNumber);
                     if (account != nullptr) {
-                        // Display account information
                         accountView.printAccount(account);
                     } else {
                         cout << "Client does not have an account." << endl;
@@ -89,12 +82,13 @@ void Controller::runClient() {
                 break;
             }
             case 4: {
-                // Remove Client
-                int number = Utils::getNumber("Enter the client number to remove");
+                // Delete Account
+                int clientNumberToDelete = Utils::getNumber("Enter client number to delete: ");
                 try {
-                    model.getClientContainer().remove(number);
-                    cout << "Client removed successfully." << endl;
-                } catch (const exception &e) { // Consider catching specific exceptions
+                    model.getClientContainer().remove(clientNumberToDelete);
+                    model.getAccountsContainer().remove(clientNumberToDelete);
+                    cout << "Client and account deleted successfully." << endl;
+                } catch (const exception& e) {
                     cerr << "Error: " << e.what() << endl;
                 }
                 break;
@@ -106,6 +100,7 @@ void Controller::runClient() {
         }
     } while (option != 0);
 }
+
 
 
 void Controller::runLoan() {

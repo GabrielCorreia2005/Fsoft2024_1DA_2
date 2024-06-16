@@ -21,10 +21,7 @@ Accounts* AccountsContainers::get(int nr) {
 // Add a new account to the container
 void AccountsContainers::add(const Accounts &obj) {
     accounts.push_back(obj);
-    cout << "Added Account: Number=" << obj.getNr()
-         << ", Balance=" << obj.getBalance()
-         << ", Client=" << obj.getClient()->getNumber()
-         << endl;
+    // cout << "Account Created: "<< endl; // <-- Commented out or removed
 }
 
 // Remove an account by account number
