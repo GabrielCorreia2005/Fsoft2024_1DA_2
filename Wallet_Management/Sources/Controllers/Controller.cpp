@@ -35,38 +35,28 @@ void Controller::runClient() {
         option = view.menuClient();
         switch (option) {
             case 1: {
-                // Create Account (Modified Logic)
-                string name = Utils::getString("Name");
-                // Validate name (Check if it's at least 3 characters long)
-                while (!Client::isNameValid(name)) {
-                    cout << "Invalid name. Name must be at least 3 characters long." << endl;
-                    name = Utils::getString("Name");
+                try {
+                    // Create Account (Modified Logic)
+                    Client newClient = clientView.getClient();
+                    model.getClientContainer().add(newClient);
+
+                    // Prompt for initial balance
+                    float balance;
+                    do {
+                        balance = Utils::getNumber("Initial Balance:");
+                        if (balance < Accounts::getMinBalance()) { // Use the getter
+                            cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
+                        }
+                    } while (balance < Accounts::getMinBalance());
+
+                    // Create the Account object
+                    Accounts newAccount(newClient.getNumber(), balance, &newClient);
+                    model.getAccountsContainer().add(newAccount);
+
+                    cout << "Client and account added successfully." << endl;
+                } catch (const InvalidDataException& e) {
+                    cerr << "Error: " << e.what() << endl;
                 }
-
-                Date birth = clientView.getDate();
-
-                // Create the Client object
-                Client newClient(name, birth, ClientsContainer::nextClientNumber);
-
-                // Add the Client to the container
-                model.getClientContainer().add(newClient);
-
-                // Prompt for initial balance
-                float balance;
-                do {
-                    balance = Utils::getNumber("Initial Balance::");
-                    if (balance < Accounts::getMinBalance()) { // Use the getter
-                        cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
-                    }
-                } while (balance < Accounts::getMinBalance());
-
-                // Create the Account object
-                Accounts newAccount(newClient.getNumber(), balance, &newClient);
-
-                // Add the Account to the container
-                model.getAccountsContainer().add(newAccount);
-
-                cout << "Client and account added successfully." << endl;
                 break;
             }
             case 2: {
