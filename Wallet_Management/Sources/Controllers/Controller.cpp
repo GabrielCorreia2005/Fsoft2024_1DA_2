@@ -36,11 +36,11 @@ void Controller::runClient() {
         switch (option) {
             case 1: {
                 // Create Account (Modified Logic)
-                string name = Utils::getString("Name::");
+                string name = Utils::getString("Name");
                 // Validate name (Check if it's at least 3 characters long)
                 while (!Client::isNameValid(name)) {
                     cout << "Invalid name. Name must be at least 3 characters long." << endl;
-                    name = Utils::getString("Name::");
+                    name = Utils::getString("Name");
                 }
 
                 Date birth = clientView.getDate();
