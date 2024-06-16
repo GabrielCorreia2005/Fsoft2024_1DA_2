@@ -17,7 +17,6 @@ private:
     /*
 
     InsuranceContainer insuranceContainer;
-    TransactionsContainers transactionsContainer;
 
     void setDataForConsistency(); // Function to check and enforce data consistency
 */
@@ -25,6 +24,8 @@ private:
     ClientsContainer clientsContainer;
     AccountsContainers accountsContainer;
     LoansContainers loansContainer;
+    TransactionsContainers transactionsContainer;
+
 public:
     // Constructors
     WalletManagement();
@@ -37,13 +38,13 @@ public:
 
 
       InsuranceContainer &getInsuranceContainer();
-      TransactionsContainers &getTransactionsContainer();
 
       //por adicionar mais
       */
     ClientsContainer &getClientContainer();
     AccountsContainers &getAccountsContainer();
     LoansContainers &getLoansContainer();
+    TransactionsContainers &getTransactionsContainer();
 
 };
 

@@ -1,7 +1,3 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
 #ifndef FSOFT_PROJECT_ACCOUNTVIEW_H
 #define FSOFT_PROJECT_ACCOUNTVIEW_H
 
@@ -9,6 +5,7 @@
 #include <tuple>
 #include "Accounts.h"
 #include "ClientsContainer.h"
+#include "WalletManagement.h" // Include WalletManagement.h
 
 class AccountView {
 public:
@@ -23,6 +20,9 @@ public:
 
     // Print accounts associated with a specific client (To be implemented based on your requirements)
     void printStudentAccounts(Client *client, list<tuple<Accounts *, int>> &subjects);
+
+    // Function to print account information (added)
+    void printAccountInformation(WalletManagement& walletManagement);
 };
 
 #endif //FSOFT_PROJECT_ACCOUNTVIEW_H

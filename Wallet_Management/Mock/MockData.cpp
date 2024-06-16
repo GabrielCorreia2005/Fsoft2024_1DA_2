@@ -31,13 +31,15 @@ void MockData::generateData(WalletManagement &walletManagement) {
         }
     }
 
-    // Accounts
-    int accountNumber = 100; // Start with a base account number
+    // Accounts (ensure minimum balance)
+    int accountNumber = 100;
     for (int i = 0; i < names.size(); ++i) {
-        float initialBalance = getRandomNumber(1000, 10000);
         Client *client = walletManagement.getClientContainer().get(i + 1);
 
-        if (client) { // Ensure client is found before creating account
+        if (client) {
+            // Generate a random balance that is at least 500
+            float initialBalance = 500 + getRandomNumber(0, 9500);
+
             Accounts account(accountNumber++, initialBalance, client);
             try {
                 walletManagement.getAccountsContainer().add(account);
@@ -63,16 +65,34 @@ void MockData::generateData(WalletManagement &walletManagement) {
         std::advance(it, randomClientIndex);
         Client* randomClient = &(*it);
 
-        // Generate a mock account for the client (ensure unique account number)
-        Accounts account(accountNumber++, 0.0f, randomClient);
-        walletManagement.getAccountsContainer().add(account);
+        // Get the client's account (if it exists)
+        Accounts* clientAccount = walletManagement.getAccountsContainer().get(randomClient->getNumber());
 
         // Create the loan and associate it with the account and client
-        Loans loan(account.getNr(), loanType, loanAmount, durationMonths, randomClient);
-        try {
-            walletManagement.getLoansContainer().add(loan, randomClient);
-        } catch (DuplicatedDataException& e) {
-            cerr << "Error adding loan: " << e.what() << endl;
+        if (clientAccount) {
+            // Associate the loan with the existing account
+            Loans loan(clientAccount->getNr(), loanType, loanAmount, durationMonths, randomClient);
+            try {
+                walletManagement.getLoansContainer().add(loan, randomClient);
+            } catch (DuplicatedDataException& e) {
+                cerr << "Error adding loan: " << e.what() << endl;
+            }
+        } else {
+            // Create a new account with a random balance for the client
+            float randomBalance = 500 + getRandomNumber(0, 9500);
+            Accounts account(accountNumber++, randomBalance, randomClient);
+            try {
+                walletManagement.getAccountsContainer().add(account);
+            } catch (DuplicatedDataException& e) {
+                cerr << "Error adding account: " << e.what() << endl;
+            }
+            // Create the loan
+            Loans loan(account.getNr(), loanType, loanAmount, durationMonths, randomClient);
+            try {
+                walletManagement.getLoansContainer().add(loan, randomClient);
+            } catch (DuplicatedDataException& e) {
+                cerr << "Error adding loan: " << e.what() << endl;
+            }
         }
     }
 
@@ -87,7 +107,7 @@ void MockData::generateData(WalletManagement &walletManagement) {
 
         Insurance insurance(insuranceType, price, length, installments, fees);
         try {
-       //     walletManagement.getInsuranceContainer().add(insurance);
+            //     walletManagement.getInsuranceContainer().add(insurance);
         } catch (DuplicatedDataException& e) {
             cerr << "Error adding insurance: " << e.what() << endl;
         }
@@ -109,7 +129,15 @@ void MockData::generateData(WalletManagement &walletManagement) {
         std::advance(it2, getRandomNumber(0, allAccounts.size() - 1));
         Accounts* destinationAccount = &(*it2);
 
-      //  Transactions transaction(transactionAmount, transactionType, transactionDate, originAccount, destinationAccount);
-       // walletManagement.getTransactionsContainer().add(transaction);
+        //  Transactions transaction(transactionAmount, transactionType, transactionDate, originAccount, destinationAccount);
+        // walletManagement.getTransactionsContainer().add(transaction);
+    }
+
+    // Ensure minimum balance in mock accounts
+    Client* mockClient = walletManagement.getClientContainer().get(1);
+    if (mockClient) {
+        float randomBalance = balanceDist(gen);
+        Accounts mockAccount(1, randomBalance, mockClient);
+        walletManagement.getAccountsContainer().add(mockAccount);
     }
 }

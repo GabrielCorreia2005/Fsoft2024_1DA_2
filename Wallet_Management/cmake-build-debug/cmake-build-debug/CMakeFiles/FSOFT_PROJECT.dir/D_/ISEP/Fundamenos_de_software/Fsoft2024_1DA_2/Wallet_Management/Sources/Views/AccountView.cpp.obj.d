@@ -146,6 +146,14 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/ClientsContainer.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/WalletManagement.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/ClientsContainer.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/AccountsContainers.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/LoansContainers.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/InsuranceContainer.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/TransactionsContainers.h \
+ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Transactions.h \
  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h \
  C:/msys64/mingw64/include/c++/13.2.0/iomanip \
  C:/msys64/mingw64/include/c++/13.2.0/locale \
@@ -158,4 +166,5 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
  C:/msys64/mingw64/include/c++/13.2.0/bits/locale_conv.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/quoted_string.h \
  C:/msys64/mingw64/include/c++/13.2.0/sstream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/13.2.0/limits

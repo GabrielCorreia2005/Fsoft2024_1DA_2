@@ -1,96 +1,71 @@
-//
-// Created by gvice on 20/05/2024.
-//
-
-#include <iostream>
-
 #include "View.h"
-#include "Utils.h"
+#include <iostream>
 
 using namespace std;
 
-View::View(){
-}
+View::View() {}
 
 int View::menuClient() {
-    cout << "\n**************** Menu Client ****************" << endl;
+    int choice;
+    cout << "**************** Menu Client ****************" << endl;
     cout << "1- Create Account" << endl;
     cout << "2- List" << endl;
-    cout << "3- Account Information" << endl; // New option
+    cout << "3- Account Information" << endl;
     cout << "4- Delete" << endl;
     cout << "0- Exit" << endl;
     cout << "Option: ";
-
-    int option;
-    cin >> option;
-    return option;
+    cin >> choice;
+    return choice;
 }
 
-int View::menuBank()
-{
-    int op = -1;
-
-    do{
-        cout << "\n**************** Menu Bank ****************\n";
-        cout << "1- Account\n";
-        cout << "2- Loans\n";
-        cout << "3- Transactions\n";
-        cout << "4- Insurance\n";
-
-        cout << "0- Log Out\n";
-        op = Utils::getNumber("Option");
-
-    }while(op < 0 || op > 4);
-    return op;
+int View::menuBank() {
+    int choice;
+    cout << "**************** Menu Bank ****************" << endl;
+    cout << "1- Account" << endl;
+    cout << "2- Loans" << endl;
+    cout << "3- Transactions" << endl;
+    cout << "4- Insurance" << endl;
+    cout << "0- Log Out" << endl;
+    cout << "Option: ";
+    cin >> choice;
+    return choice;
 }
 
-int View::menuLoans()
-{
-    int op = -1;
-
-    do{
-        cout << "\n**************** Menu Loans ****************\n";
-        cout << "1- Acquire\n";
-        cout << "2- List\n";
-        cout << "3- Monitor\n";
-        cout << "4- Amortize\n";
-
-        cout << "0- Back\n";
-        op = Utils::getNumber("Option");
-
-    }while(op < 0 || op > 4);
-    return op;
+int View::menuLoans() {
+    int choice;
+    cout << "**************** Menu Loans ****************" << endl;
+    cout << "1- Add Loan" << endl;
+    cout << "2- List Loans" << endl;
+    cout << "3- Loan Details" << endl;
+    cout << "4- Delete Loan" << endl;
+    cout << "0- Exit" << endl;
+    cout << "Option: ";
+    cin >> choice;
+    return choice;
 }
 
-int View::menuTransactions()
-{
-    int op = -1;
-
-    do{
-        cout << "\n**************** Menu Transactions ****************\n";
-        cout << "1- History\n";
-        cout << "2- Make\n";
-
-        cout << "0- Back\n";
-        op = Utils::getNumber("Option");
-
-    }while(op < 0 || op > 2);
-    return op;
+int View::menuTransactions() {
+    int choice;
+    cout << "**************** Menu Transactions ****************" << endl;
+    cout << "1- Add Transaction" << endl;
+    cout << "2- List Transactions" << endl;
+    cout << "3- Transaction Details" << endl;
+    cout << "4- Delete Transaction" << endl;
+    cout << "0- Exit" << endl;
+    cout << "Option: ";
+    cin >> choice;
+    return choice;
 }
 
-int View::menuInsurance()
-{
-    int op = -1;
-
-    do{
-        cout << "\n**************** Menu Insurance ****************\n";
-        cout << "1- Acquire\n";
-        cout << "2- Cancel\n";
-        cout << "3- List\n";
-
-        cout << "0- Log Out\n";
-        op = Utils::getNumber("Option");
-
-    }while(op < 0 || op > 3);
-    return op;
+int View::menuInsurance() {
+    int choice;
+    cout << "**************** Menu Insurance ****************" << endl;
+    cout << "1- Add Insurance" << endl;
+    cout << "2- List Insurance" << endl;
+    cout << "3- Insurance Details" << endl;
+    cout << "4- Delete Insurance" << endl;
+    cout << "0- Exit" << endl;
+    cout << "Option: ";
+    cin >> choice;
+    return choice;
 }

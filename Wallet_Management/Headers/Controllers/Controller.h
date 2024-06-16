@@ -1,7 +1,4 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
+// Controller.h
 #ifndef WALLET_MANAGEMENT_CONTROLLER_H
 #define WALLET_MANAGEMENT_CONTROLLER_H
 
@@ -11,7 +8,7 @@
 #include "ClientView.h"
 #include "InsuranceView.h"
 #include "LoanView.h"
-#include "TransactionsView.h"
+#include "TransactionsView.h" // Add TransactionsView header
 #include "WalletManagement.h"
 
 class Controller{
@@ -19,28 +16,21 @@ class Controller{
 private:
     View view;
     /*
-<<<<<<< HEAD
     AcquireView acquireView;
     InsuranceView insuranceView;
-=======
-<<<<<<< Updated upstream
-=======
-    AcquireView acquireView; //new //new
-    InsuranceView insuranceView;
->>>>>>> Stashed changes
->>>>>>> f7dcb996e1eafc76dfda2c3c452279b14a232467
-
-    TransactionsView transactionsView;*/
-
+    */
+    Client* selectClient(); // Declare the function
     AccountView accountView;
     ClientView clientView;
     LoanView loanView;
+    TransactionsView transactionsView; // Add TransactionsView to the private section
     // Private functions to handle specific modules
     void runClient();
     void runLoan();
     void runTransactions();
     void runInsurance();
     void runBank();
+    void runAccount(); // New method to handle account options
     void runAccountInformation(); // New method
 
     WalletManagement model;

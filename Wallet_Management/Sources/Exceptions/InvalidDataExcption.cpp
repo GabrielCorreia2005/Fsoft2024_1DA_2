@@ -1,17 +1,9 @@
-//
-// Created by gvice on 13/05/2024.
-//
-
+// InvalidDataException.cpp
 #include "InvalidDataException.h"
 
+InvalidDataException::InvalidDataException(string data) : data(data) {}
 
-InvalidDataException::InvalidDataException(string data){
-    this->data = data;
-}
-
-const char* InvalidDataException::what(){
-    string msg = "Error: ["+ data + "] is not valid!!";
-    return msg.c_str();
-
-
+const char* InvalidDataException::what() const noexcept {
+    // Convert data (a string) to a const char*
+    return data.c_str();
 }

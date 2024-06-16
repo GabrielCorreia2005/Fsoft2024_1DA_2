@@ -34,14 +34,39 @@ void Controller::runClient() {
     do {
         option = view.menuClient();
         switch (option) {
-            case 1: {  // Create Account
-                Client client = clientView.getClient(); // Get the client data with validation
-                try {
-                    model.getClientContainer().add(client);
-                    cout << "Client added successfully." << endl;
-                } catch (DuplicatedDataException &e) {
-                    cerr << "Error: " << e.what() << endl;
+            case 1: {
+                // Create Account (Modified Logic)
+                string name = Utils::getString("Name::");
+                // Validate name (Check if it's at least 3 characters long)
+                while (!Client::isNameValid(name)) {
+                    cout << "Invalid name. Name must be at least 3 characters long." << endl;
+                    name = Utils::getString("Name::");
                 }
+
+                Date birth = clientView.getDate();
+
+                // Create the Client object
+                Client newClient(name, birth, ClientsContainer::nextClientNumber);
+
+                // Add the Client to the container
+                model.getClientContainer().add(newClient);
+
+                // Prompt for initial balance
+                float balance;
+                do {
+                    balance = Utils::getNumber("Initial Balance::");
+                    if (balance < Accounts::getMinBalance()) { // Use the getter
+                        cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
+                    }
+                } while (balance < Accounts::getMinBalance());
+
+                // Create the Account object
+                Accounts newAccount(newClient.getNumber(), balance, &newClient);
+
+                // Add the Account to the container
+                model.getAccountsContainer().add(newAccount);
+
+                cout << "Client and account added successfully." << endl;
                 break;
             }
             case 2: {
@@ -51,24 +76,34 @@ void Controller::runClient() {
                 break;
             }
             case 3: {
+                // Account Information (New Logic)
+                int clientNumber = Utils::getNumber("Enter client number: ");
+
+                // Get the client object
+                Client* client = model.getClientContainer().get(clientNumber);
+
+                // Check if the client exists
+                if (client != nullptr) {
+                    // Get the account associated with the client (assuming one account per client)
+                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
+
+                    if (account != nullptr) {
+                        // Display account information
+                        accountView.printAccount(account);
+                    } else {
+                        cout << "Client does not have an account." << endl;
+                    }
+                } else {
+                    cout << "Client not found." << endl;
+                }
+                break;
+            }
+            case 4: {
                 // Remove Client
                 int number = Utils::getNumber("Enter the client number to remove");
                 try {
                     model.getClientContainer().remove(number);
                     cout << "Client removed successfully." << endl;
-                } catch (const exception &e) { // Consider catching specific exceptions
-                    cerr << "Error: " << e.what() << endl;
-                }
-                break;
-            }
-            case 4: {
-                // Update Client
-                int number = Utils::getNumber("Enter the client number to update");
-                string name = Utils::getString("Enter the new name: ");
-                Date birth = clientView.getDate();
-                try {
-                    model.getClientContainer().update(number, name, birth);
-                    cout << "Client updated successfully." << endl;
                 } catch (const exception &e) { // Consider catching specific exceptions
                     cerr << "Error: " << e.what() << endl;
                 }
@@ -151,8 +186,63 @@ void Controller::runLoan() {
     } while (option != 0);
 }
 
+Client* Controller::selectClient() {
+    int clientNumber = Utils::getNumber("Enter Client Number: ");
+    Client *client = model.getClientContainer().get(clientNumber);
+    if (client != nullptr) {
+        return client;
+    } else {
+        cout << "Client not found." << endl;
+        return nullptr;
+    }
+}
+
 void Controller::runTransactions() {
-    // ... implement logic for managing transactions
+    int choice;
+    do {
+        choice = view.menuTransactions();
+
+        switch (choice) {
+            case 1: {
+                // Make Transaction
+                Client* client = selectClient();
+                if (client != nullptr) {
+                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
+                    if (account != nullptr) {
+                        Transactions newTransaction = transactionsView.getTransaction(account); // Get transaction
+                        try {
+                            model.getTransactionsContainer().add(newTransaction);
+                            cout << "Transaction registered successfully!" << endl;
+                        } catch (const InvalidDataException &e) {
+                            cout << "Error: " << e.what() << endl;
+                        }
+                    } else {
+                        cout << "Account not found." << endl;
+                    }
+                }
+                break;
+            }
+            case 2: {
+                // View Transaction History
+                Client* client = selectClient();
+                if (client != nullptr) {
+                    Accounts* account = model.getAccountsContainer().get(client->getNumber());
+                    if (account != nullptr) {
+                        list<Transactions> transactions = model.getTransactionsContainer().getAll();
+                        transactionsView.printTransactions(transactions);
+                    } else {
+                        cout << "Account not found." << endl;
+                    }
+                }
+                break;
+            }
+            case 0:
+                cout << "Returning to main menu..." << endl;
+                break;
+            default:
+                cout << "Invalid option. Please try again." << endl;
+        }
+    } while (choice != 0);
 }
 
 void Controller::runInsurance() {

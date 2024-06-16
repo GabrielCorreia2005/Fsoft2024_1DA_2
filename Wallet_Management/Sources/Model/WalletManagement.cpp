@@ -24,6 +24,10 @@ void WalletManagement::setName(const string &name)
 LoansContainers &WalletManagement::getLoansContainer() {
     return loansContainer;
 }
+
+TransactionsContainers &WalletManagement::getTransactionsContainer() {
+    return transactionsContainer;
+}
 /*
 WalletManagement::WalletManagement(const char *obj) {
 }
@@ -34,9 +38,7 @@ InsuranceContainer &WalletManagement::getInsuranceContainer() {
     return insuranceContainer;
 }
 
-TransactionsContainers &WalletManagement::getTransactionsContainer() {
-    return transactionsContainer;
-}
+
 
 void WalletManagement::setDataForConsistency() {
 

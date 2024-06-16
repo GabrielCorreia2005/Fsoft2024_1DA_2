@@ -5,13 +5,25 @@
 #include "Accounts.h"
 #include "DataConsistencyException.h"
 
-Accounts::Accounts(int nr, float balance, Client *client) : nr(nr), balance(balance), client(client) {
-    if (balance < 0) {
-        throw DataConsistencyException("Balance cannot be negative.");
+const float Accounts::MIN_BALANCE = 500.0f;
+
+// Constructor with validation
+Accounts::Accounts(int nr, float balance, Client * client) : nr(nr), balance(balance), client(client) {
+    validateBalance(balance); // Validate upon creation
+}
+
+// Validation function
+void Accounts::validateBalance(float balance) const {
+    if (balance < MIN_BALANCE) {
+        throw InvalidDataException("Account balance cannot be less than "
+                                   + to_string(MIN_BALANCE));
     }
-    if (!isPointerNotNull(client)) {
-        throw DataConsistencyException("Client pointer cannot be null.");
-    }
+}
+
+// setBalance method with validation
+void Accounts::setBalance(float &balance) {
+    validateBalance(balance); // Validate before setting
+    this->balance = balance;
 }
 
 Accounts::Accounts(const Accounts &obj) : nr(obj.nr), balance(obj.balance), client(obj.client) {
@@ -47,6 +59,3 @@ void Accounts::setNumber(int &nr) {
     Accounts::nr = nr;
 }
 
-void Accounts::setBalance(float &balance) {
-    Accounts::balance = balance;
-}

@@ -1,23 +1,22 @@
-//
-// Created by corre on 20/05/2024.
-//
-
 #ifndef WALLET_MANAGEMENT_ACCOUNTS_H
 #define WALLET_MANAGEMENT_ACCOUNTS_H
 
 #include "Client.h"
+#include "InvalidDataException.h"
 
 using namespace std;
 
-class Accounts{
-
+class Accounts {
 private:
-    Accounts(int nr, float balance, void  *client);
+    static const float MIN_BALANCE; // Declare the minimum balance as a constant
     int nr;
     float balance;
     Client * client;
 
     bool isPointerNotNull(void * pointer);
+
+    // Add a validation function for the balance
+    void validateBalance(float balance) const;
 
 public:
     Accounts(int nr, float balance, Client * client);
@@ -30,7 +29,9 @@ public:
 
     void setNumber(int &nr);
     void setBalance(float &balance);
+    static float getMinBalance() {
+        return MIN_BALANCE;
+    }
 };
-
 
 #endif //WALLET_MANAGEMENT_ACCOUNTS_H

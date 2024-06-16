@@ -38,5 +38,8 @@ public:
     bool operator < (const Date& obj) const;
 
     static bool isValid(int day, int month, int year);
+
+    // Overloaded << operator for Date
+    friend ostream& operator<<(ostream& os, const Date& date);
 };
 #endif //FSOFT_PROJECT_DATE_H
