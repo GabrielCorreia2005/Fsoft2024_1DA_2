@@ -8,7 +8,7 @@
 class TransactionsView {
 public:
     // Get transaction details from the user
-    Transactions getTransaction(Accounts *sourceAccount, Accounts *destinationAccount);
+    Transactions getTransaction(Client *sourceClient, Client *destinationClient);
 
     // Print details of a single transaction
     void printTransaction(Transactions *transaction);

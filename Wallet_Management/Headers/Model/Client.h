@@ -13,7 +13,7 @@ private:
     string name;
     int number;
     Date birth;
-
+    float balance;
 public:
     Client(const string &name, const Date &birth, const int number);
     Client(const Client &obj);
@@ -24,7 +24,8 @@ public:
 
     int getNumber() const;
     void setNumber(int number);
-
+    int getBalance() const;
+    int setBalance(int balance);
     const Date& getBirth() const;
     void setBirth(const Date &birth);
 

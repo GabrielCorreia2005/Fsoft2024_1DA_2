@@ -205,11 +205,7 @@ void Controller::runTransactions() {
                     cout << "Source client not found." << endl;
                     break; // Exit to the transactions menu
                 }
-                Accounts* sourceAccount = model.getAccountsContainer().get(sourceClientNumber);
-                if (sourceAccount == nullptr) {
-                    cout << "Source account not found." << endl;
-                    break;
-                }
+
 
                 int destClientNumber = Utils::getNumber("Enter Destination Client Number: ");
                 Client* destClient = model.getClientContainer().get(destClientNumber);
@@ -217,18 +213,18 @@ void Controller::runTransactions() {
                     cout << "Destination client not found." << endl;
                     break;
                 }
-                Accounts* destAccount = model.getAccountsContainer().get(destClientNumber);
-                if (destAccount == nullptr) {
+                Client* desClient = reinterpret_cast<Client *>(model.getClientContainer().get(destClientNumber));
+                if (destClient == nullptr) {
                     cout << "Destination account not found." << endl;
                     break;
                 }
 
                 // 2. Get Transaction Details from the View
-                Transactions newTransaction = transactionsView.getTransaction(sourceAccount, destAccount);
+                Transactions newTransaction = transactionsView.getTransaction(sourceClient, destClient);
 
-                    if (sourceAccount->getBalance() >= newTransaction.getAmount()) {
-                        sourceAccount->setBalance(sourceAccount->getBalance() - newTransaction.getAmount());
-                        destAccount->setBalance(destAccount->getBalance() + newTransaction.getAmount());
+                    if (sourceClient->getBalance() >= newTransaction.getAmount()) {
+                        sourceClient->setBalance(sourceClient->getBalance() - newTransaction.getAmount());
+                        destClient->setBalance(destClient->getBalance() + newTransaction.getAmount());
                         cout << "Transaction added successfully!" << endl;
                     } else {
                         cout << "Error: Insufficient funds in the source account." << endl;

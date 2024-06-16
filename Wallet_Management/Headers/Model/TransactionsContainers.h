@@ -26,7 +26,7 @@ public:
     void remove(int transactionId);
 
     // Update a transaction (You might not need this, but it's possible)
-    void update(int transactionId, const Date& date, const string& type, float amount, Accounts *account);
+    void update(int transactionId, const Date& date, const string& type, float amount, Client* client);
 };
 
 #endif //WALLET_MANAGEMENT_TRANSACTIONSCONTAINERS_H
