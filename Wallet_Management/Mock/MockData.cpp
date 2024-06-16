@@ -74,7 +74,7 @@ void MockData::generateData(WalletManagement &walletManagement) {
             // Associate the loan with the existing account
             Loans loan(clientAccount->getNr(), loanType, loanAmount, durationMonths, randomClient);
             try {
-                walletManagement.getLoansContainer().add(loan, randomClient);
+                walletManagement.getLoansContainer().add(loan, randomClient, walletManagement.getAccountsContainer());;
             } catch (DuplicatedDataException& e) {
                 cerr << "Error adding loan: " << e.what() << endl;
             }
@@ -90,7 +90,7 @@ void MockData::generateData(WalletManagement &walletManagement) {
             // Create the loan
             Loans loan(account.getNr(), loanType, loanAmount, durationMonths, randomClient);
             try {
-                walletManagement.getLoansContainer().add(loan, randomClient);
+                walletManagement.getLoansContainer().add(loan, randomClient, walletManagement.getAccountsContainer());;
             } catch (DuplicatedDataException& e) {
                 cerr << "Error adding loan: " << e.what() << endl;
             }

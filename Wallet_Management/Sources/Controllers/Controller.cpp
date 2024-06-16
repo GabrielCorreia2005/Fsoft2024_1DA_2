@@ -113,68 +113,71 @@ void Controller::runLoan() {
     do {
         option = view.menuLoans();
         switch (option) {
-            case 1: { // Acquire Loan
-                int AccountNumber = Utils::getNumber("Enter account number: ");
-                Client* client = model.getClientContainer().get(AccountNumber);
-                if (client) {
-                    try {
-                        Loans loan = loanView.getLoan(AccountNumber, client);
-                        model.getLoansContainer().add(loan, client);
+            case 1: {
+                try {
+                    int accountNumber = Utils::getNumber("Enter account number: ");
+                    string type = Utils::getString("Enter the loan type: ");
+                    float amount = (float)Utils::getNumber("Enter the loan amount: ");
+                    int durationMonths = Utils::getNumber("Enter the loan duration in months: ");
+
+                    Client *client = selectClient();
+                    if (client != nullptr) {
+                        Loans loan(accountNumber, type, amount, durationMonths, client);
+                        model.getLoansContainer().add(loan, client, model.getAccountsContainer()); // Pass accountsContainer here
                         cout << "Loan added successfully." << endl;
-                    }catch (const InvalidDataException& e) {
-                        cerr << "Error: " << static_cast<InvalidDataException&>(const_cast<InvalidDataException &>(e)).what() << endl;
-                    } catch (const DuplicatedDataException& e) {
-                        cerr << "Error: " << static_cast<DuplicatedDataException&>(const_cast<DuplicatedDataException &>(e)).what() << " duplicated!!" << endl;
                     }
-                } else {
-                    cout << "Client not found." << endl;
+                }
+                catch (InvalidDataException &e) {
+                    cout << "Error: " << e.what() << endl;
+                }
+                catch (DuplicatedDataException &e) {
+                    cout << "Error: " << e.what() << endl;
                 }
                 break;
             }
-            case 2: {
-                // List Loans
-                list<Loans> loans = model.getLoansContainer().getAll();
-                loanView.printLoans(loans);
+            case 2: { // List Loans
+                // Assuming you have a way to get loans associated with a client
+                Client* client = selectClient();
+                if (client != nullptr) {
+                    list<Loans> clientLoans = model.getLoansContainer().getAll(); // You'll likely need a different function in LoansContainers to get loans by client
+                    loanView.printLoans(clientLoans);
+                }
                 break;
             }
-            case 3: { // Monitor Loan
+            case 3: { // Loan Details
                 int clientNumber = Utils::getNumber("Enter the client number: ");
-                Client *client = model.getClientContainer().get(clientNumber);
-                if (client) {
+                Client* client = model.getClientContainer().get(clientNumber);
+                if (client != nullptr) {
+                    list<Loans> loans = model.getLoansContainer().getAll(); // Retrieve all loans
+
+                    // Filter loans based on the client
                     list<Loans> clientLoans;
-                    for (const Loans &loan: model.getLoansContainer().getAll()) {
-                        if (loan.getClient() == client) {
+                    for (const Loans& loan : loans) {
+                        if (loan.getClient()->getNumber() == clientNumber) {
                             clientLoans.push_back(loan);
                         }
                     }
-                    loanView.printLoans(clientLoans); // Print loans associated with the client
+
+                    cout << "List of loans: " << endl;
+                    loanView.printLoans(clientLoans); // Now print the filtered clientLoans
                 } else {
                     cout << "Client not found." << endl;
                 }
                 break;
             }
-            case 4: {
-                // Update Loan (Example: Update interest rate or duration)
-                string type = Utils::getString("Enter the loan type to update:");
-                float amount = Utils::getNumber("Enter the loan amount to update:");
-                float newInterestRate = Utils::getNumber("Enter the new interest rate:");
-                int newDurationMonths = Utils::getNumber("Enter the new loan duration (in months):");
-
-                try {
-                    model.getLoansContainer().update(type, amount, newInterestRate, newDurationMonths);
-                    cout << "Loan updated successfully." << endl;
-                } catch (const exception &e) {
-                    cerr << "Error: " << e.what() << endl;
-                }
+            case 4:
+                runAmortizeLoan();
                 break;
-            }
             case 0:
-                break; // Exit the Loan Management menu
+                // Exit the loan menu
+                break;
             default:
-                cerr << "Invalid choice. Please try again." << endl;
+                cout << "Invalid option!" << endl;
+                break;
         }
     } while (option != 0);
 }
+
 
 Client* Controller::selectClient() {
     int clientNumber = Utils::getNumber("Enter Client Number: ");
@@ -300,5 +303,29 @@ void Controller::runMonitorInsurance() {
     } else {
         cout << "\nInsurances for client " << client->getName() << ":" << endl;
         insuranceView.printInsurances(clientInsurances);
+    }
+}
+
+void Controller::runAmortizeLoan() {
+    int clientNumber = Utils::getNumber("Enter the client number: ");
+    string type = Utils::getString("Enter the loan type: ");
+    float amount = Utils::getNumber("Enter the loan amount: ");
+    float paymentAmount = Utils::getNumber("Enter the payment amount: ");
+
+    float remainingBalance = model.getLoansContainer().amortizeLoan(clientNumber, type, amount, paymentAmount);
+
+    if (remainingBalance >= 0) {
+        // Loan found and potentially amortized
+        Accounts *account = model.getAccountsContainer().get(clientNumber); // Assuming account number is the same as client number
+        if (account) {
+            if (remainingBalance == 0.0f) {
+                // Loan fully paid, no need to deduct from balance
+            } else {
+                float newBalance = account->getBalance() - paymentAmount;
+                account->setBalance(newBalance);
+            }
+        } else {
+            cout << "Account not found!" << endl;
+        }
     }
 }

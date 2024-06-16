@@ -2124,6 +2124,8 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/DuplicatedDataException.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
+  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Accounts.h \
+  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/AccountsContainers.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
@@ -2592,7 +2594,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/concept_check.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h \
@@ -2609,11 +2610,8 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/bits/list.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/locale_conv.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/localefwd.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/memoryfwd.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
@@ -2624,11 +2622,9 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/predefined_ops.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/ptr_traits.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/quoted_string.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h \
@@ -2648,7 +2644,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/clocale \
   C:/msys64/mingw64/include/c++/13.2.0/cstdio \
   C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
-  C:/msys64/mingw64/include/c++/13.2.0/ctime \
   C:/msys64/mingw64/include/c++/13.2.0/cwchar \
   C:/msys64/mingw64/include/c++/13.2.0/cwctype \
   C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h \
@@ -2661,17 +2656,13 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
-  C:/msys64/mingw64/include/c++/13.2.0/iomanip \
   C:/msys64/mingw64/include/c++/13.2.0/ios \
   C:/msys64/mingw64/include/c++/13.2.0/iosfwd \
   C:/msys64/mingw64/include/c++/13.2.0/iostream \
   C:/msys64/mingw64/include/c++/13.2.0/istream \
-  C:/msys64/mingw64/include/c++/13.2.0/limits \
   C:/msys64/mingw64/include/c++/13.2.0/list \
-  C:/msys64/mingw64/include/c++/13.2.0/locale \
   C:/msys64/mingw64/include/c++/13.2.0/new \
   C:/msys64/mingw64/include/c++/13.2.0/ostream \
-  C:/msys64/mingw64/include/c++/13.2.0/sstream \
   C:/msys64/mingw64/include/c++/13.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/13.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/13.2.0/streambuf \
@@ -2690,9 +2681,7 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
-  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/include/corecrt.h \
   C:/msys64/mingw64/include/corecrt_startup.h \
   C:/msys64/mingw64/include/corecrt_stdio_config.h \
@@ -3336,6 +3325,8 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Exceptions/InvalidDataException.h \
+  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Client.h \
+  D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Date.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Model/Loans.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/LoanView.h \
   D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Headers/Views/Utils.h
@@ -4115,8 +4106,6 @@ CMakeFiles/FSOFT_PROJECT.dir/D_/ISEP/Fundamenos_de_software/Fsoft2024_1DA_2/Wall
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/iomanip:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h:
@@ -4622,8 +4611,6 @@ D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model
 D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/TransactionsContainers.cpp:
 
 D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Sources/Model/WalletManagement.cpp:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/quoted_string.h:
 
 D:/ISEP/Fundamenos\ de\ software/Fsoft2024_1DA_2/Wallet_Management/Sources/Views/AcquireView.cpp:
 

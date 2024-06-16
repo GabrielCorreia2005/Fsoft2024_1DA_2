@@ -1,31 +1,38 @@
 #include "LoanView.h"
 #include "Utils.h"
+#include "Loans.h"
 #include <iostream>
-
+#include <string>
+#include "Date.h"
+using namespace std;
 
 Loans LoanView::getLoan(int accountNumber, Client* client) {
-    string type = Utils::getString("Enter loan type: ");
-    float amount = Utils::getNumber("Enter loan amount: ");
-    int durationMonths = Utils::getNumber("Enter loan duration (in months): ");
+    string type = Utils::getString("Enter the loan type: ");
+    float amount = Utils::getNumber("Enter the loan amount: ");
+    int durationMonths = Utils::getNumber("Enter the loan duration in months: ");
 
     return Loans(accountNumber, type, amount, durationMonths, client);
 }
 
 void LoanView::printLoan(Loans *loan) {
     if (loan != nullptr) {
-        cout << "Loan Type: " << loan->getType() << endl;
-        cout << "Amount: " << loan->getAmount() << endl;
-        cout << "Interest Rate: " << Loans::getFixedInterestRate() * 100 << "%" << endl;
-        cout << "Duration (months): " << loan->getDurationMonths() << endl;
-        cout << "--------------------" << endl;
+        cout << "Loan details:" << endl;
+        cout << "Account Number: " << loan->getAccountNumber() << endl;
+        cout << "Loan type: " << loan->getType() << endl;
+        cout << "Loan amount: " << loan->getAmount() << endl;
+        cout << "Loan duration (months): " << loan->getDurationMonths() << endl;
     } else {
-        cout << "Invalid Loan (nullptr)" << endl;
+        cout << "Loan not found." << endl;
     }
 }
 
 void LoanView::printLoans(list<Loans> &loans) {
-    cout << "List of Loans:" << endl;
-    for (auto &loan : loans) {
-        printLoan(&loan);
+    if (!loans.empty()) {
+        cout << "List of loans:" << endl;
+        for (Loans &loan : loans) {
+            printLoan(&loan);
+        }
+    } else {
+        cout << "No loans found." << endl;
     }
 }
