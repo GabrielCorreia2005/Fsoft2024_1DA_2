@@ -83,3 +83,23 @@ ostream& operator<<(ostream& os, const Date& date) {
     os << date.day << "/" << date.month << "/" << date.year;
     return os;
 }
+
+int Date::calculateAge() const {
+    // Get current time
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+
+    int currentYear = 1900 + ltm->tm_year; // Current year based on system time
+    int age = currentYear - year;
+
+    // Adjust age based on month and day comparison
+    if (month > ltm->tm_mon + 1) { // tm_mon is 0-indexed
+        age--;
+    } else if (month == ltm->tm_mon + 1) {
+        if (day > ltm->tm_mday) {
+            age--;
+        }
+    }
+
+    return age;
+}

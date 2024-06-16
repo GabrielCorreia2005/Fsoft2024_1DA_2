@@ -37,6 +37,8 @@ public:
     bool operator > (const Date& obj) const;
     bool operator < (const Date& obj) const;
 
+    int calculateAge() const;
+
     static bool isValid(int day, int month, int year);
 
     // Overloaded << operator for Date

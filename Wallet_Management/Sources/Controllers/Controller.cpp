@@ -35,38 +35,28 @@ void Controller::runClient() {
         option = view.menuClient();
         switch (option) {
             case 1: {
-                // Create Account (Modified Logic)
-                string name = Utils::getString("Name");
-                // Validate name (Check if it's at least 3 characters long)
-                while (!Client::isNameValid(name)) {
-                    cout << "Invalid name. Name must be at least 3 characters long." << endl;
-                    name = Utils::getString("Name");
+                try {
+                    // Create Account (Modified Logic)
+                    Client newClient = clientView.getClient();
+                    model.getClientContainer().add(newClient);
+
+                    // Prompt for initial balance
+                    float balance;
+                    do {
+                        balance = Utils::getNumber("Initial Balance:");
+                        if (balance < Accounts::getMinBalance()) { // Use the getter
+                            cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
+                        }
+                    } while (balance < Accounts::getMinBalance());
+
+                    // Create the Account object
+                    Accounts newAccount(newClient.getNumber(), balance, &newClient);
+                    model.getAccountsContainer().add(newAccount);
+
+                    cout << "Client and account added successfully." << endl;
+                } catch (const InvalidDataException& e) {
+                    cerr << "Error: " << e.what() << endl;
                 }
-
-                Date birth = clientView.getDate();
-
-                // Create the Client object
-                Client newClient(name, birth, ClientsContainer::nextClientNumber);
-
-                // Add the Client to the container
-                model.getClientContainer().add(newClient);
-
-                // Prompt for initial balance
-                float balance;
-                do {
-                    balance = Utils::getNumber("Initial Balance::");
-                    if (balance < Accounts::getMinBalance()) { // Use the getter
-                        cout << "Initial balance must be at least " << Accounts::getMinBalance() << endl;
-                    }
-                } while (balance < Accounts::getMinBalance());
-
-                // Create the Account object
-                Accounts newAccount(newClient.getNumber(), balance, &newClient);
-
-                // Add the Account to the container
-                model.getAccountsContainer().add(newAccount);
-
-                cout << "Client and account added successfully." << endl;
                 break;
             }
             case 2: {
@@ -204,51 +194,69 @@ void Controller::runTransactions() {
         option = view.menuTransactions();
 
         switch (option) {
-            case 1: {
-                // Add a transaction
-                Client* sourceClient = selectClient(); // Get the source client
-                Client* destinationClient = selectClient(); // Get the destination client
+            case 1: { // Add Transaction
+                // 1. Get Source and Destination Accounts from the View
+                int sourceClientNumber = Utils::getNumber("Enter Source Client Number: ");
+                Client* sourceClient = model.getClientContainer().get(sourceClientNumber);
+                if (sourceClient == nullptr) {
+                    cout << "Source client not found." << endl;
+                    break; // Exit to the transactions menu
+                }
+                Accounts* sourceAccount = model.getAccountsContainer().get(sourceClientNumber);
+                if (sourceAccount == nullptr) {
+                    cout << "Source account not found." << endl;
+                    break;
+                }
 
-                if (sourceClient != nullptr && destinationClient != nullptr) { // Check if both clients are selected
-                    // Get accounts for the selected clients
-                    Accounts *sourceAccount = model.getAccountsContainer().get(sourceClient->getNumber());
-                    Accounts *destinationAccount = model.getAccountsContainer().get(destinationClient->getNumber());
+                int destClientNumber = Utils::getNumber("Enter Destination Client Number: ");
+                Client* destClient = model.getClientContainer().get(destClientNumber);
+                if (destClient == nullptr) {
+                    cout << "Destination client not found." << endl;
+                    break;
+                }
+                Accounts* destAccount = model.getAccountsContainer().get(destClientNumber);
+                if (destAccount == nullptr) {
+                    cout << "Destination account not found." << endl;
+                    break;
+                }
 
-                    if (sourceAccount != nullptr && destinationAccount != nullptr) { // Check if both accounts exist
-                        Transactions transaction = transactionsView.getTransaction(sourceAccount, destinationAccount);
+                // 2. Get Transaction Details from the View
+                Transactions newTransaction = transactionsView.getTransaction(sourceAccount, destAccount);
 
-                        // Update account balances based on transaction type
-                        if (transaction.getType() == "Transfer") {
-                            // Update the accounts
-                            sourceAccount->setBalance(sourceAccount->getBalance() - transaction.getAmount());
-                            destinationAccount->setBalance(destinationAccount->getBalance() + transaction.getAmount());
-                            // Update the AccountsContainer
-                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
-                            model.getAccountsContainer().update(destinationAccount->getNr(), destinationAccount->getBalance());
-
-                        } else if (transaction.getType() == "Deposit") {
-                            sourceAccount->setBalance(sourceAccount->getBalance() + transaction.getAmount());
-                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
-                        } else if (transaction.getType() == "Withdrawal") {
-                            sourceAccount->setBalance(sourceAccount->getBalance() - transaction.getAmount());
-                            model.getAccountsContainer().update(sourceAccount->getNr(), sourceAccount->getBalance());
-                        }
-
-                        // Add the transaction to the container
-                        transaction.setAccount(sourceAccount);
-                        model.getTransactionsContainer().add(transaction);
+                // 3. Update Account Balances in the Controller
+                if (newTransaction.getType() == "Transfer" && sourceAccount != nullptr && destAccount != nullptr) {
+                    if (sourceAccount->getBalance() >= newTransaction.getAmount()) {
+                        sourceAccount->setBalance(sourceAccount->getBalance() - newTransaction.getAmount());
+                        destAccount->setBalance(destAccount->getBalance() + newTransaction.getAmount());
                         cout << "Transaction added successfully!" << endl;
                     } else {
-                        cout << "Invalid account numbers!" << endl;
+                        cout << "Error: Insufficient funds in the source account." << endl;
+                        break;
+                    }
+                } else if (newTransaction.getType() == "Deposit" && destAccount != nullptr) {
+                    destAccount->setBalance(destAccount->getBalance() + newTransaction.getAmount());
+                    cout << "Transaction added successfully!" << endl;
+                } else if (newTransaction.getType() == "Withdrawal" && sourceAccount != nullptr) {
+                    if (sourceAccount->getBalance() >= newTransaction.getAmount()) {
+                        sourceAccount->setBalance(sourceAccount->getBalance() - newTransaction.getAmount());
+                        cout << "Transaction added successfully!" << endl;
+                    } else {
+                        cout << "Error: Insufficient funds in the account." << endl;
+                        break;
                     }
                 } else {
-                    cout << "Invalid client numbers!" << endl;
+                    cout << "Error: Invalid transaction type." << endl;
+                    break;
                 }
+
+                // 4. Add the Transaction to the Model (if balances were updated successfully)
+                model.getTransactionsContainer().add(newTransaction);
                 break;
             }
             case 2: {
-                // List transactions
-                // ... (Show list of transactions)
+                // List Transactions Logic (similar to your existing code)
+                list<Transactions> allTransactions = model.getTransactionsContainer().getAll();
+                transactionsView.printTransactions(allTransactions);
                 break;
             }
             case 0:
