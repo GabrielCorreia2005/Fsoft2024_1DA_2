@@ -18,6 +18,7 @@ Client::Client(const Client &obj) {
     this->birth = obj.birth;
 }
 
+
 Client::~Client() = default;
 
 const string &Client::getName() const {
@@ -82,4 +83,12 @@ bool Client::operator==(const Client &obj) const {
 
 bool Client::operator==(int nr) const {
     return (number == nr);
+}
+
+int Client::getBalance() const {
+    return balance;
+}
+
+int Client::setBalance(int balance) {
+    this->balance = balance;
 }

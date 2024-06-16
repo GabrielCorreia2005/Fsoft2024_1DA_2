@@ -4,6 +4,7 @@
 #include <string>
 #include "Date.h"
 #include "Accounts.h" // Include the Accounts header
+#include "Client.h"
 
 using namespace std;
 
@@ -12,11 +13,11 @@ private:
     int transactionId;
     Date date;
     float amount;
-    Accounts *account; // Pointer to the associated account
+    Client* client; // Pointer to the associated account
 
 public:
     // Constructor for creating a new transaction
-    Transactions(int transactionId, const Date &date, float amount, Accounts *account);
+    Transactions(int transactionId, const Date &date, float amount, Client* client);
     // Copy constructor
     Transactions(const Transactions& obj);
     // Destructor
@@ -27,11 +28,11 @@ public:
     const Date& getDate() const;
     const string& getType() const;
     float getAmount() const;
-    Accounts* getAccount() const;
+    Client* getClient() const;
 
     // Setters
     void setAmount(float amount);
-    void setAccount(Accounts *account);
+    void setClient(Client* client);
     void setDate(const Date& date); // Add setDate() method
 
     // Overloaded equality operator for comparing transactions

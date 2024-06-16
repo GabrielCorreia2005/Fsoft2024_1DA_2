@@ -24,12 +24,12 @@ void TransactionsContainers::remove(int transactionId) {
     }
 }
 
-void TransactionsContainers::update(int transactionId, const Date &date, const string &type, float amount, Accounts *account) {
+void TransactionsContainers::update(int transactionId, const Date &date, const string &type, float amount, Client* client) {
     list<Transactions>::iterator it = search(transactionId);
     if (it != transactions.end()) {
         it->setDate(date);
         it->setAmount(amount);
-        it->setAccount(account);
+        it->setClient(client);
     }
 }
 

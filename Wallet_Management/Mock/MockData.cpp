@@ -135,7 +135,8 @@ void MockData::generateData(WalletManagement &walletManagement) {
         std::advance(it2, getRandomNumber(0, allAccounts.size() - 1));
         Accounts* destinationAccount = &(*it2);
 
-        Transactions transaction(walletManagement.getNextAccountNumber(), transactionDate, transactionAmount, originAccount); // Correct constructor usage
+        Transactions transaction(walletManagement.getNextAccountNumber(), transactionDate, transactionAmount,
+                                 reinterpret_cast<Client *>(originAccount)); // Correct constructor usage
         try {
             walletManagement.getTransactionsContainer().add(transaction);
         } catch ( DuplicatedDataException &e) {

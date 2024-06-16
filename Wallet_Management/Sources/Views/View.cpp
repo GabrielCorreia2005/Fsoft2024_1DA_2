@@ -46,20 +46,14 @@ int View::menuLoans() {
 
 int View::menuTransactions() {
     int option;
-    do {
         cout << "----- Transactions Menu -----" << endl;
         cout << "1- Add Transaction" << endl;
         cout << "2- List Transactions" << endl;
         cout << "0- Exit" << endl;
         cout << "Option: ";
         cin >> option;
-
-        if (option < 0 || option > 2) {
-            cout << "Invalid option. Please try again." << endl;
-        }
-    } while (option < 0 || option > 2);
-
-    return option;
+        option = Utils::getNumber("Option: ");
+        return option;
 }
 
 int View::menuInsurance() {
